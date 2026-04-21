@@ -59,136 +59,109 @@ export default function ReportPage() {
     setExportError("");
 
     try {
-      // 动态加载 jsPDF（不依赖 html2canvas，避免 oklab 颜色问题）
+      // 1. 加载 html2canvas + jsPDF
       const loadScript = (url: string): Promise<void> =>
         new Promise((resolve, reject) => {
+          const existing = document.querySelector(`script[src="${url}"]`);
+          if (existing) { resolve(); return; }
           const script = document.createElement('script');
           script.src = url;
           script.onload = () => resolve();
-          script.onerror = () => reject(new Error(`CDN ${url} 加载失败`));
+          script.onerror = () => reject(new Error(`CDN 加载失败: ${url}`));
           document.head.appendChild(script);
         });
 
-      if (!(window as any).jspdf) {
-        await loadScript('https://cdn.bootcdn.net/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
+      const cdnUrls = [
+        {
+          html2canvas: 'https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.min.js',
+          jspdf: 'https://cdn.bootcdn.net/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
+        },
+        {
+          html2canvas: 'https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js',
+          jspdf: 'https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js',
+        },
+      ];
+
+      let loaded = false;
+      for (const urls of cdnUrls) {
+        try {
+          if (!(window as any).html2canvas) await loadScript(urls.html2canvas);
+          if (!(window as any).jspdf) await loadScript(urls.jspdf);
+          loaded = true;
+          break;
+        } catch {
+          continue;
+        }
       }
 
+      if (!loaded) {
+        throw new Error('无法加载 PDF 生成库，请检查网络');
+      }
+
+      // 2. 创建干净的渲染容器（不用 Tailwind，用内联样式）
+      const container = document.createElement('div');
+      container.style.cssText = `
+        position: fixed;
+        left: 0;
+        top: -10000px;
+        width: 800px;
+        background: #ffffff;
+        color: #1a1a1a;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 40px;
+      `;
+
+      // 3. 构建报告 HTML
+      const contentHtml = renderMarkdownToHtml(report.content);
+
+      container.innerHTML = `
+        <h1 style="font-size: 24px; font-weight: bold; color: #1a1a1a; margin: 0 0 8px 0;">${report.title}</h1>
+        <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+          <span style="font-size: 12px; color: #666; padding: 4px 12px; background: #f0f0f0; border-radius: 4px;">${report.totalFeedback} 份样本</span>
+          <span style="font-size: 12px; color: #666; padding: 4px 12px; background: #f0f0f0; border-radius: 4px;">平均分 ${report.avgScore}</span>
+        </div>
+        <div style="padding: 12px 16px; background: #f5f5f5; border-radius: 8px; margin-bottom: 24px; font-size: 13px; color: #555;">
+          ${report.summary}
+        </div>
+        <hr style="border: none; border-top: 2px solid #6c5ce7; margin: 0 0 24px 0;" />
+        <div style="white-space: pre-wrap;">
+          ${contentHtml}
+        </div>
+      `;
+
+      document.body.appendChild(container);
+
+      // 4. 截图
+      const canvas = await (window as any).html2canvas(container, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: '#ffffff',
+        logging: false,
+        allowTaint: true,
+      });
+
+      document.body.removeChild(container);
+
+      // 5. 生成 PDF
       const { jsPDF } = (window as any).jspdf;
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      
-      const pageWidth = 210;
+      const imgData = canvas.toDataURL('image/png');
+      const imgWidth = 210;
       const pageHeight = 297;
-      const margin = 15;
-      const contentWidth = pageWidth - margin * 2;
-      let y = margin;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 0;
 
-      // 中文字体支持：使用 jsPDF 内置字体，中文用 fallback
-      pdf.setFont('helvetica', 'normal');
-      
-      // 标题
-      pdf.setFontSize(18);
-      pdf.setFont('helvetica', 'bold');
-      pdf.setTextColor(26, 26, 26);
-      pdf.text(report.title, margin, y);
-      y += 10;
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
 
-      // 摘要
-      pdf.setFontSize(9);
-      pdf.setFont('helvetica', 'italic');
-      pdf.setTextColor(102, 102, 102);
-      const summaryLines = pdf.splitTextToSize(report.summary, contentWidth);
-      pdf.text(summaryLines, margin, y);
-      y += summaryLines.length * 5 + 5;
-
-      // 分隔线
-      pdf.setDrawColor(108, 92, 231);
-      pdf.setLineWidth(0.8);
-      pdf.line(margin, y, pageWidth - margin, y);
-      y += 8;
-
-      // 报告正文
-      pdf.setFontSize(11);
-      pdf.setFont('helvetica', 'normal');
-      pdf.setTextColor(26, 26, 26);
-
-      const lines = report.content.split('\n');
-      for (const line of lines) {
-        // 检查是否需要新页
-        if (y > pageHeight - 20) {
-          pdf.addPage();
-          y = margin;
-        }
-
-        if (line.startsWith('## ')) {
-          y += 4;
-          pdf.setFontSize(14);
-          pdf.setFont('helvetica', 'bold');
-          pdf.setTextColor(26, 26, 26);
-          const titleText = line.slice(3);
-          pdf.text(titleText, margin, y);
-          y += 7;
-          // 下划线
-          pdf.setDrawColor(108, 92, 231);
-          pdf.setLineWidth(0.5);
-          pdf.line(margin, y, pageWidth - margin, y);
-          y += 5;
-          pdf.setFontSize(11);
-          pdf.setFont('helvetica', 'normal');
-        } else if (line.startsWith('### ')) {
-          y += 3;
-          pdf.setFontSize(12);
-          pdf.setFont('helvetica', 'bold');
-          pdf.text(line.slice(4), margin, y);
-          y += 6;
-          pdf.setFontSize(11);
-          pdf.setFont('helvetica', 'normal');
-        } else if (line.startsWith('- ')) {
-          const text = line.slice(2);
-          const bulletLines = pdf.splitTextToSize(`• ${text}`, contentWidth - 5);
-          for (const bl of bulletLines) {
-            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
-            pdf.text(bl, margin + 5, y);
-            y += 5;
-          }
-        } else if (line.startsWith('> ')) {
-          y += 2;
-          pdf.setFont('helvetica', 'italic');
-          pdf.setTextColor(100, 100, 100);
-          const quoteLines = pdf.splitTextToSize(line.slice(2), contentWidth - 5);
-          for (const ql of quoteLines) {
-            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
-            pdf.text(ql, margin + 5, y);
-            y += 5;
-          }
-          pdf.setFont('helvetica', 'normal');
-          pdf.setTextColor(26, 26, 26);
-          y += 2;
-        } else if (line.startsWith('|')) {
-          // 跳过表格分隔行
-          if (!line.includes('---')) {
-            const cells = line.split('|').filter(c => c.trim() !== '');
-            const tableText = cells.map(c => c.trim()).join('  |  ');
-            const tableLines = pdf.splitTextToSize(tableText, contentWidth);
-            for (const tl of tableLines) {
-              if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
-              pdf.setFontSize(9);
-              pdf.text(tl, margin, y);
-              y += 4;
-            }
-            pdf.setFontSize(11);
-          }
-        } else if (line.trim() === '') {
-          y += 3;
-        } else {
-          // 普通段落
-          const text = line.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
-          const paraLines = pdf.splitTextToSize(text, contentWidth);
-          for (const pl of paraLines) {
-            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
-            pdf.text(pl, margin, y);
-            y += 5;
-          }
-        }
+      while (heightLeft > -0.5) {
+        position -= pageHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
       }
 
       const filename = `${report.title.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_')}.pdf`;
@@ -289,7 +262,53 @@ export default function ReportPage() {
   );
 }
 
-// Markdown 渲染组件
+// Markdown → HTML（用于 PDF 导出，纯内联样式）
+function renderMarkdownToHtml(content: string): string {
+  return content
+    .split('\n')
+    .map(line => {
+      if (line.startsWith('## ')) {
+        return `<h2 style="font-size:18px;font-weight:bold;margin:24px 0 8px 0;padding-bottom:6px;border-bottom:2px solid #6c5ce7;color:#1a1a1a;">${escapeHtml(line.slice(3))}</h2>`;
+      }
+      if (line.startsWith('### ')) {
+        return `<h3 style="font-size:15px;font-weight:bold;margin:16px 0 6px 0;color:#1a1a1a;">${escapeHtml(line.slice(4))}</h3>`;
+      }
+      if (line.startsWith('- ')) {
+        return `<div style="margin-left:20px;margin-bottom:4px;">• ${processInline(line.slice(2))}</div>`;
+      }
+      if (line.startsWith('> ')) {
+        return `<div style="border-left:4px solid #6c5ce7;padding:8px 12px;margin:8px 0;background:#f5f5f5;color:#555;">${processInline(line.slice(2))}</div>`;
+      }
+      if (line.startsWith('|') && !line.includes('---')) {
+        const cells = line.split('|').filter(c => c.trim() !== '');
+        return `<div style="padding:4px 0;font-size:13px;">${cells.map(c => `<span style="display:inline-block;min-width:120px;padding:2px 8px;">${escapeHtml(c.trim())}</span>`).join('')}</div>`;
+      }
+      if (line.startsWith('|') && line.includes('---')) {
+        return ''; // separator
+      }
+      if (line.trim() === '') {
+        return '<div style="height:8px;"></div>';
+      }
+      return `<p style="margin:4px 0;">${processInline(line)}</p>`;
+    })
+    .join('');
+}
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function processInline(text: string): string {
+  return text
+    .replace(/\*\*([^*]+)\*\*/g, '<strong style="font-weight:bold;">$1</strong>')
+    .replace(/`([^`]+)`/g, '<code style="background:#f0f0f0;padding:1px 4px;border-radius:3px;font-size:12px;">$1</code>');
+}
+
+// 页面内 Markdown 渲染组件
 function ReportContent({ content }: { content: string }) {
   const lines = content.trim().split("\n");
   const elements: React.ReactNode[] = [];
