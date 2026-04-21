@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, Calendar, FileText } from "lucide-react";
+import { Download, Calendar, FileText, FileDown } from "lucide-react";
 import { format } from "date-fns";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface Report {
   id: number;
@@ -38,6 +38,8 @@ export default function ReportPage() {
       });
   }, []);
 
+  const reportRef = useRef<HTMLDivElement>(null);
+
   const handleDownload = () => {
     if (!report) return;
     const blob = new Blob([report.content], { type: 'text/markdown;charset=utf-8' });
@@ -49,6 +51,10 @@ export default function ReportPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  };
+
+  const handleExportPDF = () => {
+    window.print();
   };
 
   if (loading) {
@@ -82,10 +88,18 @@ export default function ReportPage() {
             </Badge>
             <Button
               onClick={handleDownload}
-              className="bg-primary hover:bg-primary/90 gap-2"
+              variant="outline"
+              className="gap-2 print:hidden"
             >
               <Download className="w-4 h-4" />
-              下载报告
+              下载 Markdown
+            </Button>
+            <Button
+              onClick={handleExportPDF}
+              className="bg-primary hover:bg-primary/90 gap-2 print:hidden"
+            >
+              <FileDown className="w-4 h-4" />
+              导出 PDF
             </Button>
           </div>
         </div>
@@ -93,7 +107,7 @@ export default function ReportPage() {
 
       {/* Main Content */}
       <main className="max-w-[1200px] mx-auto px-8 py-6">
-        <Card className="bg-card border-border">
+        <Card className="bg-card border-border" ref={reportRef}>
           <CardHeader className="border-b border-border">
             <div className="flex items-start justify-between">
               <div>

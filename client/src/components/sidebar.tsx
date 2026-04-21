@@ -6,6 +6,7 @@ import {
   MessageSquareWarning,
   FileBarChart,
   Radar,
+  Upload,
 } from "lucide-react";
 
 const navItems = [
@@ -13,6 +14,7 @@ const navItems = [
   { label: "项目管理", path: "/projects", icon: FolderKanban },
   { label: "反馈列表", path: "/feedback", icon: MessageSquareWarning },
   { label: "分析报告", path: "/report", icon: FileBarChart },
+  { label: "数据导入", path: "/import", icon: Upload },
 ];
 
 export function Sidebar() {
