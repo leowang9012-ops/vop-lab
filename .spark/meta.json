@@ -1,0 +1,13 @@
+{
+  "appId": "app_4jzfrxdcxm354",
+  "conversationId": "conversation_4jzftyrk1p2s1",
+  "createdAt": "2026-04-21T12:12:53+08:00",
+  "updatedAt": "2026-04-21T14:25:00+08:00",
+  "features": [],
+  "stack": "miaoda-openclaw",
+  "version": "1.6.3",
+  "template": "apex",
+  "appUrl": "https://z74yoeuk3g.aiforce.cloud/app/app_4jzfrxdcxm354",
+  "archType": 2,
+  "finalText": "---\n\n**已修复白屏问题，VoP Lab 重新部署成功！**\n\n### 访问地址\n**https://z74yoeuk3g.aiforce.cloud/app/app_4jzfrxdcxm354**\n\n---\n\n### 部署验证结果\n\n| 检查项 | 状态 |\n|--------|------|\n| Lint 检查 | ✅ 通过 |\n| TypeScript 类型检查 | ✅ 通过 |\n| 构建成功 | ✅ 成功 |\n| 产物验证 | ✅ 正常 |\n| 部署完成 | ✅ 版本 11 |\n\n---\n\n### 可访问页面\n\n1. **Dashboard 数据看板** (`/`) - 统计卡片、分类饼图、情感趋势、关键词云、紧急问题\n2. **项目管理** (`/projects`) - 项目卡片列表、新建项目弹窗\n3. **反馈列表** (`/feedback`) - 多维筛选器、反馈表格、分页\n4. **分析报告** (`/report`) - Markdown渲染、周期选择器、下载按钮\n\n所有页面现在均可正常浏览，白屏问题已解决。"
+}
