@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FileDown, Calendar, TrendingUp, TrendingDown, AlertTriangle, CheckCircle, BarChart3, MessageSquare } from "lucide-react";
 import { useEffect, useState, useCallback, useRef } from "react";
+import { ShareDialog } from "@/components/ShareDialog";
 
 interface Feedback {
   content: string;
@@ -261,10 +262,19 @@ export default function WeeklyReportPage() {
             <p className="text-sm text-muted-foreground mt-0.5">自动生成玩家反馈周报</p>
           </div>
           {report && (
-            <Button onClick={handleExportPDF} className="bg-primary hover:bg-primary/90 gap-2">
-              <FileDown className="w-4 h-4" />
-              导出周报 PDF
-            </Button>
+            <div className="flex items-center gap-3">
+              <ShareDialog
+                reportTitle={`${rangeLabel}玩家反馈周报`}
+                totalFeedback={report.totalFeedback}
+                avgScore={report.avgScore}
+                positiveRate={report.positiveRate}
+                summary={`本周共收到${report.totalFeedback}条玩家反馈，平均评分${report.avgScore}，正面率${report.positiveRate}%`}
+              />
+              <Button onClick={handleExportPDF} className="bg-primary hover:bg-primary/90 gap-2">
+                <FileDown className="w-4 h-4" />
+                导出周报 PDF
+              </Button>
+            </div>
           )}
         </div>
       </header>

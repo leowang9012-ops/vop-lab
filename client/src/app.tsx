@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useSearchParams, Navigate } from "react-router-dom";
 import { Layout } from "@/components/layout";
 import DashboardPage from "@/pages/DashboardPage/DashboardPage";
 import ProjectsPage from "@/pages/ProjectsPage/ProjectsPage";
@@ -9,11 +9,19 @@ import TrendPage from "@/pages/TrendPage/TrendPage";
 import WeeklyReportPage from "@/pages/WeeklyReportPage/WeeklyReportPage";
 import NotFoundPage from "@/pages/NotFoundPage/NotFoundPage";
 
+function ShareRedirect() {
+  const [params] = useSearchParams();
+  const share = params.get("share");
+  if (share === "report") return <Navigate to="/report" replace />;
+  if (share === "weekly") return <Navigate to="/weekly" replace />;
+  return <Navigate to="/" replace />;
+}
+
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<DashboardPage />} />
+        <Route index element={<ShareRedirect />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="feedback" element={<FeedbackPage />} />
         <Route path="report" element={<ReportPage />} />

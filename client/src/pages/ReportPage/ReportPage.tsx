@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Download, Calendar, FileText, FileDown } from "lucide-react";
 import { format } from "date-fns";
 import { useEffect, useState, useRef, useCallback } from "react";
+import { ShareDialog } from "@/components/ShareDialog";
 
 interface Report {
   id: number;
@@ -204,6 +205,13 @@ export default function ReportPage() {
             <Badge variant="outline" className="text-xs">
               {report.totalFeedback} 份样本
             </Badge>
+            <ShareDialog
+              reportTitle={report.title}
+              totalFeedback={report.totalFeedback}
+              avgScore={report.avgScore}
+              positiveRate={0}
+              summary={report.summary}
+            />
             <Button
               onClick={handleDownload}
               variant="outline"
