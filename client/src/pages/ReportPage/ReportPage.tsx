@@ -59,55 +59,136 @@ export default function ReportPage() {
     setExportError("");
 
     try {
-      // 方案：动态加载 jsPDF + html2canvas（分开加载，更可靠）
+      // 动态加载 jsPDF（不依赖 html2canvas，避免 oklab 颜色问题）
       const loadScript = (url: string): Promise<void> =>
         new Promise((resolve, reject) => {
           const script = document.createElement('script');
           script.src = url;
           script.onload = () => resolve();
-          script.onerror = () => reject(new Error(`Failed to load ${url}`));
+          script.onerror = () => reject(new Error(`CDN ${url} 加载失败`));
           document.head.appendChild(script);
         });
 
-      // 加载 jsPDF
       if (!(window as any).jspdf) {
         await loadScript('https://cdn.bootcdn.net/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js');
       }
-      // 加载 html2canvas
-      if (!(window as any).html2canvas) {
-        await loadScript('https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.min.js');
-      }
 
       const { jsPDF } = (window as any).jspdf;
-      const element = reportRef.current;
-      if (!element) throw new Error('报告内容未加载');
-
-      // 用 html2canvas 截图
-      const canvas = await (window as any).html2canvas(element, {
-        scale: 2,
-        useCORS: true,
-        backgroundColor: '#ffffff',
-        logging: false,
-      });
-
-      // 创建 PDF
-      const imgData = canvas.toDataURL('image/jpeg', 0.95);
-      const imgWidth = 210; // A4 width in mm
-      const pageHeight = 297; // A4 height in mm
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      let heightLeft = imgHeight;
-      let position = 0;
-
       const pdf = new jsPDF('p', 'mm', 'a4');
-      pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
+      
+      const pageWidth = 210;
+      const pageHeight = 297;
+      const margin = 15;
+      const contentWidth = pageWidth - margin * 2;
+      let y = margin;
 
-      // 多页处理
-      while (heightLeft > 0) {
-        position = heightLeft - imgHeight;
-        pdf.addPage();
-        pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
+      // 中文字体支持：使用 jsPDF 内置字体，中文用 fallback
+      pdf.setFont('helvetica', 'normal');
+      
+      // 标题
+      pdf.setFontSize(18);
+      pdf.setFont('helvetica', 'bold');
+      pdf.setTextColor(26, 26, 26);
+      pdf.text(report.title, margin, y);
+      y += 10;
+
+      // 摘要
+      pdf.setFontSize(9);
+      pdf.setFont('helvetica', 'italic');
+      pdf.setTextColor(102, 102, 102);
+      const summaryLines = pdf.splitTextToSize(report.summary, contentWidth);
+      pdf.text(summaryLines, margin, y);
+      y += summaryLines.length * 5 + 5;
+
+      // 分隔线
+      pdf.setDrawColor(108, 92, 231);
+      pdf.setLineWidth(0.8);
+      pdf.line(margin, y, pageWidth - margin, y);
+      y += 8;
+
+      // 报告正文
+      pdf.setFontSize(11);
+      pdf.setFont('helvetica', 'normal');
+      pdf.setTextColor(26, 26, 26);
+
+      const lines = report.content.split('\n');
+      for (const line of lines) {
+        // 检查是否需要新页
+        if (y > pageHeight - 20) {
+          pdf.addPage();
+          y = margin;
+        }
+
+        if (line.startsWith('## ')) {
+          y += 4;
+          pdf.setFontSize(14);
+          pdf.setFont('helvetica', 'bold');
+          pdf.setTextColor(26, 26, 26);
+          const titleText = line.slice(3);
+          pdf.text(titleText, margin, y);
+          y += 7;
+          // 下划线
+          pdf.setDrawColor(108, 92, 231);
+          pdf.setLineWidth(0.5);
+          pdf.line(margin, y, pageWidth - margin, y);
+          y += 5;
+          pdf.setFontSize(11);
+          pdf.setFont('helvetica', 'normal');
+        } else if (line.startsWith('### ')) {
+          y += 3;
+          pdf.setFontSize(12);
+          pdf.setFont('helvetica', 'bold');
+          pdf.text(line.slice(4), margin, y);
+          y += 6;
+          pdf.setFontSize(11);
+          pdf.setFont('helvetica', 'normal');
+        } else if (line.startsWith('- ')) {
+          const text = line.slice(2);
+          const bulletLines = pdf.splitTextToSize(`• ${text}`, contentWidth - 5);
+          for (const bl of bulletLines) {
+            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
+            pdf.text(bl, margin + 5, y);
+            y += 5;
+          }
+        } else if (line.startsWith('> ')) {
+          y += 2;
+          pdf.setFont('helvetica', 'italic');
+          pdf.setTextColor(100, 100, 100);
+          const quoteLines = pdf.splitTextToSize(line.slice(2), contentWidth - 5);
+          for (const ql of quoteLines) {
+            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
+            pdf.text(ql, margin + 5, y);
+            y += 5;
+          }
+          pdf.setFont('helvetica', 'normal');
+          pdf.setTextColor(26, 26, 26);
+          y += 2;
+        } else if (line.startsWith('|')) {
+          // 跳过表格分隔行
+          if (!line.includes('---')) {
+            const cells = line.split('|').filter(c => c.trim() !== '');
+            const tableText = cells.map(c => c.trim()).join('  |  ');
+            const tableLines = pdf.splitTextToSize(tableText, contentWidth);
+            for (const tl of tableLines) {
+              if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
+              pdf.setFontSize(9);
+              pdf.text(tl, margin, y);
+              y += 4;
+            }
+            pdf.setFontSize(11);
+          }
+        } else if (line.trim() === '') {
+          y += 3;
+        } else {
+          // 普通段落
+          const text = line.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
+          const paraLines = pdf.splitTextToSize(text, contentWidth);
+          for (const pl of paraLines) {
+            if (y > pageHeight - 15) { pdf.addPage(); y = margin; }
+            pdf.text(pl, margin, y);
+            y += 5;
+          }
+        }
       }
 
       const filename = `${report.title.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_')}.pdf`;
