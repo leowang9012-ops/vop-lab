@@ -8,7 +8,8 @@ echo "📊 Generating AI analysis report..."
 node scripts/generate-report.js
 
 echo "🕷️  Crawling TapTap reviews (optional, skip if no network)..."
-node scripts/crawl-taptap.js 168332 20 500 || echo "⚠️ TapTap crawl skipped"
+# 街篮2 TapTap ID: 175459
+node scripts/crawl-taptap.js 175459 5 || echo "⚠️ TapTap crawl skipped"
 
 echo "🕷️  Crawling App Store reviews (optional, skip if no network)..."
 # 街篮 App Store ID: 1096974019 (街篮2 可能尚未上架)
