@@ -11,7 +11,8 @@ echo "🕷️  Crawling TapTap reviews (optional, skip if no network)..."
 node scripts/crawl-taptap.js 168332 20 500 || echo "⚠️ TapTap crawl skipped"
 
 echo "🕷️  Crawling App Store reviews (optional, skip if no network)..."
-node scripts/crawl-appstore.js 168332 cn 3 || echo "⚠️ App Store crawl skipped"
+# 街篮 App Store ID: 1096974019 (街篮2 可能尚未上架)
+node scripts/crawl-appstore.js 1096974019 cn 5 || echo "⚠️ App Store crawl skipped"
 
 echo "🔄 Re-merging with crawled data..."
 node scripts/merge-data.js

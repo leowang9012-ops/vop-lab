@@ -1,38 +1,53 @@
 /**
  * TapTap 评论爬虫
- * 使用 TapTap Web API 获取游戏评论
- * API: https://www.taptap.com/webapiv2/review/v2/by-app
+ * 注意：TapTap 有 WAF 防护，服务器端直接请求会被拦截（405）
+ * 解决方案：使用 TapTap 开放 API 或通过浏览器环境抓取
+ * 当前版本：尝试使用备用 API 端点
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const TAPTAP_API = 'https://www.taptap.com/webapiv2/review/v2/by-app';
+// TapTap API 备用端点（可能随时间变化）
+const TAPTAP_APIS = [
+  'https://www.taptap.com/webapiv2/review/v2/by-app',
+  'https://www.taptap.com/webapiv2/reviews/v2/by-app',
+];
+
 const HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-  'Accept': 'application/json',
-  'X-UA': 'V=1&PN=WebApp&LANG=zh-CN',
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'Accept': 'application/json, text/plain, */*',
+  'Referer': 'https://www.taptap.com/app/168332/review',
+  'Origin': 'https://www.taptap.com',
+  'X-Requested-With': 'XMLHttpRequest',
 };
 
 /**
  * 抓取 TapTap 评论
- * @param {string} appId - TapTap 游戏 ID（如 街篮2: 168332）
- * @param {number} maxPages - 最大页数（每页10条）
- * @param {number} delayMs - 请求间隔（毫秒）
+ * @param {string} appId - TapTap 游戏 ID
+ * @param {number} maxPages - 最大页数
+ * @param {number} delayMs - 请求间隔
  */
-async function fetchTapTapReviews(appId, maxPages = 50, delayMs = 800) {
+async function fetchTapTapReviews(appId, maxPages = 20, delayMs = 1000) {
   console.log(`🎮 开始抓取 TapTap 评论 (app_id=${appId}, max_pages=${maxPages})`);
+  console.log(`⚠️ 注意：TapTap 有 WAF 防护，服务器端可能被拦截`);
   
   const allReviews = [];
-  let hasMore = true;
-  let page = 0;
 
-  while (hasMore && page < maxPages) {
+  for (let page = 0; page < maxPages; page++) {
     const from = page * 10;
-    const url = `${TAPTAP_API}?app_id=${appId}&from=${from}&limit=10&mainRequest=true&X-UA=V%3D1%26PN%3DWebApp%26LANG%3Dzh-CN`;
+    const url = `${TAPTAP_APIS[0]}?app_id=${appId}&from=${from}&limit=10&order=default`;
 
     try {
       const res = await fetch(url, { headers: HEADERS });
+      
+      // 405 = 被 WAF 拦截
+      if (res.status === 405) {
+        console.log(`⚠️ TapTap WAF 拦截（405），服务器 IP 被封`);
+        console.log(`💡 建议：在浏览器环境中运行此脚本，或使用代理`);
+        break;
+      }
+      
       if (!res.ok) {
         console.log(`⚠️ 第 ${page + 1} 页请求失败: ${res.status}`);
         break;
@@ -41,10 +56,7 @@ async function fetchTapTapReviews(appId, maxPages = 50, delayMs = 800) {
       const data = await res.json();
       const reviews = data.data?.list || [];
       
-      if (reviews.length === 0) {
-        hasMore = false;
-        break;
-      }
+      if (reviews.length === 0) break;
 
       for (const review of reviews) {
         const msg = review.msg || review.title || '';
@@ -67,12 +79,9 @@ async function fetchTapTapReviews(appId, maxPages = 50, delayMs = 800) {
         });
       }
 
-      page++;
-      console.log(`  ✅ 第 ${page} 页: ${reviews.length} 条 (累计 ${allReviews.length})`);
+      console.log(`  ✅ 第 ${page + 1} 页: ${reviews.length} 条 (累计 ${allReviews.length})`);
 
-      if (delayMs > 0) {
-        await new Promise(r => setTimeout(r, delayMs));
-      }
+      if (delayMs > 0) await new Promise(r => setTimeout(r, delayMs));
     } catch (err) {
       console.log(`  ❌ 第 ${page + 1} 页出错: ${err.message}`);
       break;
