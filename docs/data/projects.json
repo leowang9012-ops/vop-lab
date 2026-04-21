@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": "street-basketball-2",
+      "name": "街篮2",
+      "platform": "Android / iOS",
+      "genre": "体育竞技",
+      "status": "active",
+      "createdAt": "2026-04-15",
+      "dataFile": "feedback_processed.json",
+      "reportFile": "report_latest.json",
+      "trendFile": "trend_comparison.json",
+      "description": "街头篮球2手游，多渠道玩家反馈分析"
+    }
+  ]
+}

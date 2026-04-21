@@ -35,6 +35,7 @@ cp data/feedback_processed.json docs/data/feedback_processed.json
 cp data/trend_comparison.json docs/data/trend_comparison.json 2>/dev/null || true
 cp data/taptap_reviews.json docs/data/taptap_reviews.json 2>/dev/null || true
 cp data/appstore_reviews.json docs/data/appstore_reviews.json 2>/dev/null || true
+cp data/projects.json docs/data/projects.json 2>/dev/null || true
 
 # Restore 404.html for SPA routing
 cat > docs/404.html << 'HTMLEOF'
