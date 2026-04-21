@@ -7,6 +7,7 @@ import {
   FileBarChart,
   Radar,
   Upload,
+  TrendingUp,
 } from "lucide-react";
 
 const navItems = [
@@ -14,6 +15,7 @@ const navItems = [
   { label: "项目管理", path: "/projects", icon: FolderKanban },
   { label: "反馈列表", path: "/feedback", icon: MessageSquareWarning },
   { label: "分析报告", path: "/report", icon: FileBarChart },
+  { label: "趋势对比", path: "/trend", icon: TrendingUp },
   { label: "数据导入", path: "/import", icon: Upload },
 ];
 

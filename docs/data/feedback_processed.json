@@ -33396,5 +33396,2903 @@
     "timestamp": "2026-04-21T12:51:02.072Z",
     "author": "和你失约的海",
     "version": "1.37.2"
+  },
+  {
+    "id": "taptap_175459_1_0",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_1",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 37,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_2",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 30,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_3",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_4",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 34,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_5",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 34,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_6",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_7",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "操作"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_8",
+    "source": "taptap",
+    "content": "街篮1给的三星，毕竟16年打到现在了..\\\\\n\\\\\n街篮2只想给一颗星的，很多方面做的太差太差，樱木和铁男两个角色的问题上，也不用多说了，大家都应该知道，随便翻翻就有大神的一些解析。\\\\\n\\\\\n这次写评价谈三个方面：平衡、时装、手感\\\\\n\\\\\n我是一直玩内线的，街篮2我搞不过樱木我承认了，几天时间我打到了钻石一的位置，浙江省前三的战力积分。毅然选择退坑，受不了了。樱木弹速太快他的前场板只要马上扣我没有一次能盖到的，玩C能卡位占到一些优势的情况下樱木还有个分球，只要你家的憨批后卫去跑空位去了，等于这个球权让给对面了。\\\\\n\\\\\n无力吐槽的还有时装，怎么的穿得好看点就得给你贡献点钱呗？？不花钱连衣服都穿不起了，属性直接被压了，街篮1我总共花了30，买了个教练玩的开开心心，时装也百花齐放，在这合着我穿不起衣服连属性都得被碾压，我全身上下就一个七天的背包我干到钻一，我受不了了，我走还不行吗？？\\\\\n\\\\\n最后说手感，街篮2就是一个最强NBA吧？？模型改了改其他一模一样，干脆就叫最强樱木？樱木2？最强NBA为什么热度越来越低，手感拉胯得很啊，啥玩意儿模型捏个颜色捏个看不清的脸就能号称球星...无",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "平衡",
+      "手感",
+      "匹配"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_9",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2020-09-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_10",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_11",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_12",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 42,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_13",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_14",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 37,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_15",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_16",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_17",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "keywords": [
+      "操作"
+    ],
+    "score": 67,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_18",
+    "source": "taptap",
+    "content": "叫街篮2，其实是灌.篮.高.手换皮游戏，甚至比那个氪点还多。（这个还有时装配饰并且加属性）\\\\\n\\\\\n活动还拉胯，当初玩灌.篮.高.手的时候白给樱木，第二天给大猩猩，流川枫登陆七天获得，其他位置也会有暮木和湘北吉祥物，新用户七天新手任务给超大杯的素材道具。\\\\\n\\\\\n这游戏玩了快两个小时我就知道首充给三选一，有个人物靠抽奖获得，好几万金币没地方用，预约获得的人物解锁技能的素材用完了。\\\\\n\\\\\n玩了一会莫名其妙，一大堆人抢篮板也看不出来到底谁抢到了，键位也难受加速挡拆离那么远。\\\\\n\\\\\n人物建模真蠢到家了就特别假，新手教程你整个女的脱外套，游戏靠这玩意吸引玩家吗？\\\\\n\\\\\n就这学习成本和建模，活动策划是个狼人",
+    "category": "玩法设计",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "keywords": [
+      "技能"
+    ],
+    "score": 67,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_19",
+    "source": "taptap",
+    "content": "唯一的优点，就是操作更顺手，在玩其他街篮游戏的时候，会有一种难受感，明明按了按键，动作却慢一点，要么就是快点，就是很难受，只有这个街篮2，按了之后立即响应，有可能是错觉，如果所有球员，都是钻石购买，时装无属性的话，将场外增加属性点的东西，都移除，或许是最好的街篮游戏。",
+    "category": "操作手感",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "操作"
+    ],
+    "score": 50,
+    "timestamp": "2024-06-15T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_20",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_21",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 45,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_22",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 32,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_23",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_24",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 32,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_25",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 32,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_26",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_27",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 39,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_28",
+    "source": "taptap",
+    "content": "修改&总结:还平什么衡啊.....削奈娜还连带着失吹和小明这些底层一起削，没啥人物特色，这游戏的特色就是新出的绝对强，对，下一个新出的又是绝对强，旧角色削一波，玩家洗点，就这么一浪一浪的，你身上啥都不剩，划策只想从你口袋里赚点券，然后不断的削弱回收洗点费(没错，黑心到失吹小明的洗点费都赚)，再然后制作街篮3，这就是它们的整体思路，照这情况街篮3继续相同战略，就连咱们现在说的这些，它们看都不带看一眼的，说来搞笑就来这个论坛都没人发帖了，匹配3v3，1v1，2v2全是人机，聊天栏只有刷喇叭没有交流，俱乐部聊天栏每天都是句号逗号句号逗号，好友一大半弃坑40，30，20多天，玩小号钻石以下单排把把人机，这游戏开服几个月就已经在走末路了，说不定街篮3已经在制作了，救不活了~😒",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 37,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_29",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2020-10-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_30",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_31",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 35,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_32",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_33",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_34",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 39,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_35",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_36",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_37",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_38",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2020-09-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_39",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_40",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 30,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_41",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_42",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_43",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_44",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "操作"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_45",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "充值"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_46",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 42,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_47",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_48",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2020-09-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "appstore_1096974019_1_0",
+    "source": "appstore",
+    "content": "靠还我账号 好久没登，tm直接换服务商了。之前的老账号直接清除了。",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "afeizhz",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_1",
+    "source": "appstore",
+    "content": "充钱 充钱就厉害",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "🙈😔😊",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_2",
+    "source": "appstore",
+    "content": "登陆 突然登不了了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "Hfcgddfhjnbvg",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_3",
+    "source": "appstore",
+    "content": "想回归玩玩，发现号没了 之前玩的时候还电话回访，问现在怎么不玩了。怎么帐号迁移连个短信都不发，巨人垃圾运营，以后他们的游戏都不碰了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [],
+    "score": 2,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "bobf'zh",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_4",
+    "source": "appstore",
+    "content": "垃圾 垃圾，投半天不进一个球",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "sjshgxvsus",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_5",
+    "source": "appstore",
+    "content": "0星，我账号呢？ 我问你，我的账号呢？一年多没上，账号没了？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "下周新声音这配置",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_6",
+    "source": "appstore",
+    "content": "骗子游戏 冲了几万块钱，退游两年左右回来账号没了。也没法找回。官方群都进不去。无敌了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "jxoakskkdisja",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_7",
+    "source": "appstore",
+    "content": "垃圾垃圾 垃圾游戏，腊鸡匹配机制，充钱的在里面横着走，没充钱的永远打得都是充钱的，充钱永远都是开挂机制，垃圾垃圾，赶紧下架吧，怪不得没人玩",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "腊鸡腊鸡，永远的腊鸡",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_8",
+    "source": "appstore",
+    "content": "一星都嫌多，劝退新人 这款垃圾游戏，新人没资源，老人氪金也没用，游戏没有检测外挂的系统，全靠录屏提交肉眼分辨，段位上去基本全是开挂的而且有些开挂的好像有人脉一样不会被封号，长期霸榜，游戏体验差环境严重不平衡，建议新人不要入坑！！！",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "平衡"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "宝宝肚肚打雷辣",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_9",
+    "source": "appstore",
+    "content": ". 游戏福利太少了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 4,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "严将军",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_10",
+    "source": "appstore",
+    "content": "把之前的号还给我！！！！ 是不是又骗人啊？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "zhangwenyu111",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_11",
+    "source": "appstore",
+    "content": "非常一般 感觉这个游戏设计跟半成品一样，按键反馈怪怪的，篮板、盖帽跟迷一样，老是跟着常理感觉反着来，特别恶心想吐，匹配时间较长，还有进入游戏前要等2s画面是啥意思，感觉非常奇葩。",
+    "category": "美术表现",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "画面",
+      "匹配"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "不让不让动",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_12",
+    "source": "appstore",
+    "content": "垃圾游戏 盘下了以前的巨人网络，依然垃圾游戏一个，内线的三分比外线还准，而且每次更新后，游戏各种网络掉帧，游戏人物经常飘得很",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "网络"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "我是你碟尼爷",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_13",
+    "source": "appstore",
+    "content": "垃圾游戏 赶快下架",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "拉几来分期",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_14",
+    "source": "appstore",
+    "content": "有钱人的游戏 免费的角色能力削削削，花钱的加加加，一星就给情怀。",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "、佐臉",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_15",
+    "source": "appstore",
+    "content": "腊鸡 你就猛猛坑钱就完了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "蜡几街篮",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_16",
+    "source": "appstore",
+    "content": "以前的账号不见了 充了几千打水漂了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "还是你好12356378",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_17",
+    "source": "appstore",
+    "content": "加油新公司 加油新公司",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "Swaggylzaya",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_18",
+    "source": "appstore",
+    "content": "氪金为王 简单粗暴，就是氪金为王，举报系统就是形同摆设，要人自己写上对方iD，是没做过游戏吗？还是要维护氪金就可以作弊的意思？恶心人",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "哟尼大爷",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_19",
+    "source": "appstore",
+    "content": "别碰这游戏，被赚钱冲昏头脑的一帮人 新增氪金角色完全碾压免费角色，不花钱别想在这个破游戏中获得任何成就感",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "SummerH2O",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_20",
+    "source": "appstore",
+    "content": "玩不了 玩不了啊  显示没网络",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "网络"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "所谓的你所谓的我",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_21",
+    "source": "appstore",
+    "content": "账号找不回了 换了手机账号找不回了，希望能快速处理",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "孙关政",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_22",
+    "source": "appstore",
+    "content": "o 几年前玩的时候外挂横行就删了 没想到这游到现在还在",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "风之戢",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_23",
+    "source": "appstore",
+    "content": "垃圾真多 什么牛鬼都有",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "Wan12123",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_24",
+    "source": "appstore",
+    "content": "区 有没有办法转区的",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.071Z",
+    "author": "高高高！nngggx",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_25",
+    "source": "appstore",
+    "content": "…… 更新后进不去了，咋回事",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "魁来了",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_26",
+    "source": "appstore",
+    "content": "手感好 玩来玩去 手感还是这个最强",
+    "category": "操作手感",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "手感"
+    ],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "Tony3stark",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_27",
+    "source": "appstore",
+    "content": "太氪金 一个角色五六百块人民币 想钱想疯了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "飞蛾额打家劫舍",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_28",
+    "source": "appstore",
+    "content": "希望越办越好！ 加油新运营。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "周末购物券",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_29",
+    "source": "appstore",
+    "content": "垃圾 垃圾中的垃圾，不充钱没法玩，一个角色几百块，一晚一个不吱声，垃圾",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "垃圾中的垃圾438",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_30",
+    "source": "appstore",
+    "content": "设计一点责任不负 有一段时间没上，再上东西全没了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "BurNIngFY",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_31",
+    "source": "appstore",
+    "content": "画质无敌 太垃圾了都不想说了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "悲伤的iPhone11",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_32",
+    "source": "appstore",
+    "content": "垃圾游戏 不充钱没办法玩 什么都跟不上",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "1c v",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_33",
+    "source": "appstore",
+    "content": "一切都是为了充钱 多了不想说 体验感很好 我是老玩家了  越玩越糟心， 现在只要不充钱 根本玩不过哪些花钱买的角色，多了不想说了，你们想要钱也得多少有点分寸，要不这游戏真的很难长久让人玩下去！",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "okgdbju",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_34",
+    "source": "appstore",
+    "content": "垃圾游戏 真恶心我单机你拿电脑一直虐我活该你凉了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "分别是脑子你并非必然涉及社会文化",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_35",
+    "source": "appstore",
+    "content": "我玩街篮玩了5年时间了，是我玩过最好的篮球竞技游戏了 我玩街篮玩了5年时间了，是我玩过最好的篮球竞技游戏了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "raymanfang",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_36",
+    "source": "appstore",
+    "content": "回来了孩子们 7年街篮老玩家，游戏回归研发之后福利和内容都有提升，对科技的打击力度也大大提高了，希望用心做下去。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "-阿姬-",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_37",
+    "source": "appstore",
+    "content": "老玩家回归 作为一名8年的街篮忠实玩家，我见证了游戏的成长与变迁。八周年后不仅有了更多福利，对科技的打击力度也显著增强，营造了更加公平健康的游戏环境。希望后续能更多聆听玩家心声，对科技的打击也不要懈怠，期待游戏变得更好，蒸蒸日上。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "骑猪看驴滚",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_38",
+    "source": "appstore",
+    "content": "不得不品 不得不品鉴一番的作品，很有时代气息。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "不得不品",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_39",
+    "source": "appstore",
+    "content": "好评 这个这款游戏我的体验是非常满足的，人物游戏画风都很美好丰富，还有过年时的福利也是非常的多，也是非常建议大家一起",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "HIIMDRT",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_40",
+    "source": "appstore",
+    "content": "老游戏了 N年老游戏比较复古经典的",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "戊辰mark",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_41",
+    "source": "appstore",
+    "content": "8年老玩家 希望街篮能继续加油",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "茶小几",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_42",
+    "source": "appstore",
+    "content": "实名认证 更新后实名登记，居然登陆不上提示未成年，你们实名认证系统没有测试吗？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "为了权限了",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_43",
+    "source": "appstore",
+    "content": "新手玩不了 这游戏别碰，下载一个玩了玩全是冷嘲热讽，甚至还有人在群里圈你埋汰你的，这游戏你不会玩、技术差，别人就骂你。环境烂的很",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "jhgiijfj1187",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_44",
+    "source": "appstore",
+    "content": "好游戏 游戏可玩性挺强，就是没有维护，外挂多，挂机脚本多",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "匿名星你松子西西里",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_45",
+    "source": "appstore",
+    "content": "垃圾游戏，改公司以后彻底登不上了，祝你们早日倒闭吧 看到评论里那么多人骂这个游戏我就放心了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "我是来传球的",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_46",
+    "source": "appstore",
+    "content": "辅助 作为一个玩了5年的老玩家，客观评价下：游戏可玩性可以，要是能把各种加速辅助和外挂弄掉，游戏能上一个台阶，虽然知道官方看不到我评论的",
+    "category": "综合体验",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [],
+    "score": 3,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "以前的街篮爱好者",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_47",
+    "source": "appstore",
+    "content": "垃圾策划 游戏不错，外挂满天飞，模拟器和手机不分开匹配，氪度高，总之就是策划不作为，天天恰烂钱",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 2,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "李云龙25865",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_48",
+    "source": "appstore",
+    "content": "厉害 服务区都满了玩尼嘛？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T12:51:02.072Z",
+    "author": "和你失约的海",
+    "version": "1.37.2"
+  },
+  {
+    "id": "taptap_175459_1_0",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_1",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 47,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_2",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 40,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_3",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_4",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 30,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_5",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 50,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_6",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_7",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "操作"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_8",
+    "source": "taptap",
+    "content": "街篮1给的三星，毕竟16年打到现在了..\\\\\n\\\\\n街篮2只想给一颗星的，很多方面做的太差太差，樱木和铁男两个角色的问题上，也不用多说了，大家都应该知道，随便翻翻就有大神的一些解析。\\\\\n\\\\\n这次写评价谈三个方面：平衡、时装、手感\\\\\n\\\\\n我是一直玩内线的，街篮2我搞不过樱木我承认了，几天时间我打到了钻石一的位置，浙江省前三的战力积分。毅然选择退坑，受不了了。樱木弹速太快他的前场板只要马上扣我没有一次能盖到的，玩C能卡位占到一些优势的情况下樱木还有个分球，只要你家的憨批后卫去跑空位去了，等于这个球权让给对面了。\\\\\n\\\\\n无力吐槽的还有时装，怎么的穿得好看点就得给你贡献点钱呗？？不花钱连衣服都穿不起了，属性直接被压了，街篮1我总共花了30，买了个教练玩的开开心心，时装也百花齐放，在这合着我穿不起衣服连属性都得被碾压，我全身上下就一个七天的背包我干到钻一，我受不了了，我走还不行吗？？\\\\\n\\\\\n最后说手感，街篮2就是一个最强NBA吧？？模型改了改其他一模一样，干脆就叫最强樱木？樱木2？最强NBA为什么热度越来越低，手感拉胯得很啊，啥玩意儿模型捏个颜色捏个看不清的脸就能号称球星...无",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "平衡",
+      "手感",
+      "匹配"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_1_9",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2020-09-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_10",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_11",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_12",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 31,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_13",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_14",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_15",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_16",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_17",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "keywords": [
+      "操作"
+    ],
+    "score": 67,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_18",
+    "source": "taptap",
+    "content": "叫街篮2，其实是灌.篮.高.手换皮游戏，甚至比那个氪点还多。（这个还有时装配饰并且加属性）\\\\\n\\\\\n活动还拉胯，当初玩灌.篮.高.手的时候白给樱木，第二天给大猩猩，流川枫登陆七天获得，其他位置也会有暮木和湘北吉祥物，新用户七天新手任务给超大杯的素材道具。\\\\\n\\\\\n这游戏玩了快两个小时我就知道首充给三选一，有个人物靠抽奖获得，好几万金币没地方用，预约获得的人物解锁技能的素材用完了。\\\\\n\\\\\n玩了一会莫名其妙，一大堆人抢篮板也看不出来到底谁抢到了，键位也难受加速挡拆离那么远。\\\\\n\\\\\n人物建模真蠢到家了就特别假，新手教程你整个女的脱外套，游戏靠这玩意吸引玩家吗？\\\\\n\\\\\n就这学习成本和建模，活动策划是个狼人",
+    "category": "玩法设计",
+    "sentiment": "neutral",
+    "urgency": "low",
+    "keywords": [
+      "技能"
+    ],
+    "score": 67,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_2_19",
+    "source": "taptap",
+    "content": "唯一的优点，就是操作更顺手，在玩其他街篮游戏的时候，会有一种难受感，明明按了按键，动作却慢一点，要么就是快点，就是很难受，只有这个街篮2，按了之后立即响应，有可能是错觉，如果所有球员，都是钻石购买，时装无属性的话，将场外增加属性点的东西，都移除，或许是最好的街篮游戏。",
+    "category": "操作手感",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "操作"
+    ],
+    "score": 50,
+    "timestamp": "2024-06-15T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_20",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_21",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 39,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_22",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_23",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_24",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 42,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_25",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 43,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_26",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_27",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 39,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_28",
+    "source": "taptap",
+    "content": "修改&总结:还平什么衡啊.....削奈娜还连带着失吹和小明这些底层一起削，没啥人物特色，这游戏的特色就是新出的绝对强，对，下一个新出的又是绝对强，旧角色削一波，玩家洗点，就这么一浪一浪的，你身上啥都不剩，划策只想从你口袋里赚点券，然后不断的削弱回收洗点费(没错，黑心到失吹小明的洗点费都赚)，再然后制作街篮3，这就是它们的整体思路，照这情况街篮3继续相同战略，就连咱们现在说的这些，它们看都不带看一眼的，说来搞笑就来这个论坛都没人发帖了，匹配3v3，1v1，2v2全是人机，聊天栏只有刷喇叭没有交流，俱乐部聊天栏每天都是句号逗号句号逗号，好友一大半弃坑40，30，20多天，玩小号钻石以下单排把把人机，这游戏开服几个月就已经在走末路了，说不定街篮3已经在制作了，救不活了~😒",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 47,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_3_29",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2020-10-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_30",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_31",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 39,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_32",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 49,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_33",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_34",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 33,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_35",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "充值"
+    ],
+    "score": 50,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_36",
+    "source": "taptap",
+    "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+    "category": "玩法设计",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_37",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2026-02-25T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_4_38",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2020-09-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_39",
+    "source": "taptap",
+    "content": "总体来讲还可以，一般低中段位的时候才能打，一旦上了高段位的话，普通球员根本玩不了。只能说零氪玩家只能玩玩匹配度度日。一旦你上了高段位的话，基本上那都是真人，并且都是充了钱的。一个晃倒就把你给晃没了。本人充值买了个SP炎。基本上二中一和对面的基本上在我的干扰下，根本进不了球，所以说不充钱的话，建议就玩玩匹配就好，没必要冲排位。游戏基本上就是氪金就强的。零氪微氪玩家体验感差也是正常的。毕竟这本来就是一个拼养成的游戏。",
+    "category": "游戏平衡",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "匹配",
+      "氪金",
+      "充值"
+    ],
+    "score": 80,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_40",
+    "source": "taptap",
+    "content": "街篮这游戏从手感到画面在同类游戏就没失望过这没人反驳吧？但就是运营和匹配机制问题对新人非常不友好而且氪金度非常重，没钱玩尼玛批被巨人发挥得淋漓尽致导致游戏平衡破坏得没眼看，老粉现在听说运营换了立马回来先支持一波，跑不跑路后续看看再说😂",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "平衡",
+      "手感",
+      "画面",
+      "匹配",
+      "氪金"
+    ],
+    "score": 38,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_41",
+    "source": "taptap",
+    "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "画面",
+      "技能",
+      "氪金"
+    ],
+    "score": 43,
+    "timestamp": "2026-01-19T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_42",
+    "source": "taptap",
+    "content": "就玩玩，不跟氪金玩家比就还好，氪金的人物技能属性都高一节打不过正常，整体还不错",
+    "category": "游戏平衡",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [
+      "技能",
+      "氪金"
+    ],
+    "score": 50,
+    "timestamp": "2025-11-14T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_43",
+    "source": "taptap",
+    "content": "我是一开始在电脑玩这个游戏的 很喜欢 后来电脑坏了就没怎么玩了 然后偶然一次发现 上手机端了 所以就玩了 我没有充过钱 纯肝 基本上最多只能打上铂金 铂金开始氪金大佬一个比一个多 从来没有打赢过 输一把就安排一把大佬 就一直输一直赢的 我肝了很多 身边朋友也没有人玩 只有我坚持了三年 后来高三退游了 要学习 现在回来发现这个游戏已经换运营了 号也是找不回来的 我只能说心寒 幸好没往里充钱吧 挺可惜的 但站在客观角度 这种游戏赶紧下架吧",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2025-05-27T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_44",
+    "source": "taptap",
+    "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+    "category": "操作手感",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "操作"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_45",
+    "source": "taptap",
+    "content": "tmd好久不玩回归回来号没了，需要近期充值记录，开服充的找不到数据。街篮1开始玩，2个号都找不到",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "充值"
+    ],
+    "score": 20,
+    "timestamp": "2026-03-11T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_46",
+    "source": "taptap",
+    "content": "氪金游戏，排位机制一塌糊涂官方都上机器人，一分都不想给，强制点分才能评论",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "氪金"
+    ],
+    "score": 30,
+    "timestamp": "2026-03-16T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_47",
+    "source": "taptap",
+    "content": "之前写过一次评价，但是没写到一些重点上，现在有点闲空，把之前的删掉，重新写一写，这游戏为什么给一星。\\\\\n\\\\\n首先感官最差的就是球员的培养，所有球员都需要以下东西\\\\\n\\\\\n1.等级-能量饮料（经验卡）\\\\\n\\\\\n这个没的说，养成必不可少的东西，各类养成的游戏都会有。\\\\\n\\\\\n2.球员技能进阶-通用进阶卡以及球员专属进阶卡\\\\\n\\\\\n通用技能卡的免费来源目前只有三种，第一种活跃礼包每天16张，以及商城15活跃币可以买一张，每天限量20张；第二种活动会给一点，记住，是一点；第三种是天梯对局中，评分10分以上会给一到两张。剩下的氪金方式一个是冠军手册给一点，200级平均一级给一个；剩下就是氪金约等于一块钱一张。\\\\\n\\\\\n所以球员的小技能进阶有45个由于每个进阶需要的数字有所不同，现在往小了说，平均需要十五张，四十五个共需要差不多675张通用进阶卡。（这个数字只会比这更高）\\\\\n\\\\\n球员专属进阶卡，每个球员都有九个需要专属进阶卡来进阶，每次需要12张，共102张。免费获得的方式只有在每日活跃宝箱里产生24个，初始的三位球员便宜一点4个碎屏换一张，其他普通球员七个换一张，花球球员12块",
+    "category": "性能问题",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "卡顿",
+      "网络",
+      "职业",
+      "操作",
+      "画面"
+    ],
+    "score": 100,
+    "timestamp": "2026-03-06T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "taptap_175459_5_48",
+    "source": "taptap",
+    "content": "这个游戏真的是没法说。玩了几天，终于第一次理解到了首充角色的强大，和王者氪金大佬组队，依然抵不过首充sf的一顿平A，严重怀疑策划脑子是不是二次元倾向，sg在高端局越来越无力，无论怎么运球，只要sf一贴身必定失误，但sf秀sg就跟玩儿一样，开加速追不上平a的奈娜，三分线外平a跳投依然绝佳2分球。这个游戏已经失去了应有的可玩性了，也见到过好些大佬退游卸载的，这是我玩过所有街篮游戏里sf最暴力的一款，不需要天赋的加持，只需要一顿平a加跳投，就算夏树的大招也没办法冒到，很多想上分的玩家都改行玩起了sf，流行一句话，想上分就选奈娜，sf球场是一霸，不用担心封号和检查，堪比三方挂中挂。或许这游戏也就这样了吧，各位安好，还是不要去氪金这个游戏，只需首充即可让你强大。",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "天赋",
+      "氪金"
+    ],
+    "score": 20,
+    "timestamp": "2020-09-01T00:00:00.000Z",
+    "author": "",
+    "version": ""
+  },
+  {
+    "id": "appstore_1096974019_1_0",
+    "source": "appstore",
+    "content": "靠还我账号 好久没登，tm直接换服务商了。之前的老账号直接清除了。",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.250Z",
+    "author": "afeizhz",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_1",
+    "source": "appstore",
+    "content": "充钱 充钱就厉害",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "🙈😔😊",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_2",
+    "source": "appstore",
+    "content": "登陆 突然登不了了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "Hfcgddfhjnbvg",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_3",
+    "source": "appstore",
+    "content": "想回归玩玩，发现号没了 之前玩的时候还电话回访，问现在怎么不玩了。怎么帐号迁移连个短信都不发，巨人垃圾运营，以后他们的游戏都不碰了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [],
+    "score": 2,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "bobf'zh",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_4",
+    "source": "appstore",
+    "content": "垃圾 垃圾，投半天不进一个球",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "sjshgxvsus",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_5",
+    "source": "appstore",
+    "content": "0星，我账号呢？ 我问你，我的账号呢？一年多没上，账号没了？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "下周新声音这配置",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_6",
+    "source": "appstore",
+    "content": "骗子游戏 冲了几万块钱，退游两年左右回来账号没了。也没法找回。官方群都进不去。无敌了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "jxoakskkdisja",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_7",
+    "source": "appstore",
+    "content": "垃圾垃圾 垃圾游戏，腊鸡匹配机制，充钱的在里面横着走，没充钱的永远打得都是充钱的，充钱永远都是开挂机制，垃圾垃圾，赶紧下架吧，怪不得没人玩",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "腊鸡腊鸡，永远的腊鸡",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_8",
+    "source": "appstore",
+    "content": "一星都嫌多，劝退新人 这款垃圾游戏，新人没资源，老人氪金也没用，游戏没有检测外挂的系统，全靠录屏提交肉眼分辨，段位上去基本全是开挂的而且有些开挂的好像有人脉一样不会被封号，长期霸榜，游戏体验差环境严重不平衡，建议新人不要入坑！！！",
+    "category": "游戏平衡",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "平衡"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "宝宝肚肚打雷辣",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_9",
+    "source": "appstore",
+    "content": ". 游戏福利太少了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 4,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "严将军",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_10",
+    "source": "appstore",
+    "content": "把之前的号还给我！！！！ 是不是又骗人啊？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "zhangwenyu111",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_11",
+    "source": "appstore",
+    "content": "非常一般 感觉这个游戏设计跟半成品一样，按键反馈怪怪的，篮板、盖帽跟迷一样，老是跟着常理感觉反着来，特别恶心想吐，匹配时间较长，还有进入游戏前要等2s画面是啥意思，感觉非常奇葩。",
+    "category": "美术表现",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "画面",
+      "匹配"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "不让不让动",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_12",
+    "source": "appstore",
+    "content": "垃圾游戏 盘下了以前的巨人网络，依然垃圾游戏一个，内线的三分比外线还准，而且每次更新后，游戏各种网络掉帧，游戏人物经常飘得很",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "网络"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "我是你碟尼爷",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_13",
+    "source": "appstore",
+    "content": "垃圾游戏 赶快下架",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "拉几来分期",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_14",
+    "source": "appstore",
+    "content": "有钱人的游戏 免费的角色能力削削削，花钱的加加加，一星就给情怀。",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "、佐臉",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_15",
+    "source": "appstore",
+    "content": "腊鸡 你就猛猛坑钱就完了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "蜡几街篮",
+    "version": "1.50.4"
+  },
+  {
+    "id": "appstore_1096974019_1_16",
+    "source": "appstore",
+    "content": "以前的账号不见了 充了几千打水漂了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "还是你好12356378",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_17",
+    "source": "appstore",
+    "content": "加油新公司 加油新公司",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "Swaggylzaya",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_18",
+    "source": "appstore",
+    "content": "氪金为王 简单粗暴，就是氪金为王，举报系统就是形同摆设，要人自己写上对方iD，是没做过游戏吗？还是要维护氪金就可以作弊的意思？恶心人",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "哟尼大爷",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_19",
+    "source": "appstore",
+    "content": "别碰这游戏，被赚钱冲昏头脑的一帮人 新增氪金角色完全碾压免费角色，不花钱别想在这个破游戏中获得任何成就感",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "SummerH2O",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_20",
+    "source": "appstore",
+    "content": "玩不了 玩不了啊  显示没网络",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [
+      "网络"
+    ],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "所谓的你所谓的我",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_21",
+    "source": "appstore",
+    "content": "账号找不回了 换了手机账号找不回了，希望能快速处理",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "孙关政",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_22",
+    "source": "appstore",
+    "content": "o 几年前玩的时候外挂横行就删了 没想到这游到现在还在",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "风之戢",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_23",
+    "source": "appstore",
+    "content": "垃圾真多 什么牛鬼都有",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "Wan12123",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_24",
+    "source": "appstore",
+    "content": "区 有没有办法转区的",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "高高高！nngggx",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_25",
+    "source": "appstore",
+    "content": "…… 更新后进不去了，咋回事",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "魁来了",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_26",
+    "source": "appstore",
+    "content": "手感好 玩来玩去 手感还是这个最强",
+    "category": "操作手感",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [
+      "手感"
+    ],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "Tony3stark",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_27",
+    "source": "appstore",
+    "content": "太氪金 一个角色五六百块人民币 想钱想疯了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "飞蛾额打家劫舍",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_28",
+    "source": "appstore",
+    "content": "希望越办越好！ 加油新运营。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "周末购物券",
+    "version": "1.50.1"
+  },
+  {
+    "id": "appstore_1096974019_1_29",
+    "source": "appstore",
+    "content": "垃圾 垃圾中的垃圾，不充钱没法玩，一个角色几百块，一晚一个不吱声，垃圾",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "垃圾中的垃圾438",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_30",
+    "source": "appstore",
+    "content": "设计一点责任不负 有一段时间没上，再上东西全没了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "BurNIngFY",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_31",
+    "source": "appstore",
+    "content": "画质无敌 太垃圾了都不想说了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "悲伤的iPhone11",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_32",
+    "source": "appstore",
+    "content": "垃圾游戏 不充钱没办法玩 什么都跟不上",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "1c v",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_33",
+    "source": "appstore",
+    "content": "一切都是为了充钱 多了不想说 体验感很好 我是老玩家了  越玩越糟心， 现在只要不充钱 根本玩不过哪些花钱买的角色，多了不想说了，你们想要钱也得多少有点分寸，要不这游戏真的很难长久让人玩下去！",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "okgdbju",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_34",
+    "source": "appstore",
+    "content": "垃圾游戏 真恶心我单机你拿电脑一直虐我活该你凉了",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "分别是脑子你并非必然涉及社会文化",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_35",
+    "source": "appstore",
+    "content": "我玩街篮玩了5年时间了，是我玩过最好的篮球竞技游戏了 我玩街篮玩了5年时间了，是我玩过最好的篮球竞技游戏了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "raymanfang",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_36",
+    "source": "appstore",
+    "content": "回来了孩子们 7年街篮老玩家，游戏回归研发之后福利和内容都有提升，对科技的打击力度也大大提高了，希望用心做下去。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "-阿姬-",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_37",
+    "source": "appstore",
+    "content": "老玩家回归 作为一名8年的街篮忠实玩家，我见证了游戏的成长与变迁。八周年后不仅有了更多福利，对科技的打击力度也显著增强，营造了更加公平健康的游戏环境。希望后续能更多聆听玩家心声，对科技的打击也不要懈怠，期待游戏变得更好，蒸蒸日上。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "骑猪看驴滚",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_38",
+    "source": "appstore",
+    "content": "不得不品 不得不品鉴一番的作品，很有时代气息。",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "不得不品",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_39",
+    "source": "appstore",
+    "content": "好评 这个这款游戏我的体验是非常满足的，人物游戏画风都很美好丰富，还有过年时的福利也是非常的多，也是非常建议大家一起",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "HIIMDRT",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_40",
+    "source": "appstore",
+    "content": "老游戏了 N年老游戏比较复古经典的",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "戊辰mark",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_41",
+    "source": "appstore",
+    "content": "8年老玩家 希望街篮能继续加油",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "茶小几",
+    "version": "1.40.2"
+  },
+  {
+    "id": "appstore_1096974019_1_42",
+    "source": "appstore",
+    "content": "实名认证 更新后实名登记，居然登陆不上提示未成年，你们实名认证系统没有测试吗？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "为了权限了",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_43",
+    "source": "appstore",
+    "content": "新手玩不了 这游戏别碰，下载一个玩了玩全是冷嘲热讽，甚至还有人在群里圈你埋汰你的，这游戏你不会玩、技术差，别人就骂你。环境烂的很",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "jhgiijfj1187",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_44",
+    "source": "appstore",
+    "content": "好游戏 游戏可玩性挺强，就是没有维护，外挂多，挂机脚本多",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "匿名星你松子西西里",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_45",
+    "source": "appstore",
+    "content": "垃圾游戏，改公司以后彻底登不上了，祝你们早日倒闭吧 看到评论里那么多人骂这个游戏我就放心了",
+    "category": "综合体验",
+    "sentiment": "positive",
+    "urgency": "low",
+    "keywords": [],
+    "score": 5,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "我是来传球的",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_46",
+    "source": "appstore",
+    "content": "辅助 作为一个玩了5年的老玩家，客观评价下：游戏可玩性可以，要是能把各种加速辅助和外挂弄掉，游戏能上一个台阶，虽然知道官方看不到我评论的",
+    "category": "综合体验",
+    "sentiment": "neutral",
+    "urgency": "medium",
+    "keywords": [],
+    "score": 3,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "以前的街篮爱好者",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_47",
+    "source": "appstore",
+    "content": "垃圾策划 游戏不错，外挂满天飞，模拟器和手机不分开匹配，氪度高，总之就是策划不作为，天天恰烂钱",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "high",
+    "keywords": [
+      "匹配"
+    ],
+    "score": 2,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "李云龙25865",
+    "version": "1.40.1"
+  },
+  {
+    "id": "appstore_1096974019_1_48",
+    "source": "appstore",
+    "content": "厉害 服务区都满了玩尼嘛？",
+    "category": "综合体验",
+    "sentiment": "negative",
+    "urgency": "critical",
+    "keywords": [],
+    "score": 1,
+    "timestamp": "2026-04-21T13:09:55.251Z",
+    "author": "和你失约的海",
+    "version": "1.37.2"
   }
 ]
