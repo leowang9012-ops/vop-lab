@@ -1,0 +1,1003 @@
+{
+  "projects": [
+    {
+      "id": "proj_jielan2",
+      "name": "街篮2",
+      "description": "《街篮2》试玩反馈问卷 - 374份有效样本",
+      "platforms": [
+        "Android"
+      ],
+      "status": "active",
+      "totalFeedback": 374,
+      "weeklyNew": 374,
+      "negativeRate": 20.3,
+      "urgentCount": 17,
+      "updatedAt": "2024-06-15T10:00:00Z",
+      "createdAt": "2024-06-01T10:00:00Z"
+    }
+  ],
+  "categoryData": [
+    {
+      "name": "性能问题",
+      "value": 52.9,
+      "count": 198
+    },
+    {
+      "name": "美术表现",
+      "value": 12.3,
+      "count": 46
+    },
+    {
+      "name": "UI/UX",
+      "value": 9.4,
+      "count": 35
+    },
+    {
+      "name": "整体体验",
+      "value": 9.1,
+      "count": 34
+    },
+    {
+      "name": "音频体验",
+      "value": 8.8,
+      "count": 33
+    },
+    {
+      "name": "操作手感",
+      "value": 7.5,
+      "count": 28
+    }
+  ],
+  "sentimentTrend": [
+    {
+      "day": "Day 1",
+      "positive": 30.2,
+      "neutral": 49.1,
+      "negative": 20.8
+    },
+    {
+      "day": "Day 2",
+      "positive": 20.8,
+      "neutral": 52.8,
+      "negative": 26.4
+    },
+    {
+      "day": "Day 3",
+      "positive": 22.6,
+      "neutral": 60.4,
+      "negative": 17.0
+    },
+    {
+      "day": "Day 4",
+      "positive": 28.3,
+      "neutral": 50.9,
+      "negative": 20.8
+    },
+    {
+      "day": "Day 5",
+      "positive": 35.8,
+      "neutral": 50.9,
+      "negative": 13.2
+    },
+    {
+      "day": "Day 6",
+      "positive": 24.5,
+      "neutral": 54.7,
+      "negative": 20.8
+    },
+    {
+      "day": "Day 7",
+      "positive": 33.9,
+      "neutral": 42.9,
+      "negative": 23.2
+    }
+  ],
+  "keywords": [
+    {
+      "name": "安卓手机",
+      "count": 309
+    },
+    {
+      "name": "网络延迟",
+      "count": 254
+    },
+    {
+      "name": "比较难受",
+      "count": 146
+    },
+    {
+      "name": "感觉没法玩了",
+      "count": 136
+    },
+    {
+      "name": "按键误触",
+      "count": 117
+    },
+    {
+      "name": "爆发技位置",
+      "count": 115
+    },
+    {
+      "name": "华为",
+      "count": 93
+    },
+    {
+      "name": "小米",
+      "count": 88
+    },
+    {
+      "name": "模拟器",
+      "count": 56
+    },
+    {
+      "name": "还能接受",
+      "count": 41
+    },
+    {
+      "name": "vivo",
+      "count": 39
+    },
+    {
+      "name": "没遇到过网络波动",
+      "count": 35
+    },
+    {
+      "name": "三星",
+      "count": 19
+    },
+    {
+      "name": "一加",
+      "count": 16
+    },
+    {
+      "name": "无明显感觉",
+      "count": 16
+    },
+    {
+      "name": "oppo",
+      "count": 15
+    },
+    {
+      "name": "魅族",
+      "count": 10
+    },
+    {
+      "name": "荣耀",
+      "count": 10
+    },
+    {
+      "name": "凤凰系统",
+      "count": 9
+    },
+    {
+      "name": "OPPO",
+      "count": 8
+    }
+  ],
+  "feedbackList": [
+    {
+      "id": "fb_1",
+      "content": "设备:模拟器 | mix3 | 延迟:比较难受 | 整体:1.0 战斗:1.0 美术:1.0",
+      "category": "操作手感",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-01T10:00:00Z",
+      "score": 20.0
+    },
+    {
+      "id": "fb_2",
+      "content": "设备:模拟器 | 啊啊 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:1.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-02T11:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_3",
+      "content": "设备:模拟器 | 三星 | 延迟:还能接受 | 整体:4.0 战斗:4.0 美术:2.0",
+      "category": "美术表现",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "还能接受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-03T12:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_4",
+      "content": "设备:安卓手机 | 华为荣耀 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-04T13:00:00Z",
+      "score": 51.0
+    },
+    {
+      "id": "fb_5",
+      "content": "设备:模拟器 | 1.0 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:3.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-05T14:00:00Z",
+      "score": 53.0
+    },
+    {
+      "id": "fb_6",
+      "content": "设备:安卓手机 | 小米 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:1.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-06T15:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_7",
+      "content": "设备:凤凰系统 | 华为 | 延迟:感觉没法玩了 | 整体:4.0 战斗:3.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "凤凰系统"
+      ],
+      "timestamp": "2024-06-07T16:00:00Z",
+      "score": 48.0
+    },
+    {
+      "id": "fb_8",
+      "content": "设备:安卓手机 | 小米9 | 整体:3.0 战斗:3.0 美术:2.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "还能接受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-08T17:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_9",
+      "content": "设备:安卓手机 | 小米 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-09T18:00:00Z",
+      "score": 60.0
+    },
+    {
+      "id": "fb_10",
+      "content": "设备:安卓手机 | 华为 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-10T19:00:00Z",
+      "score": 45.0
+    },
+    {
+      "id": "fb_11",
+      "content": "设备:安卓手机 | 一加 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "操作手感",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-11T20:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_12",
+      "content": "设备:安卓手机 | vivo | 整体:5.0 战斗:4.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-12T21:00:00Z",
+      "score": 68.0
+    },
+    {
+      "id": "fb_13",
+      "content": "设备:安卓手机 | OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "操作手感",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-13T10:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_14",
+      "content": "设备:安卓手机 | 华为 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-14T11:00:00Z",
+      "score": 51.0
+    },
+    {
+      "id": "fb_15",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:4.0",
+      "category": "整体体验",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-15T12:00:00Z",
+      "score": 60.0
+    },
+    {
+      "id": "fb_16",
+      "content": "设备:安卓手机 | vivo | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "没遇到过网络波动",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-16T13:00:00Z",
+      "score": 63.0
+    },
+    {
+      "id": "fb_17",
+      "content": "设备:安卓手机 | 华为 | 延迟:比较难受 | 整体:4.0 战斗:3.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-17T14:00:00Z",
+      "score": 52.0
+    },
+    {
+      "id": "fb_18",
+      "content": "设备:安卓手机 | 一加 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-18T15:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_19",
+      "content": "设备:安卓手机 | VIVO | 延迟:比较难受 | 整体:3.0 战斗:1.0 美术:3.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-19T16:00:00Z",
+      "score": 37.0
+    },
+    {
+      "id": "fb_20",
+      "content": "设备:安卓手机 | vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-20T17:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_21",
+      "content": "设备:安卓手机 | vivo | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-21T18:00:00Z",
+      "score": 43.0
+    },
+    {
+      "id": "fb_22",
+      "content": "设备:安卓手机 | 华为 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "操作手感",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-22T19:00:00Z",
+      "score": 39.0
+    },
+    {
+      "id": "fb_23",
+      "content": "设备:安卓手机 | 三星 | 延迟:感觉没法玩了 | 整体:2.0 战斗:2.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-23T20:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_24",
+      "content": "设备:安卓手机 | 魅族 | 延迟:感觉没法玩了 | 整体:2.0 战斗:3.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-24T21:00:00Z",
+      "score": 44.0
+    },
+    {
+      "id": "fb_25",
+      "content": "设备:凤凰系统 | 华硕 | 整体:2.0 战斗:2.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "没遇到过网络波动",
+        "凤凰系统"
+      ],
+      "timestamp": "2024-06-25T10:00:00Z",
+      "score": 39.0
+    },
+    {
+      "id": "fb_26",
+      "content": "设备:模拟器 | MUMU模拟器 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "UI/UX",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "还能接受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-26T11:00:00Z",
+      "score": 43.0
+    },
+    {
+      "id": "fb_27",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:1.0 战斗:2.0 美术:3.0",
+      "category": "整体体验",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-27T12:00:00Z",
+      "score": 37.0
+    },
+    {
+      "id": "fb_28",
+      "content": "设备:安卓手机 | 华为 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "UI/UX",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "无明显感觉",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-28T13:00:00Z",
+      "score": 28.0
+    },
+    {
+      "id": "fb_29",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:2.0 战斗:1.0 美术:2.0",
+      "category": "整体体验",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-01T14:00:00Z",
+      "score": 29.0
+    },
+    {
+      "id": "fb_30",
+      "content": "设备:安卓手机 | 三星 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "美术表现",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-02T15:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_31",
+      "content": "设备:安卓手机 | 一加 | 延迟:还能接受 | 整体:3.0 战斗:4.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "还能接受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-03T16:00:00Z",
+      "score": 60.0
+    },
+    {
+      "id": "fb_32",
+      "content": "设备:安卓手机 | 华为 | 延迟:没遇到过网络波动 | 整体:5.0 战斗:5.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "没遇到过网络波动",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-04T17:00:00Z",
+      "score": 64.0
+    },
+    {
+      "id": "fb_33",
+      "content": "设备:安卓手机 | 小米 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:2.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-05T18:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_34",
+      "content": "设备:安卓手机 | 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-06T19:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_35",
+      "content": "设备:安卓手机 | 小米 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-07T20:00:00Z",
+      "score": 54.0
+    },
+    {
+      "id": "fb_36",
+      "content": "设备:安卓手机 | 小米 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-08T21:00:00Z",
+      "score": 45.0
+    },
+    {
+      "id": "fb_37",
+      "content": "设备:安卓手机 | 努比亚 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-09T10:00:00Z",
+      "score": 48.0
+    },
+    {
+      "id": "fb_38",
+      "content": "设备:安卓手机 | 小米 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "整体体验",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-10T11:00:00Z",
+      "score": 55.0
+    },
+    {
+      "id": "fb_39",
+      "content": "设备:安卓手机 | 三星 | 整体:4.0 战斗:4.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-11T12:00:00Z",
+      "score": 66.0
+    },
+    {
+      "id": "fb_40",
+      "content": "设备:安卓手机 | vivo | 延迟:比较难受 | 整体:3.0 战斗:2.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-12T13:00:00Z",
+      "score": 43.0
+    },
+    {
+      "id": "fb_41",
+      "content": "设备:模拟器 | PC | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-13T14:00:00Z",
+      "score": 53.0
+    },
+    {
+      "id": "fb_42",
+      "content": "设备:模拟器 | 小米 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-14T15:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_43",
+      "content": "设备:模拟器 | OPPO | 整体:3.0 战斗:3.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "无明显感觉",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-15T16:00:00Z",
+      "score": 45.0
+    },
+    {
+      "id": "fb_44",
+      "content": "设备:安卓手机 | vivo | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-16T17:00:00Z",
+      "score": 55.0
+    },
+    {
+      "id": "fb_45",
+      "content": "设备:模拟器 | mumu | 延迟:感觉没法玩了 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "性能问题",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-17T18:00:00Z",
+      "score": 43.0
+    },
+    {
+      "id": "fb_46",
+      "content": "设备:安卓手机 | 华为 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "性能问题",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "没遇到过网络波动",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-18T19:00:00Z",
+      "score": 62.0
+    },
+    {
+      "id": "fb_47",
+      "content": "设备:安卓手机 | OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-19T20:00:00Z",
+      "score": 54.0
+    },
+    {
+      "id": "fb_48",
+      "content": "设备:安卓手机 | 小米 | 整体:3.0 战斗:2.0 美术:3.0",
+      "category": "整体体验",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-20T21:00:00Z",
+      "score": 51.0
+    },
+    {
+      "id": "fb_49",
+      "content": "设备:模拟器 | 雷神 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:1.0",
+      "category": "美术表现",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-21T10:00:00Z",
+      "score": 38.0
+    },
+    {
+      "id": "fb_50",
+      "content": "设备:安卓手机 | 小米 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:3.0",
+      "category": "操作手感",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-22T11:00:00Z",
+      "score": 42.0
+    }
+  ],
+  "urgentFeedback": [
+    {
+      "id": "fb_1",
+      "content": "设备:模拟器 | mix3 | 延迟:比较难受 | 整体:1.0 战斗:1.0 美术:1.0",
+      "category": "操作手感",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-01T10:00:00Z",
+      "score": 20.0
+    },
+    {
+      "id": "fb_23",
+      "content": "设备:安卓手机 | 三星 | 延迟:感觉没法玩了 | 整体:2.0 战斗:2.0 美术:5.0",
+      "category": "性能问题",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-23T20:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_24",
+      "content": "设备:安卓手机 | 魅族 | 延迟:感觉没法玩了 | 整体:2.0 战斗:3.0 美术:4.0",
+      "category": "UI/UX",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-24T21:00:00Z",
+      "score": 44.0
+    },
+    {
+      "id": "fb_25",
+      "content": "设备:凤凰系统 | 华硕 | 整体:2.0 战斗:2.0 美术:4.0",
+      "category": "操作手感",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "没遇到过网络波动",
+        "凤凰系统"
+      ],
+      "timestamp": "2024-06-25T10:00:00Z",
+      "score": 39.0
+    },
+    {
+      "id": "fb_27",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:1.0 战斗:2.0 美术:3.0",
+      "category": "整体体验",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-27T12:00:00Z",
+      "score": 37.0
+    },
+    {
+      "id": "fb_28",
+      "content": "设备:安卓手机 | 华为 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "UI/UX",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "无明显感觉",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-28T13:00:00Z",
+      "score": 28.0
+    },
+    {
+      "id": "fb_29",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:2.0 战斗:1.0 美术:2.0",
+      "category": "整体体验",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-01T14:00:00Z",
+      "score": 29.0
+    },
+    {
+      "id": "fb_30",
+      "content": "设备:安卓手机 | 三星 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "美术表现",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-02T15:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_45",
+      "content": "设备:模拟器 | mumu | 延迟:感觉没法玩了 | 整体:2.0 战斗:2.0 美术:2.0",
+      "category": "性能问题",
+      "sentiment": "negative",
+      "urgency": "high",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-17T18:00:00Z",
+      "score": 43.0
+    }
+  ],
+  "report": "# 《街篮2》试玩反馈分析报告\n\n## 数据概览\n- **有效样本**: 374 份\n- **平均分**: 48.6/75（满分75分）\n- **负面反馈占比**: 20.3%\n- **紧急问题数**: 17 条\n\n## 用户画像\n- **年龄段**: 30以上(49%) > 25~30(38%) > 19~24(13%)\n- **设备**: 安卓手机(83%) > 模拟器(14%)\n- **地域**: 江苏、上海、广东、浙江、山东为TOP5省份\n\n## 核心发现\n\n### 1. 网络延迟是最大痛点（67.9%用户遇到）\n- 主要负面感受：\"比较难受\"、\"感觉没法玩了\"\n- 影响整体体验和战斗体验评分\n\n### 2. 操作手感待优化\n- 按键误触频率评分最低（2.97/5）\n- 爆发技按键位置评分偏低（2.99/5）\n- 操作响应及时性仅3.12/5\n\n### 3. 美术表现获得认可\n- 背景音乐评分最高（3.43/5）\n- 按键布局适应性较好（3.61/5）\n- 初始球员技能掌握度高（3.57/5）\n\n## 建议优先级\n1. **P0 - 网络优化**：降低延迟，改善匹配体验\n2. **P1 - 操作优化**：调整按键布局，减少误触\n3. **P2 - 爆发技优化**：重新设计大招按键位置\n4. **P3 - 保持美术品质**：继续优化球员模型\n",
+  "summary": {
+    "totalFeedback": 374,
+    "weeklyNew": 374,
+    "negativeRate": 20.3,
+    "urgentCount": 17,
+    "avgScore": 48.6,
+    "maxScore": 75.0,
+    "minScore": 15.0,
+    "networkLagRate": 67.9,
+    "avgOverall": 3.08,
+    "avgCombat": 3.04
+  }
+}

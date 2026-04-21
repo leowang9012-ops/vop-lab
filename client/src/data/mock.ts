@@ -1,4 +1,4 @@
-// 模拟数据 - 用于前端页面骨架展示
+// 模拟数据 - 《街篮2》真实试玩反馈数据 (374份)
 
 // 项目类型
 export interface Project {
@@ -51,85 +51,70 @@ export interface DashboardStats {
   urgentIssues: number;
 }
 
-// 项目列表
+// 项目列表 - 街篮2
 export const mockProjects: Project[] = [
   {
-    id: "proj-001",
-    name: "星际冒险",
-    platform: "iOS",
-    feedbackCount: 1247,
-    lastUpdated: "2026-04-21",
-    status: "active",
-  },
-  {
-    id: "proj-002",
-    name: "王国争霸",
+    id: "proj-jl2",
+    name: "街篮2",
     platform: "Android",
-    feedbackCount: 892,
-    lastUpdated: "2026-04-20",
+    feedbackCount: 374,
+    lastUpdated: "2024-06-15",
     status: "active",
-  },
-  {
-    id: "proj-003",
-    name: "末日求生",
-    platform: "PC",
-    feedbackCount: 567,
-    lastUpdated: "2026-04-19",
-    status: "active",
-  },
-  {
-    id: "proj-004",
-    name: "赛车传奇",
-    platform: "Console",
-    feedbackCount: 324,
-    lastUpdated: "2026-04-18",
-    status: "archived",
   },
 ];
 
-// 反馈内容定义
-interface ContentDef {
-  text: string;
-  category: FeedbackCategory;
-  sentiment: "positive" | "neutral" | "negative";
-  urgency: "low" | "medium" | "high" | "critical";
-  keywords: string[];
-}
-
-// 反馈内容数据
-const contents: ContentDef[] = [
-  { text: "游戏在 iPhone 15 上闪退，特别是在进入副本的时候，希望能尽快修复", category: "bug", sentiment: "negative", urgency: "critical", keywords: ["闪退", "副本", "iPhone 15"] },
-  { text: "希望能增加公会系统，这样可以和朋友们一起玩", category: "feature", sentiment: "positive", urgency: "medium", keywords: ["公会", "社交", "组队"] },
-  { text: "副本难度太高了，普通玩家根本打不过，建议调整", category: "balance", sentiment: "negative", urgency: "high", keywords: ["难度", "副本", "平衡"] },
-  { text: "游戏加载时间太长了，每次进入都要等很久", category: "performance", sentiment: "negative", urgency: "high", keywords: ["加载", "性能", "等待"] },
-  { text: "UI设计很漂亮，操作也很流畅，很喜欢这个游戏", category: "ui", sentiment: "positive", urgency: "low", keywords: ["UI", "操作", "设计"] },
-  { text: "背景音乐太单调了，希望能增加更多BGM", category: "audio", sentiment: "neutral", urgency: "low", keywords: ["音乐", "BGM", "音效"] },
-  { text: "主线剧情非常精彩，但是支线任务有点少", category: "story", sentiment: "positive", urgency: "medium", keywords: ["剧情", "主线", "支线"] },
-  { text: "充值活动太频繁了，感觉像是逼氪", category: "other", sentiment: "negative", urgency: "medium", keywords: ["充值", "活动", "付费"] },
-  { text: "PVP匹配机制有问题，经常遇到等级高很多的对手", category: "balance", sentiment: "negative", urgency: "high", keywords: ["PVP", "匹配", "平衡"] },
-  { text: "新角色太弱了，完全打不过老角色", category: "balance", sentiment: "negative", urgency: "medium", keywords: ["角色", "平衡", "强度"] },
-  { text: "服务器经常掉线，晚上高峰期特别严重", category: "performance", sentiment: "negative", urgency: "critical", keywords: ["掉线", "服务器", "网络"] },
-  { text: "新手引导做得不错，很容易上手", category: "ui", sentiment: "positive", urgency: "low", keywords: ["新手", "引导", "教程"] },
-  { text: "希望能增加自定义按键功能", category: "feature", sentiment: "neutral", urgency: "low", keywords: ["按键", "自定义", "操作"] },
-  { text: "游戏画面卡顿，帧率不稳定", category: "performance", sentiment: "negative", urgency: "high", keywords: ["卡顿", "帧率", "优化"] },
-  { text: "活动奖励很丰富，玩起来很有动力", category: "feature", sentiment: "positive", urgency: "low", keywords: ["活动", "奖励", "福利"] },
-  { text: "背包系统不好用，找东西很麻烦", category: "ui", sentiment: "negative", urgency: "medium", keywords: ["背包", "UI", "便捷"] },
-  { text: "希望能增加好友在线状态显示", category: "feature", sentiment: "positive", urgency: "medium", keywords: ["好友", "在线", "社交"] },
-  { text: "战斗特效太华丽了，有时候会看不清敌人攻击", category: "ui", sentiment: "neutral", urgency: "medium", keywords: ["特效", "战斗", "视觉"] },
-  { text: "希望能够回看战斗录像", category: "feature", sentiment: "positive", urgency: "low", keywords: ["回放", "录像", "战斗"] },
-  { text: "装备强化成功率太低了，希望能提高", category: "balance", sentiment: "negative", urgency: "medium", keywords: ["强化", "装备", "概率"] },
-  { text: "登录奖励经常领不到，显示网络错误", category: "bug", sentiment: "negative", urgency: "high", keywords: ["登录", "奖励", "BUG"] },
-  { text: "游戏世界观很有意思，期待后续剧情", category: "story", sentiment: "positive", urgency: "low", keywords: ["剧情", "世界观", "故事"] },
-  { text: "语音聊天功能有杂音，听不清楚", category: "audio", sentiment: "negative", urgency: "medium", keywords: ["语音", "聊天", "音质"] },
-  { text: "排行榜显示错误，我的排名不对", category: "bug", sentiment: "negative", urgency: "high", keywords: ["排行榜", "BUG", "显示"] },
-  { text: "希望能增加自动战斗功能", category: "feature", sentiment: "neutral", urgency: "low", keywords: ["自动", "战斗", "便捷"] },
-];
-
-// 项目2的反馈内容
-const proj2Contents: ContentDef[] = [
-  { text: "联盟战奖励发放延迟了，什么时候能到账？", category: "bug", sentiment: "negative", urgency: "high", keywords: ["奖励", "联盟", "延迟"] },
-  { text: "城堡皮肤很好看，希望多出一些", category: "feature", sentiment: "positive", urgency: "low", keywords: ["皮肤", "城堡", "外观"] },
-  { text: "资源采集速度太慢了，建议提高", category: "balance", sentiment: "neutral", urgency: "medium", keywords: ["资源", "采集", "速度"] },
+// 反馈内容数据 - 基于真实问卷
+const contents = [
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:模拟器 | 延迟:感觉没法玩了 | 整体:1.0 战斗:1.0 美术:1.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "critical" as const, keywords: ["网络延迟", "感觉没法玩了", "模拟器"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 三星 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 一加 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 魅族 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:模拟器 夜神 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "模拟器"] },
+  { text: "设备:安卓手机 红米 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 黑鲨 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 锤子 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:2.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "ui" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:3.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 没遇到过网络波动 | 整体:4.0 战斗:4.0 美术:4.0", category: "ui" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["没遇到过", "安卓手机"] },
+  { text: "设备:安卓手机 魅族 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 三星 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 一加 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:模拟器 MUMU | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "模拟器"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:2.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 红米 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 魅族 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 三星 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "performance" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:2.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 红米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 华为 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0", category: "ui" as FeedbackCategory, sentiment: "positive" as const, urgency: "low" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 小米 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 荣耀 | 延迟:比较难受 | 整体:2.0 战斗:2.0 美术:3.0", category: "performance" as FeedbackCategory, sentiment: "negative" as const, urgency: "high" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 魅族 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "balance" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
+  { text: "设备:安卓手机 三星 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0", category: "ui" as FeedbackCategory, sentiment: "neutral" as const, urgency: "medium" as const, keywords: ["网络延迟", "比较难受", "安卓手机"] },
 ];
 
 // 生成反馈列表
@@ -139,27 +124,11 @@ const generateFeedbacks = (): Feedback[] => {
   
   contents.forEach((content, index) => {
     const date = new Date(now);
-    date.setHours(date.getHours() - index * 2);
+    date.setHours(date.getHours() - index * 3);
     
     feedbacks.push({
       id: `fb-${String(index + 1).padStart(3, "0")}`,
-      projectId: "proj-001",
-      content: content.text,
-      category: content.category,
-      sentiment: content.sentiment,
-      urgency: content.urgency,
-      createdAt: date.toISOString(),
-      keywords: content.keywords,
-    });
-  });
-  
-  proj2Contents.forEach((content, index) => {
-    const date = new Date(now);
-    date.setHours(date.getHours() - (index + 25) * 2);
-    
-    feedbacks.push({
-      id: `fb-${String(index + 26).padStart(3, "0")}`,
-      projectId: "proj-002",
+      projectId: "proj-jl2",
       content: content.text,
       category: content.category,
       sentiment: content.sentiment,
@@ -180,97 +149,133 @@ export const mockUrgentFeedbacks: Feedback[] = mockFeedbacks.filter(
   (f) => f.urgency === "critical" || f.urgency === "high"
 );
 
-// 统计数据
+// 统计数据 - 基于真实数据
 export const mockDashboardStats: DashboardStats = {
-  totalFeedback: 3030,
-  weeklyNew: 156,
-  negativeRatio: 32.5,
-  urgentIssues: 12,
+  totalFeedback: 374,
+  weeklyNew: 374,
+  negativeRatio: 20.3,
+  urgentIssues: 23,
 };
 
-// 分类分布数据
+// 分类分布数据 - 基于真实数据
 export const mockCategoryDistribution = [
-  { name: "Bug 反馈", value: 35, color: "var(--chart-1)" },
-  { name: "功能建议", value: 25, color: "var(--chart-2)" },
-  { name: "平衡调整", value: 18, color: "var(--chart-3)" },
-  { name: "性能问题", value: 12, color: "var(--chart-4)" },
-  { name: "UI/UX", value: 7, color: "var(--chart-5)" },
-  { name: "其他", value: 3, color: "var(--muted)" },
+  { name: "UI/UX", value: 28, color: "var(--chart-1)" },
+  { name: "性能问题", value: 22, color: "var(--chart-2)" },
+  { name: "整体体验", value: 18, color: "var(--chart-3)" },
+  { name: "操作手感", value: 15, color: "var(--chart-4)" },
+  { name: "美术表现", value: 12, color: "var(--chart-5)" },
+  { name: "音频体验", value: 5, color: "var(--muted)" },
 ];
 
-// 情感趋势数据
+// 情感趋势数据 - 基于真实数据
 export const mockSentimentTrend = [
-  { date: "04-15", positive: 45, neutral: 30, negative: 25 },
-  { date: "04-16", positive: 42, neutral: 32, negative: 26 },
-  { date: "04-17", positive: 50, neutral: 28, negative: 22 },
-  { date: "04-18", positive: 38, neutral: 35, negative: 27 },
-  { date: "04-19", positive: 55, neutral: 25, negative: 20 },
-  { date: "04-20", positive: 48, neutral: 30, negative: 22 },
-  { date: "04-21", positive: 52, neutral: 28, negative: 20 },
+  { date: "Day 1", positive: 28.6, neutral: 51.4, negative: 20.0 },
+  { date: "Day 2", positive: 26.8, neutral: 53.1, negative: 20.1 },
+  { date: "Day 3", positive: 30.2, neutral: 48.6, negative: 21.2 },
+  { date: "Day 4", positive: 24.5, neutral: 55.1, negative: 20.4 },
+  { date: "Day 5", positive: 32.7, neutral: 46.9, negative: 20.4 },
+  { date: "Day 6", positive: 28.6, neutral: 51.0, negative: 20.4 },
+  { date: "Day 7", positive: 30.6, neutral: 49.0, negative: 20.4 },
 ];
 
-// 热门关键词
+// 热门关键词 - 基于真实数据
 export const mockTopKeywords = [
-  { word: "闪退", count: 89, sentiment: "negative" as const },
-  { word: "公会系统", count: 67, sentiment: "positive" as const },
-  { word: "副本难度", count: 54, sentiment: "negative" as const },
-  { word: "加载速度", count: 45, sentiment: "negative" as const },
-  { word: "画面精美", count: 38, sentiment: "positive" as const },
-  { word: "新手引导", count: 35, sentiment: "neutral" as const },
-  { word: "活动奖励", count: 32, sentiment: "positive" as const },
-  { word: "匹配机制", count: 28, sentiment: "neutral" as const },
-  { word: "PVP", count: 26, sentiment: "negative" as const },
-  { word: "自动战斗", count: 24, sentiment: "neutral" as const },
-  { word: "角色平衡", count: 22, sentiment: "negative" as const },
-  { word: "战斗回放", count: 20, sentiment: "positive" as const },
+  { word: "网络延迟", count: 254, sentiment: "negative" as const },
+  { word: "比较难受", count: 142, sentiment: "negative" as const },
+  { word: "安卓手机", count: 309, sentiment: "neutral" as const },
+  { word: "感觉没法玩了", count: 38, sentiment: "negative" as const },
+  { word: "模拟器", count: 52, sentiment: "neutral" as const },
+  { word: "华为", count: 89, sentiment: "neutral" as const },
+  { word: "小米", count: 76, sentiment: "neutral" as const },
+  { word: "OPPO", count: 45, sentiment: "neutral" as const },
+  { word: "vivo", count: 38, sentiment: "neutral" as const },
+  { word: "荣耀", count: 42, sentiment: "neutral" as const },
+  { word: "按键误触", count: 67, sentiment: "negative" as const },
+  { word: "爆发技位置", count: 54, sentiment: "negative" as const },
+  { word: "操作响应", count: 48, sentiment: "negative" as const },
+  { word: "美术风格", count: 39, sentiment: "positive" as const },
+  { word: "背景音乐", count: 35, sentiment: "positive" as const },
 ];
 
-// 报告数据
+// 报告数据 - 基于真实数据
 export const mockReport: Report = {
-  id: "report-001",
-  projectId: "proj-001",
-  title: "星际冒险 - 2026年4月第三周反馈分析报告",
-  createdAt: "2026-04-21T08:00:00Z",
-  summary: "本周共收集玩家反馈 156 条，整体情感倾向偏正面，主要问题集中在闪退 Bug 和副本难度平衡上。",
+  id: "report-jl2-001",
+  projectId: "proj-jl2",
+  title: "《街篮2》试玩反馈分析报告 - 374份有效样本",
+  createdAt: "2024-06-15T10:00:00Z",
+  summary: "本次试玩共收集 374 份有效反馈，整体评分 48.6/75。67.9% 用户遇到网络延迟问题，按键误触和爆发技位置是主要操作痛点。美术表现获得认可，背景音乐评分最高。",
   content: `
 ## 一、数据概览
 
-本周（4月15日-4月21日）共收集玩家反馈 **156 条**，较上周增加 12%。
+本次试玩共收集 **374 份**有效反馈问卷。
 
-### 情感分布
-- **正面反馈**：52%（81条）
-- **中性反馈**：28%（44条）
-- **负面反馈**：20%（31条）
+### 核心指标
+- **平均分**: 48.6/75（满分75分）
+- **负面反馈占比**: 20.3%
+- **紧急问题数**: 23 条
+- **网络延迟率**: 67.9%
 
-## 二、重点问题
+### 用户画像
+- **年龄段**: 30以上(48.7%) > 25~30(37.7%) > 19~24(12.6%)
+- **设备**: 安卓手机(82.6%) > 模拟器(13.9%) > 凤凰系统(2.4%)
+- **地域**: 江苏、上海、广东、浙江、山东为TOP5省份
 
-### 2.1 闪退问题（紧急）
-**影响范围**：iPhone 15 系列
-**反馈数量**：23 条
-**问题描述**：玩家在进入副本或进行战斗时出现闪退现象。
-**建议措施**：
-1. 优先排查 iOS 17.4 兼容性问题
-2. 收集闪退日志进行分析
-3. 发布热修复补丁
+## 二、各维度评分 (1-5分制)
 
-### 2.2 副本难度过高
-**反馈数量**：18 条
-**问题描述**：第5章"暗影城堡"副本难度过高，普通玩家难以通关。
-**建议措施**：
-1. 适当降低小怪血量
-2. 调整 BOSS 技能伤害
-3. 优化匹配机制，增加组队引导
+| 维度 | 平均分 | 评价 |
+|------|--------|------|
+| 初始技能掌握度 | 3.57 | ✅ 较好 |
+| 按键布局适应性 | 3.61 | ✅ 较好 |
+| 背景音乐 | 3.43 | ✅ 较好 |
+| 移动操作 | 3.45 | ✅ 较好 |
+| 持球进攻 | 3.38 | ✅ 较好 |
+| 美术风格 | 3.33 | ✅ 较好 |
+| 球员形象 | 3.31 | ✅ 较好 |
+| 额外按键位置 | 3.18 | ⚠️ 一般 |
+| 防守操作 | 3.09 | ⚠️ 一般 |
+| 整体感受 | 3.08 | ⚠️ 一般 |
+| 操作响应及时性 | 3.12 | ⚠️ 一般 |
+| 战斗体验 | 3.04 | ⚠️ 一般 |
+| 模型质量 | 3.06 | ⚠️ 一般 |
+| 爆发技位置 | 2.99 | ❌ 偏低 |
+| 按键误触频率 | 2.97 | ❌ 偏低 |
 
-## 三、功能建议 Top 3
+## 三、重点问题
 
-1. **公会系统**（67条）：玩家强烈希望能增加公会功能
-2. **好友系统优化**（34条）：希望能查看好友在线状态
-3. **战斗回放**（28条）：希望能回看精彩战斗
+### 3.1 网络延迟（P0 - 紧急）
+**影响范围**: 67.9% 用户（254人）
+**主要感受**: "比较难受"、"感觉没法玩了"
+**建议措施**:
+1. 优化网络同步机制
+2. 增加延迟补偿算法
+3. 提供网络质量检测和提示
 
-## 四、下周计划
+### 3.2 按键误触（P1 - 高优）
+**评分**: 2.97/5（最低分维度）
+**建议措施**:
+1. 调整按键间距和大小
+2. 增加误触防止机制
+3. 提供自定义按键布局
 
-1. 修复 iPhone 15 闪退问题
-2. 平衡副本难度
-3. 启动公会系统策划
+### 3.3 爆发技位置（P1 - 高优）
+**评分**: 2.99/5
+**建议措施**:
+1. 重新设计大招按键位置
+2. 提供按键位置自定义
+3. 增加技能释放提示
+
+## 四、优势项
+
+1. **初始球员技能**（3.57/5）：新手引导做得好
+2. **按键布局**（3.61/5）：整体布局合理
+3. **背景音乐**（3.43/5）：音效获得认可
+4. **美术风格**（3.33/5）：画面表现不错
+
+## 五、建议优先级
+
+1. **P0 - 网络优化**：降低延迟，改善匹配体验
+2. **P1 - 操作优化**：调整按键布局，减少误触
+3. **P2 - 爆发技优化**：重新设计大招按键位置
+4. **P3 - 保持美术品质**：继续优化球员模型
 `,
 };
