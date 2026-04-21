@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/vop-lab/',
   root: path.resolve(__dirname, 'client'),
   plugins: [
     react(),
@@ -22,7 +23,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist/output',
+    outDir: '../docs',
     emptyOutDir: true,
   },
 })
