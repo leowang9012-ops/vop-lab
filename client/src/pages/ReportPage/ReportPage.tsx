@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, Calendar, FileText, FileDown } from "lucide-react";
 import { format } from "date-fns";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
+import html2pdf from "html2pdf.js";
 
 interface Report {
   id: number;
@@ -39,6 +40,7 @@ export default function ReportPage() {
   }, []);
 
   const reportRef = useRef<HTMLDivElement>(null);
+  const [exporting, setExporting] = useState(false);
 
   const handleDownload = () => {
     if (!report) return;
@@ -53,9 +55,39 @@ export default function ReportPage() {
     URL.revokeObjectURL(url);
   };
 
-  const handleExportPDF = () => {
-    window.print();
-  };
+  const handleExportPDF = useCallback(async () => {
+    if (!reportRef.current || !report) return;
+    setExporting(true);
+    
+    try {
+      const element = reportRef.current;
+      const filename = `${report.title.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_')}.pdf`;
+      
+      const opt = {
+        margin: [10, 10, 10, 10],
+        filename,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { 
+          scale: 2,
+          useCORS: true,
+          backgroundColor: '#ffffff',
+          logging: false,
+        },
+        jsPDF: { 
+          unit: 'mm', 
+          format: 'a4', 
+          orientation: 'portrait' 
+        },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+      };
+      
+      await html2pdf().set(opt).from(element).save();
+    } catch (err) {
+      console.error('PDF 导出失败:', err);
+    } finally {
+      setExporting(false);
+    }
+  }, [report]);
 
   if (loading) {
     return (
@@ -96,10 +128,11 @@ export default function ReportPage() {
             </Button>
             <Button
               onClick={handleExportPDF}
-              className="bg-primary hover:bg-primary/90 gap-2 print:hidden"
+              disabled={exporting}
+              className="bg-primary hover:bg-primary/90 gap-2"
             >
               <FileDown className="w-4 h-4" />
-              导出 PDF
+              {exporting ? '导出中...' : '导出 PDF'}
             </Button>
           </div>
         </div>
