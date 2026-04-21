@@ -4,7 +4,6 @@ import { Badge } from "@/components/ui/badge";
 import { Download, Calendar, FileText, FileDown } from "lucide-react";
 import { format } from "date-fns";
 import { useEffect, useState, useRef, useCallback } from "react";
-import html2pdf from "html2pdf.js";
 
 interface Report {
   id: number;
@@ -41,6 +40,7 @@ export default function ReportPage() {
 
   const reportRef = useRef<HTMLDivElement>(null);
   const [exporting, setExporting] = useState(false);
+  const [exportError, setExportError] = useState<string>("");
 
   const handleDownload = () => {
     if (!report) return;
@@ -58,10 +58,28 @@ export default function ReportPage() {
   const handleExportPDF = useCallback(async () => {
     if (!reportRef.current || !report) return;
     setExporting(true);
+    setExportError("");
     
     try {
+      // 动态加载 html2pdf.js（UMD 库，CDN 方式更可靠）
+      if (!(window as any).html2pdf) {
+        await new Promise<void>((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+          script.onload = () => resolve();
+          script.onerror = () => reject(new Error('加载 PDF 生成库失败'));
+          document.head.appendChild(script);
+        });
+      }
+      
       const element = reportRef.current;
       const filename = `${report.title.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_')}.pdf`;
+      
+      // 临时隐藏 header 和按钮，让 PDF 更干净
+      const header = document.querySelector('header');
+      const sidebar = document.querySelector('aside');
+      if (header) (header as HTMLElement).style.display = 'none';
+      if (sidebar) (sidebar as HTMLElement).style.display = 'none';
       
       const opt = {
         margin: [10, 10, 10, 10],
@@ -71,7 +89,7 @@ export default function ReportPage() {
           scale: 2,
           useCORS: true,
           backgroundColor: '#ffffff',
-          logging: false,
+          letterRendering: true,
         },
         jsPDF: { 
           unit: 'mm', 
@@ -81,8 +99,14 @@ export default function ReportPage() {
         pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
       };
       
-      await html2pdf().set(opt).from(element).save();
+      await (window as any).html2pdf().set(opt).from(element).save();
+      
+      // 恢复显示
+      if (header) (header as HTMLElement).style.display = '';
+      if (sidebar) (sidebar as HTMLElement).style.display = '';
     } catch (err) {
+      const msg = err instanceof Error ? err.message : '未知错误';
+      setExportError(`导出失败: ${msg}`);
       console.error('PDF 导出失败:', err);
     } finally {
       setExporting(false);
@@ -108,7 +132,7 @@ export default function ReportPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
+      <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border relative">
         <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-foreground">分析报告</h1>
@@ -121,7 +145,7 @@ export default function ReportPage() {
             <Button
               onClick={handleDownload}
               variant="outline"
-              className="gap-2 print:hidden"
+              className="gap-2"
             >
               <Download className="w-4 h-4" />
               下载 Markdown
@@ -135,6 +159,11 @@ export default function ReportPage() {
               {exporting ? '导出中...' : '导出 PDF'}
             </Button>
           </div>
+          {exportError && (
+            <div className="absolute top-20 right-8 z-50 px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-lg text-sm text-destructive">
+              {exportError}
+            </div>
+          )}
         </div>
       </header>
 
