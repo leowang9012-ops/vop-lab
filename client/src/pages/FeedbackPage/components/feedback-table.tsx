@@ -7,20 +7,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import type { Feedback } from "@/data/mock";
 import { cn } from "@/lib/utils";
-import { format } from "date-fns";
-
-const categoryLabels: Record<string, string> = {
-  bug: "Bug",
-  feature: "功能",
-  balance: "平衡",
-  performance: "性能",
-  ui: "UI",
-  audio: "音频",
-  story: "剧情",
-  other: "其他",
-};
+import type { FeedbackItem } from "../FeedbackPage";
 
 const sentimentLabels: Record<string, { label: string; className: string }> = {
   positive: { label: "正面", className: "bg-success/10 text-success border-success/30" },
@@ -36,7 +24,7 @@ const urgencyLabels: Record<string, { label: string; className: string }> = {
 };
 
 interface FeedbackTableProps {
-  feedbacks: Feedback[];
+  feedbacks: FeedbackItem[];
 }
 
 export function FeedbackTable({ feedbacks }: FeedbackTableProps) {
@@ -45,50 +33,58 @@ export function FeedbackTable({ feedbacks }: FeedbackTableProps) {
       <TableHeader>
         <TableRow className="border-border hover:bg-transparent">
           <TableHead className="text-muted-foreground font-medium">反馈内容</TableHead>
-          <TableHead className="text-muted-foreground font-medium w-[80px]">分类</TableHead>
+          <TableHead className="text-muted-foreground font-medium w-[100px]">分类</TableHead>
           <TableHead className="text-muted-foreground font-medium w-[80px]">情感</TableHead>
           <TableHead className="text-muted-foreground font-medium w-[80px]">紧急度</TableHead>
-          <TableHead className="text-muted-foreground font-medium w-[120px]">时间</TableHead>
+          <TableHead className="text-muted-foreground font-medium w-[80px]">评分</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {feedbacks.map((feedback) => (
-          <TableRow
-            key={feedback.id}
-            className="border-border hover:bg-secondary/30 cursor-pointer transition-colors"
-          >
-            <TableCell>
-              <div className="max-w-[500px]">
-                <p className="text-sm text-foreground line-clamp-2">{feedback.content}</p>
-                <div className="flex gap-1.5 mt-1.5">
-                  {feedback.keywords.slice(0, 3).map((kw) => (
-                    <Badge key={kw} variant="outline" className="text-xs text-muted-foreground">
-                      {kw}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </TableCell>
-            <TableCell>
-              <Badge variant="outline" className="text-xs">
-                {categoryLabels[feedback.category]}
-              </Badge>
-            </TableCell>
-            <TableCell>
-              <Badge variant="outline" className={cn("text-xs", sentimentLabels[feedback.sentiment].className)}>
-                {sentimentLabels[feedback.sentiment].label}
-              </Badge>
-            </TableCell>
-            <TableCell>
-              <Badge className={cn("text-xs", urgencyLabels[feedback.urgency].className)}>
-                {urgencyLabels[feedback.urgency].label}
-              </Badge>
-            </TableCell>
-            <TableCell className="text-sm text-muted-foreground">
-              {format(new Date(feedback.createdAt), "MM-dd HH:mm")}
+        {feedbacks.length === 0 ? (
+          <TableRow>
+            <TableCell colSpan={5} className="text-center py-12 text-muted-foreground">
+              没有匹配的反馈数据
             </TableCell>
           </TableRow>
-        ))}
+        ) : (
+          feedbacks.map((feedback) => (
+            <TableRow
+              key={feedback.id}
+              className="border-border hover:bg-secondary/30 transition-colors"
+            >
+              <TableCell>
+                <div className="max-w-[500px]">
+                  <p className="text-sm text-foreground line-clamp-2">{feedback.content}</p>
+                  <div className="flex gap-1.5 mt-1.5 flex-wrap">
+                    {feedback.keywords.slice(0, 3).map((kw) => (
+                      <Badge key={kw} variant="outline" className="text-xs text-muted-foreground">
+                        {kw}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </TableCell>
+              <TableCell>
+                <Badge variant="outline" className="text-xs">
+                  {feedback.category}
+                </Badge>
+              </TableCell>
+              <TableCell>
+                <Badge variant="outline" className={cn("text-xs", sentimentLabels[feedback.sentiment]?.className)}>
+                  {sentimentLabels[feedback.sentiment]?.label || feedback.sentiment}
+                </Badge>
+              </TableCell>
+              <TableCell>
+                <Badge className={cn("text-xs", urgencyLabels[feedback.urgency]?.className)}>
+                  {urgencyLabels[feedback.urgency]?.label || feedback.urgency}
+                </Badge>
+              </TableCell>
+              <TableCell className="text-sm font-semibold text-foreground">
+                {feedback.score?.toFixed(0) || '-'}
+              </TableCell>
+            </TableRow>
+          ))
+        )}
       </TableBody>
     </Table>
   );

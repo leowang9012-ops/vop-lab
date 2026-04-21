@@ -1,51 +1,86 @@
 import { motion } from "framer-motion";
-import { StatsCards } from "./components/stats-cards";
-import { CategoryPieChart } from "./components/category-pie-chart";
-import { SentimentTrendChart } from "./components/sentiment-trend-chart";
-import { KeywordsCloud } from "./components/keywords-cloud";
-import { UrgentFeedbackList } from "./components/urgent-feedback-list";
-import { ProjectSelector } from "./components/project-selector";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageSquareWarning, TrendingUp, Frown, AlertTriangle } from "lucide-react";
+import { useEffect, useState } from "react";
+
+interface ReportData {
+  totalFeedback: number;
+  avgScore: number;
+  sentimentDistribution: Record<string, number>;
+  categoryDistribution: Record<string, number>;
+  urgencyDistribution: Record<string, number>;
+  topKeywords: { word: string; count: number }[];
+  categoryAvgScores: { category: string; avgScore: number; count: number }[];
+  urgentIssues: number;
+}
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.1,
-    },
+    transition: { staggerChildren: 0.1, delayChildren: 0.1 },
   },
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease: "easeOut" as const,
-    },
-  },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } },
 };
 
+const statsConfig = [
+  { label: "总反馈数", key: "totalFeedback", icon: MessageSquareWarning, color: "text-primary", bgColor: "bg-primary/10", format: (v: number) => v.toLocaleString() },
+  { label: "平均评分", key: "avgScore", icon: TrendingUp, color: "text-success", bgColor: "bg-success/10", format: (v: number) => v.toFixed(1) },
+  { label: "负面反馈占比", key: "negativeRatio", icon: Frown, color: "text-warning", bgColor: "bg-warning/10", format: (v: number) => `${v}%` },
+  { label: "紧急问题", key: "urgentIssues", icon: AlertTriangle, color: "text-destructive", bgColor: "bg-destructive/10", format: (v: number) => v.toString() },
+];
+
 export default function DashboardPage() {
+  const [report, setReport] = useState<ReportData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/report_latest.json`)
+      .then(res => res.ok ? res.json() : Promise.reject())
+      .then(data => {
+        const total = data.totalFeedback || 1;
+        const negativeCount = data.sentimentDistribution?.negative || 0;
+        setReport({
+          ...data,
+          negativeRatio: Math.round(negativeCount / total * 100),
+        });
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">加载数据中...</p>
+      </div>
+    );
+  }
+
+  if (!report) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">暂无数据，请先构建项目</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
         <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-foreground">数据看板</h1>
             <p className="text-sm text-muted-foreground mt-0.5">实时监控玩家反馈动态</p>
           </div>
-          <ProjectSelector />
         </div>
       </header>
 
-      {/* Main Content */}
-      <motion.main 
+      <motion.main
         className="max-w-[1600px] mx-auto px-8 py-6 space-y-6"
         variants={containerVariants}
         initial="hidden"
@@ -53,43 +88,112 @@ export default function DashboardPage() {
       >
         {/* Stats Row */}
         <motion.div variants={itemVariants}>
-          <StatsCards />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {statsConfig.map((stat, index) => {
+              const Icon = stat.icon;
+              const value = stat.key === "negativeRatio"
+                ? report.negativeRatio
+                : (report as any)[stat.key] ?? 0;
+              return (
+                <motion.div
+                  key={stat.label}
+                  custom={index}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.4, delay: index * 0.1, ease: "easeOut" } },
+                  }}
+                  initial="hidden"
+                  animate="visible"
+                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                >
+                  <Card className="bg-card border-border h-full">
+                    <CardContent className="p-5">
+                      <div className="flex items-center gap-4">
+                        <div className={`w-11 h-11 rounded-lg ${stat.bgColor} flex items-center justify-center`}>
+                          <Icon className={`w-5 h-5 ${stat.color}`} />
+                        </div>
+                        <div>
+                          <p className="text-2xl font-bold text-foreground">{stat.format(value)}</p>
+                          <p className="text-sm text-muted-foreground">{stat.label}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              );
+            })}
+          </div>
         </motion.div>
 
-        {/* Charts Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <motion.div variants={itemVariants}>
-            <Card className="bg-card border-border h-full">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-base font-medium">反馈分类分布</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CategoryPieChart />
-              </CardContent>
-            </Card>
-          </motion.div>
+        {/* Category Distribution */}
+        <motion.div variants={itemVariants}>
+          <Card className="bg-card border-border">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-base font-medium">反馈分类分布</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                {Object.entries(report.categoryDistribution).map(([cat, count]) => {
+                  const pct = Math.round(count / report.totalFeedback * 100);
+                  return (
+                    <div key={cat} className="p-4 rounded-lg bg-secondary/30 border border-border/50">
+                      <p className="text-2xl font-bold text-foreground">{count}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{cat}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">{pct}%</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-          <motion.div variants={itemVariants} className="lg:col-span-2">
-            <Card className="bg-card border-border h-full">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-base font-medium">情感趋势</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <SentimentTrendChart />
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
+        {/* Category Scores */}
+        <motion.div variants={itemVariants}>
+          <Card className="bg-card border-border">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-base font-medium">各维度平均评分</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3">
+                {report.categoryAvgScores
+                  .sort((a, b) => a.avgScore - b.avgScore)
+                  .map(({ category, avgScore, count }) => {
+                    const pct = Math.round(avgScore / 100 * 100);
+                    const color = avgScore >= 55 ? "bg-success" : avgScore >= 45 ? "bg-warning" : "bg-destructive";
+                    return (
+                      <div key={category} className="flex items-center gap-4">
+                        <span className="text-sm text-foreground w-24 truncate">{category}</span>
+                        <div className="flex-1 h-3 bg-secondary rounded-full overflow-hidden">
+                          <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
+                        </div>
+                        <span className="text-sm font-semibold text-foreground w-16 text-right">{avgScore.toFixed(1)}</span>
+                        <span className="text-xs text-muted-foreground w-12 text-right">({count}条)</span>
+                      </div>
+                    );
+                  })}
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
 
-        {/* Keywords & Urgent */}
+        {/* Keywords & Sentiment */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <motion.div variants={itemVariants}>
             <Card className="bg-card border-border h-full">
               <CardHeader className="pb-2">
-                <CardTitle className="text-base font-medium">热门关键词</CardTitle>
+                <CardTitle className="text-base font-medium">热门关键词 TOP10</CardTitle>
               </CardHeader>
               <CardContent>
-                <KeywordsCloud />
+                <div className="space-y-2">
+                  {report.topKeywords.slice(0, 10).map(({ word, count }, i) => (
+                    <div key={word} className="flex items-center gap-3">
+                      <span className="text-xs text-muted-foreground w-6 text-right">{i + 1}</span>
+                      <span className="text-sm text-foreground flex-1">{word}</span>
+                      <span className="text-sm font-semibold text-foreground">{count}</span>
+                    </div>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           </motion.div>
@@ -97,10 +201,27 @@ export default function DashboardPage() {
           <motion.div variants={itemVariants}>
             <Card className="bg-card border-border h-full">
               <CardHeader className="pb-2">
-                <CardTitle className="text-base font-medium">紧急问题</CardTitle>
+                <CardTitle className="text-base font-medium">情感分布</CardTitle>
               </CardHeader>
               <CardContent>
-                <UrgentFeedbackList />
+                <div className="space-y-4">
+                  {Object.entries(report.sentimentDistribution).map(([sentiment, count]) => {
+                    const label = sentiment === "positive" ? "正面" : sentiment === "negative" ? "负面" : "中性";
+                    const color = sentiment === "positive" ? "bg-success" : sentiment === "negative" ? "bg-destructive" : "bg-muted";
+                    const pct = Math.round(count / report.totalFeedback * 100);
+                    return (
+                      <div key={sentiment}>
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-sm text-foreground">{label}</span>
+                          <span className="text-sm font-semibold text-foreground">{count} ({pct}%)</span>
+                        </div>
+                        <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                          <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </CardContent>
             </Card>
           </motion.div>

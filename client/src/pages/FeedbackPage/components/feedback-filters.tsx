@@ -14,12 +14,12 @@ interface FeedbackFiltersProps {
   filters: FilterState;
   onFilterChange: (filters: Partial<FilterState>) => void;
   onReset: () => void;
+  categories?: string[];
 }
 
-export function FeedbackFilters({ filters, onFilterChange, onReset }: FeedbackFiltersProps) {
+export function FeedbackFilters({ filters, onFilterChange, onReset, categories = [] }: FeedbackFiltersProps) {
   return (
     <div className="flex flex-wrap items-center gap-4">
-      {/* Search */}
       <div className="relative flex-1 min-w-[240px] max-w-[320px]">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
         <Input
@@ -30,8 +30,7 @@ export function FeedbackFilters({ filters, onFilterChange, onReset }: FeedbackFi
         />
       </div>
 
-      {/* Category Filter */}
-      <Select 
+      <Select
         value={filters.category}
         onValueChange={(value) => onFilterChange({ category: value })}
       >
@@ -40,19 +39,13 @@ export function FeedbackFilters({ filters, onFilterChange, onReset }: FeedbackFi
         </SelectTrigger>
         <SelectContent>
           <SelectItem value="all">全部分类</SelectItem>
-          <SelectItem value="bug">Bug 反馈</SelectItem>
-          <SelectItem value="feature">功能建议</SelectItem>
-          <SelectItem value="balance">平衡调整</SelectItem>
-          <SelectItem value="performance">性能问题</SelectItem>
-          <SelectItem value="ui">UI/UX</SelectItem>
-          <SelectItem value="audio">音频问题</SelectItem>
-          <SelectItem value="story">剧情相关</SelectItem>
-          <SelectItem value="other">其他</SelectItem>
+          {categories.map(cat => (
+            <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+          ))}
         </SelectContent>
       </Select>
 
-      {/* Sentiment Filter */}
-      <Select 
+      <Select
         value={filters.sentiment}
         onValueChange={(value) => onFilterChange({ sentiment: value })}
       >
@@ -67,8 +60,7 @@ export function FeedbackFilters({ filters, onFilterChange, onReset }: FeedbackFi
         </SelectContent>
       </Select>
 
-      {/* Urgency Filter */}
-      <Select 
+      <Select
         value={filters.urgency}
         onValueChange={(value) => onFilterChange({ urgency: value })}
       >
@@ -84,25 +76,8 @@ export function FeedbackFilters({ filters, onFilterChange, onReset }: FeedbackFi
         </SelectContent>
       </Select>
 
-      {/* Date Range */}
-      <Select 
-        value={filters.dateRange}
-        onValueChange={(value) => onFilterChange({ dateRange: value })}
-      >
-        <SelectTrigger className="w-[140px] bg-card border-border">
-          <SelectValue placeholder="时间范围" />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="today">今天</SelectItem>
-          <SelectItem value="7d">近7天</SelectItem>
-          <SelectItem value="30d">近30天</SelectItem>
-          <SelectItem value="90d">近90天</SelectItem>
-          <SelectItem value="all">全部</SelectItem>
-        </SelectContent>
-      </Select>
-
-      <Button 
-        variant="outline" 
+      <Button
+        variant="outline"
         className="ml-auto gap-2"
         onClick={onReset}
       >
