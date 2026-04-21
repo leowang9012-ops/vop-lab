@@ -58,6 +58,10 @@ function analyzeStats(data) {
     category: cat, avgScore: sc.reduce((a, b) => a + b, 0) / sc.length, count: sc.length
   })).sort((a, b) => a.avgScore - b.avgScore);
 
+  // 来源分布
+  const sourceDist = {};
+  data.forEach(d => { const s = d.source || 'unknown'; sourceDist[s] = (sourceDist[s] || 0) + 1; });
+
   const sentimentScores = {};
   data.forEach(d => {
     if (d.score && d.score > 0) {
@@ -73,7 +77,7 @@ function analyzeStats(data) {
   return {
     total, avgScore: Math.round(avgScore * 10) / 10,
     categoryDist, sentimentDist, urgencyDist, topKeywords, scoreRanges,
-    categoryAvgScores, sentimentAvgScores,
+    categoryAvgScores, sentimentAvgScores, sourceDist,
     lowScoreFeedback: data.filter(d => d.score && d.score <= 30).sort((a, b) => (a.score || 0) - (b.score || 0)).slice(0, 10),
     highScoreFeedback: data.filter(d => d.score && d.score >= 70).sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 10),
   };
@@ -116,6 +120,7 @@ async function generateAIReport(stats) {
   const summary = {
     total: stats.total,
     avgScore: stats.avgScore,
+    sourceDist: stats.sourceDist,
     categoryDist: stats.categoryDist,
     sentimentDist: stats.sentimentDist,
     urgencyDist: stats.urgencyDist,
@@ -131,6 +136,7 @@ async function generateAIReport(stats) {
 ## 数据摘要
 
 - **样本总量**: ${summary.total} 份
+- **数据来源**: ${JSON.stringify(summary.sourceDist)}
 - **平均评分**: ${summary.avgScore}/100
 - **评分分布**: ${JSON.stringify(summary.scoreRanges)}
 - **分类分布**: ${JSON.stringify(summary.categoryDist)}
@@ -223,11 +229,12 @@ function generateFallbackReport(stats) {
   const report = {
     id: 1,
     projectId: 1,
-    title: '《街篮2》试玩反馈分析报告（AI 生成）',
+    title: '《街篮2》反馈分析报告（AI 生成 · 多渠道）',
     periodStart: '2024-06-01',
     periodEnd: new Date().toISOString().split('T')[0],
     totalFeedback: stats.total,
     avgScore: stats.avgScore,
+    sourceDistribution: stats.sourceDist,
     categoryDistribution: stats.categoryDist,
     sentimentDistribution: stats.sentimentDist,
     urgencyDistribution: stats.urgencyDist,
@@ -239,7 +246,7 @@ function generateFallbackReport(stats) {
     lowScoreFeedback: stats.lowScoreFeedback,
     highScoreFeedback: stats.highScoreFeedback,
     content: reportContent,
-    summary: `共 ${stats.total} 份反馈，平均分 ${stats.avgScore}，正面评价 ${Math.round((stats.sentimentDist.positive || 0) / stats.total * 100)}%，紧急问题 ${stats.urgentIssues} 个`,
+    summary: `共 ${stats.total} 份反馈（${Object.entries(stats.sourceDist || {}).map(([s, c]) => `${s} ${c}条`).join('、')}），平均分 ${stats.avgScore}，正面评价 ${Math.round((stats.sentimentDist.positive || 0) / stats.total * 100)}%，紧急问题 ${stats.urgentIssues} 个`,
     createdAt: new Date().toISOString(),
   };
 

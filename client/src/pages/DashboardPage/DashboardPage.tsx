@@ -9,6 +9,7 @@ interface ReportData {
   sentimentDistribution: Record<string, number>;
   categoryDistribution: Record<string, number>;
   urgencyDistribution: Record<string, number>;
+  sourceDistribution?: Record<string, number>;
   topKeywords: { word: string; count: number }[];
   categoryAvgScores: { category: string; avgScore: number; count: number }[];
   urgentIssues: number;
@@ -147,6 +148,33 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
         </motion.div>
+
+        {/* Source Distribution */}
+        {report.sourceDistribution && Object.keys(report.sourceDistribution).length > 0 && (
+          <motion.div variants={itemVariants}>
+            <Card className="bg-card border-border">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-base font-medium">数据来源分布</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {Object.entries(report.sourceDistribution).map(([source, count]) => {
+                    const label = source === 'questionnaire' ? '问卷反馈' : source === 'taptap' ? 'TapTap' : source === 'appstore' ? 'App Store' : source;
+                    const pct = Math.round(count / report.totalFeedback * 100);
+                    const icon = source === 'questionnaire' ? '📋' : source === 'taptap' ? '🎮' : source === 'appstore' ? '🍎' : '📊';
+                    return (
+                      <div key={source} className="p-4 rounded-lg bg-secondary/30 border border-border/50">
+                        <p className="text-2xl font-bold text-foreground">{icon} {count}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{label}</p>
+                        <p className="text-xs text-muted-foreground mt-0.5">{pct}%</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
 
         {/* Category Scores */}
         <motion.div variants={itemVariants}>
