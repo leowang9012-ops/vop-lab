@@ -9,7 +9,11 @@ import {
   Upload,
   TrendingUp,
   Calendar,
+  ChevronDown,
+  Gamepad2,
 } from "lucide-react";
+import { useState } from "react";
+import { useProject } from "@/contexts/ProjectContext";
 
 const navItems = [
   { label: "数据看板", path: "/", icon: LayoutDashboard },
@@ -23,6 +27,8 @@ const navItems = [
 
 export function Sidebar() {
   const location = useLocation();
+  const { projects, currentProject, selectProject } = useProject();
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const isActive = (path: string) => {
     if (path === "/") return location.pathname === "/";
@@ -45,6 +51,56 @@ export function Sidebar() {
           </p>
         </div>
       </div>
+
+      {/* Project Selector */}
+      {projects.length > 0 && (
+        <div className="px-3 py-3 border-b border-sidebar-border">
+          <div className="relative">
+            <button
+              onClick={() => setShowDropdown(!showDropdown)}
+              className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-secondary/50 hover:bg-secondary/80 transition-colors text-left"
+            >
+              <Gamepad2 className="w-4 h-4 text-sidebar-primary shrink-0" />
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-sidebar-foreground truncate">
+                  {currentProject?.name || "选择项目"}
+                </p>
+                <p className="text-[10px] text-muted-foreground truncate">
+                  {currentProject?.genre || ""}
+                </p>
+              </div>
+              <ChevronDown className={cn("w-3.5 h-3.5 text-muted-foreground transition-transform", showDropdown && "rotate-180")} />
+            </button>
+
+            {showDropdown && (
+              <>
+                <div className="fixed inset-0 z-40" onClick={() => setShowDropdown(false)} />
+                <div className="absolute top-full left-0 right-0 mt-1 bg-popover border border-border rounded-lg shadow-lg z-50 overflow-hidden">
+                  {projects.map(p => (
+                    <button
+                      key={p.id}
+                      onClick={() => { selectProject(p.id); setShowDropdown(false); }}
+                      className={cn(
+                        "w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-secondary/50 transition-colors",
+                        currentProject?.id === p.id && "bg-secondary/30"
+                      )}
+                    >
+                      <Gamepad2 className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+                      <div className="text-left">
+                        <p className="font-medium text-foreground">{p.name}</p>
+                        <p className="text-[10px] text-muted-foreground">{p.platform}</p>
+                      </div>
+                      {currentProject?.id === p.id && (
+                        <span className="ml-auto text-xs text-primary">●</span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Navigation */}
       <nav className="flex-1 px-3 py-4 space-y-1">

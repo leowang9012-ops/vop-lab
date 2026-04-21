@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquareWarning, TrendingUp, Frown, AlertTriangle } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useProject } from "@/contexts/ProjectContext";
 
 interface ReportData {
   totalFeedback: number;
@@ -38,6 +39,7 @@ const statsConfig = [
 export default function DashboardPage() {
   const [report, setReport] = useState<ReportData | null>(null);
   const [loading, setLoading] = useState(true);
+  const { currentProject } = useProject();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/report_latest.json`)
@@ -76,7 +78,9 @@ export default function DashboardPage() {
         <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-foreground">数据看板</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">实时监控玩家反馈动态</p>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              {currentProject ? `${currentProject.name} · 实时监控玩家反馈动态` : "实时监控玩家反馈动态"}
+            </p>
           </div>
         </div>
       </header>
