@@ -61,25 +61,87 @@ export default function ReportPage() {
     setExportError("");
     
     try {
-      // 动态加载 html2pdf.js（UMD 库，CDN 方式更可靠）
+      // 动态加载 html2pdf.js（优先国内 CDN）
       if (!(window as any).html2pdf) {
-        await new Promise<void>((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-          script.onload = () => resolve();
-          script.onerror = () => reject(new Error('加载 PDF 生成库失败'));
-          document.head.appendChild(script);
-        });
+        const cdnUrls = [
+          'https://cdn.bootcdn.net/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js',
+          'https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js',
+          'https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js',
+        ];
+        
+        let loaded = false;
+        let lastError = '';
+        for (const url of cdnUrls) {
+          try {
+            await new Promise<void>((resolve, reject) => {
+              const script = document.createElement('script');
+              script.src = url;
+              script.onload = () => resolve();
+              script.onerror = () => reject(new Error(`CDN ${url} 加载失败`));
+              document.head.appendChild(script);
+            });
+            loaded = true;
+            break;
+          } catch (e) {
+            lastError = e instanceof Error ? e.message : '未知错误';
+            continue;
+          }
+        }
+        
+        if (!loaded) {
+          // 所有 CDN 都失败，回退到打印方案
+          setExportError(`CDN 加载失败（${lastError}），已切换到打印模式`);
+          // 短暂延迟让用户看到提示，然后触发打印
+          await new Promise(r => setTimeout(r, 1500));
+          window.print();
+          setExporting(false);
+          return;
+        }
       }
       
-      const element = reportRef.current;
       const filename = `${report.title.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_')}.pdf`;
       
-      // 临时隐藏 header 和按钮，让 PDF 更干净
-      const header = document.querySelector('header');
-      const sidebar = document.querySelector('aside');
-      if (header) (header as HTMLElement).style.display = 'none';
-      if (sidebar) (sidebar as HTMLElement).style.display = 'none';
+      // 创建临时打印容器
+      const pdfContainer = document.createElement('div');
+      pdfContainer.style.cssText = `
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 210mm;
+        background: white;
+        color: #1a1a1a;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        padding: 15mm;
+        font-size: 11pt;
+        line-height: 1.6;
+        z-index: 10000;
+        overflow: auto;
+        max-height: 100vh;
+      `;
+      
+      // 构建报告 HTML
+      const contentHtml = report.content
+        .split('\n')
+        .map(line => {
+          if (line.startsWith('## ')) return `<h2 style="font-size:16pt;margin:16px 0 8px;border-bottom:2px solid #6c5ce7;padding-bottom:4px;">${line.slice(3)}</h2>`;
+          if (line.startsWith('### ')) return `<h3 style="font-size:13pt;margin:12px 0 6px;">${line.slice(4)}</h3>`;
+          if (line.startsWith('- ')) return `<li style="margin-left:20px;list-style:disc;">${line.slice(2)}</li>`;
+          if (line.startsWith('> ')) return `<blockquote style="border-left:4px solid #6c5ce7;padding:4px 12px;margin:8px 0;background:#f5f5f5;">${line.slice(2)}</blockquote>`;
+          if (line.startsWith('|')) return null; // skip table lines for simplicity
+          if (line.trim() === '') return '<br/>';
+          return `<p style="margin:4px 0;">${line}</p>`;
+        })
+        .filter(Boolean)
+        .join('');
+      
+      pdfContainer.innerHTML = `
+        <h1 style="font-size:22pt;color:#1a1a1a;margin-bottom:8px;">${report.title}</h1>
+        <p style="color:#666;font-size:10pt;margin-bottom:16px;">${report.summary}</p>
+        <hr style="border:none;border-top:2px solid #6c5ce7;margin:12px 0;"/>
+        ${contentHtml}
+      `;
+      
+      document.body.appendChild(pdfContainer);
       
       const opt = {
         margin: [10, 10, 10, 10],
@@ -89,25 +151,23 @@ export default function ReportPage() {
           scale: 2,
           useCORS: true,
           backgroundColor: '#ffffff',
-          letterRendering: true,
         },
         jsPDF: { 
           unit: 'mm', 
           format: 'a4', 
           orientation: 'portrait' 
         },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
       };
       
-      await (window as any).html2pdf().set(opt).from(element).save();
+      await (window as any).html2pdf().set(opt).from(pdfContainer).save();
       
-      // 恢复显示
-      if (header) (header as HTMLElement).style.display = '';
-      if (sidebar) (sidebar as HTMLElement).style.display = '';
+      document.body.removeChild(pdfContainer);
     } catch (err) {
       const msg = err instanceof Error ? err.message : '未知错误';
-      setExportError(`导出失败: ${msg}`);
+      setExportError(`导出失败: ${msg}，尝试打印模式...`);
       console.error('PDF 导出失败:', err);
+      // 回退到打印
+      setTimeout(() => window.print(), 1500);
     } finally {
       setExporting(false);
     }
