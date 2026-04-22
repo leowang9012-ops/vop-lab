@@ -15,10 +15,12 @@ export type FeedbackItem = {
   timestamp: string;
   keywords: string[];
   score: number;
+  source?: string;
 };
 
 export type FilterState = {
   search: string;
+  source: string;
   category: string;
   sentiment: string;
   urgency: string;
@@ -32,6 +34,7 @@ export default function FeedbackPage() {
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState<FilterState>({
     search: "",
+    source: "all",
     category: "all",
     sentiment: "all",
     urgency: "all",
@@ -57,6 +60,7 @@ export default function FeedbackPage() {
         const matchesKeywords = feedback.keywords.some(kw => kw.toLowerCase().includes(searchLower));
         if (!matchesContent && !matchesKeywords) return false;
       }
+      if (filters.source !== "all" && feedback.source !== filters.source) return false;
       if (filters.category !== "all" && feedback.category !== filters.category) return false;
       if (filters.sentiment !== "all" && feedback.sentiment !== filters.sentiment) return false;
       if (filters.urgency !== "all" && feedback.urgency !== filters.urgency) return false;
@@ -76,7 +80,7 @@ export default function FeedbackPage() {
   };
 
   const handleReset = () => {
-    setFilters({ search: "", category: "all", sentiment: "all", urgency: "all", dateRange: "all" });
+    setFilters({ search: "", source: "all", category: "all", sentiment: "all", urgency: "all", dateRange: "all" });
     setCurrentPage(1);
   };
 
@@ -105,7 +109,8 @@ export default function FeedbackPage() {
           filters={filters}
           onFilterChange={handleFilterChange}
           onReset={handleReset}
-          categories={[...new Set(feedbacks.map(f => f.category))]}
+          categories={[...new Set(feedbacks.map(f => f.category))].filter(Boolean)}
+          sources={[...new Set(feedbacks.map(f => f.source).filter(Boolean) as string[])]}
         />
 
         <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs md:text-sm">

@@ -16,11 +16,12 @@ interface FeedbackFiltersProps {
   onFilterChange: (filters: Partial<FilterState>) => void;
   onReset: () => void;
   categories?: string[];
+  sources?: string[];
 }
 
-export function FeedbackFilters({ filters, onFilterChange, onReset, categories = [] }: FeedbackFiltersProps) {
+export function FeedbackFilters({ filters, onFilterChange, onReset, categories = [], sources = [] }: FeedbackFiltersProps) {
   const [collapsed, setCollapsed] = useState(true);
-  const hasActiveFilters = filters.category !== "all" || filters.sentiment !== "all" || filters.urgency !== "all" || filters.search !== "";
+  const hasActiveFilters = filters.source !== "all" || filters.category !== "all" || filters.sentiment !== "all" || filters.urgency !== "all" || filters.search !== "";
 
   return (
     <div className="space-y-3">
@@ -55,6 +56,21 @@ export function FeedbackFilters({ filters, onFilterChange, onReset, categories =
 
       {/* Filter row - hidden on mobile unless expanded, always visible on desktop */}
       <div className={`flex flex-wrap items-center gap-3 md:flex ${collapsed ? 'hidden md:flex' : 'flex'}`}>
+        <Select
+          value={filters.source}
+          onValueChange={(value) => onFilterChange({ source: value })}
+        >
+          <SelectTrigger className="w-full md:w-[140px] bg-card border-border text-sm">
+            <SelectValue placeholder="渠道" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">全部渠道</SelectItem>
+            {sources.map(src => (
+              <SelectItem key={src} value={src}>{src}</SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+
         <Select
           value={filters.category}
           onValueChange={(value) => onFilterChange({ category: value })}
