@@ -35,12 +35,20 @@ cp data/taptap_reviews.json docs/data/taptap_reviews.json 2>/dev/null || true
 cp data/appstore_reviews.json docs/data/appstore_reviews.json 2>/dev/null || true
 cp data/projects.json docs/data/projects.json 2>/dev/null || true
 
-# Copy per-project data directories
+# Copy per-project data directories + merge star-rail TapTap data
 for dir in data/projects/*/; do
   name=$(basename "$dir")
   mkdir -p "docs/data/projects/$name"
   cp "$dir"*.json "docs/data/projects/$name/" 2>/dev/null || true
 done
+
+# Merge and regenerate star-rail report
+if [ -f scripts/merge-star-rail.js ]; then
+  echo "📊 Merging star-rail data..."
+  node scripts/merge-star-rail.js || echo "⚠️ Star-rail merge skipped"
+  node scripts/generate-star-rail-report.js || echo "⚠️ Star-rail report skipped"
+  cp data/projects/star-rail/*.json docs/data/projects/star-rail/ 2>/dev/null || true
+fi
 
 # Generate semantic clusters AFTER data copy
 echo "🔮 Running semantic clustering..."
