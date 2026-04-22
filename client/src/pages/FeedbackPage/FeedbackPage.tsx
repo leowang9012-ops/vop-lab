@@ -4,6 +4,7 @@ import { FeedbackTable } from "./components/feedback-table";
 import { Pagination } from "./components/pagination";
 import { ExportButton } from "./components/ExportButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useProject } from "@/contexts/ProjectContext";
 
 export type FeedbackItem = {
   id: string;
@@ -37,16 +38,15 @@ export default function FeedbackPage() {
     dateRange: "all",
   });
   const [currentPage, setCurrentPage] = useState(1);
+  const { currentDataDir } = useProject();
 
   useEffect(() => {
-    fetch(`\/vop-lab\/data\/feedback_processed.json`)
+    if (!currentDataDir) return;
+    fetch(`/vop-lab/data/projects/${currentDataDir}/feedback_processed.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
-      .then(data => {
-        setFeedbacks(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, []);
+      .then(data => { setFeedbacks(data); setLoading(false); })
+      .catch(() => { setFeedbacks([]); setLoading(false); });
+  }, [currentDataDir]);
 
   // 筛选反馈数据
   const filteredFeedbacks = useMemo(() => {

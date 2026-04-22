@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, TrendingDown, Minus, Calendar, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useProject } from "@/contexts/ProjectContext";
 
 interface TrendData {
   period1: PeriodData;
@@ -24,21 +25,15 @@ interface PeriodData {
 export default function TrendPage() {
   const [trendData, setTrendData] = useState<TrendData | null>(null);
   const [loading, setLoading] = useState(true);
+  const { currentDataDir } = useProject();
 
   useEffect(() => {
-    fetch(`\/vop-lab\/data\/trend_comparison.json`)
-      .then(res => {
-        if (!res.ok) throw new Error('Trend data not found');
-        return res.json();
-      })
-      .then(data => {
-        setTrendData(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setLoading(false);
-      });
-  }, []);
+    if (!currentDataDir) return;
+    fetch(`/vop-lab/data/projects/${currentDataDir}/trend_comparison.json`)
+      .then(res => { if (!res.ok) throw new Error('Trend data not found'); return res.json(); })
+      .then(data => { setTrendData(data); setLoading(false); })
+      .catch(() => { setTrendData(null); setLoading(false); });
+  }, [currentDataDir]);
 
   if (loading) {
     return (

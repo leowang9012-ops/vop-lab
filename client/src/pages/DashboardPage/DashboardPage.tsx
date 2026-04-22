@@ -39,15 +39,15 @@ const statsConfig = [
 export default function DashboardPage() {
   const [report, setReport] = useState<ReportData | null>(null);
   const [loading, setLoading] = useState(true);
-  const { currentProject } = useProject();
+  const { currentProject, currentDataDir } = useProject();
 
   useEffect(() => {
-    fetch(`/vop-lab/data/report_latest.json`)
+    if (!currentDataDir) return;
+    fetch(`/vop-lab/data/projects/${currentDataDir}/report_latest.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         const total = data.totalFeedback || 1;
         const negativeCount = data.sentimentDistribution?.negative || 0;
-        // 兼容 topKeywords 格式：可能是 string[] 或 {word, count}[]
         const topKeywords = Array.isArray(data.topKeywords)
           ? data.topKeywords.map((item: any) => typeof item === 'string' ? { word: item, count: 0 } : item)
           : [];
@@ -58,8 +58,8 @@ export default function DashboardPage() {
         });
         setLoading(false);
       })
-      .catch(() => setLoading(false));
-  }, []);
+      .catch(() => { setReport(null); setLoading(false); });
+  }, [currentDataDir]);
 
   if (loading) {
     return (

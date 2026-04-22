@@ -34,6 +34,7 @@ export default function ProjectsPage() {
 
   const handleCreate = () => {
     if (!form.name.trim()) return;
+    const slug = form.name.trim().toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]/g, "-").replace(/-+/g, "-");
     const newProject: Project = {
       id: `proj_${Date.now()}`,
       name: form.name.trim(),
@@ -41,9 +42,7 @@ export default function ProjectsPage() {
       genre: form.genre.trim() || "竞技",
       status: "active",
       createdAt: new Date().toLocaleDateString("zh-CN"),
-      dataFile: "",
-      reportFile: "",
-      trendFile: "",
+      dataDir: slug,
       description: form.description.trim(),
     };
     addProject(newProject);

@@ -7,10 +7,18 @@
       "genre": "体育竞技",
       "status": "active",
       "createdAt": "2026-04-15",
-      "dataFile": "feedback_processed.json",
-      "reportFile": "report_latest.json",
-      "trendFile": "trend_comparison.json",
+      "dataDir": "street-basketball-2",
       "description": "街头篮球2手游，多渠道玩家反馈分析"
+    },
+    {
+      "id": "star-rail",
+      "name": "星穹铁道",
+      "platform": "Android / iOS",
+      "genre": "回合制RPG",
+      "status": "active",
+      "createdAt": "2026-04-22",
+      "dataDir": "star-rail",
+      "description": "崩坏星穹铁道手游玩家反馈分析"
     }
   ]
 }

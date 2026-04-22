@@ -5,6 +5,7 @@ import { Download, Calendar, FileText, FileDown } from "lucide-react";
 import { format } from "date-fns";
 import { useEffect, useState, useRef, useCallback } from "react";
 import { ShareDialog } from "@/components/ShareDialog";
+import { useProject } from "@/contexts/ProjectContext";
 
 interface Report {
   id: number;
@@ -23,21 +24,15 @@ export default function ReportPage() {
   const [loading, setLoading] = useState(true);
   const [exporting, setExporting] = useState(false);
   const [exportError, setExportError] = useState<string>("");
+  const { currentDataDir } = useProject();
 
   useEffect(() => {
-    fetch(`\/vop-lab\/data\/report_latest.json`)
-      .then(res => {
-        if (!res.ok) throw new Error('Report not found');
-        return res.json();
-      })
-      .then(data => {
-        setReport(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setLoading(false);
-      });
-  }, []);
+    if (!currentDataDir) return;
+    fetch(`/vop-lab/data/projects/${currentDataDir}/report_latest.json`)
+      .then(res => { if (!res.ok) throw new Error('Report not found'); return res.json(); })
+      .then(data => { setReport(data); setLoading(false); })
+      .catch(() => { setReport(null); setLoading(false); });
+  }, [currentDataDir]);
 
   const reportRef = useRef<HTMLDivElement>(null);
 

@@ -7,9 +7,7 @@ export interface Project {
   genre: string;
   status: "active" | "archived";
   createdAt: string;
-  dataFile: string;
-  reportFile: string;
-  trendFile: string;
+  dataDir: string;
   description: string;
 }
 
@@ -19,6 +17,7 @@ interface ProjectContextType {
   selectProject: (id: string) => void;
   addProject: (project: Project) => void;
   loading: boolean;
+  currentDataDir: string;
 }
 
 const ProjectContext = createContext<ProjectContextType | null>(null);
@@ -32,10 +31,9 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
     fetch(`/vop-lab/data/projects.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
-        const list = data.projects || [];
+        const list: Project[] = data.projects || [];
         setProjects(list);
 
-        // Restore selected project from localStorage
         const savedId = localStorage.getItem("vop-lab-current-project");
         const saved = list.find((p: Project) => p.id === savedId);
         if (saved) {
@@ -59,16 +57,22 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
   };
 
   const addProject = (project: Project) => {
-    // For static site, we can't persist to server
-    // Add to local state and localStorage
     const updated = [...projects, project];
     setProjects(updated);
-    // Store in localStorage as fallback
     localStorage.setItem("vop-lab-projects", JSON.stringify(updated));
   };
 
   return (
-    <ProjectContext.Provider value={{ projects, currentProject, selectProject, addProject, loading }}>
+    <ProjectContext.Provider
+      value={{
+        projects,
+        currentProject,
+        selectProject,
+        addProject,
+        loading,
+        currentDataDir: currentProject?.dataDir || "",
+      }}
+    >
       {children}
     </ProjectContext.Provider>
   );
