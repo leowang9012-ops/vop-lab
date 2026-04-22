@@ -196,41 +196,34 @@ export default function ReportPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border relative">
-        <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-xl font-bold text-foreground">分析报告</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">AI 生成的玩家反馈分析报告</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <Badge variant="outline" className="text-xs">
-              {report.totalFeedback} 份样本
-            </Badge>
-            <ShareDialog
-              reportTitle={report.title}
-              totalFeedback={report.totalFeedback}
-              avgScore={report.avgScore}
-              positiveRate={0}
-              summary={report.summary}
-            />
-            <Button
-              onClick={handleDownload}
-              variant="outline"
-              className="gap-2"
-            >
-              <Download className="w-4 h-4" />
-              下载 Markdown
-            </Button>
-            <Button
-              onClick={handleExportPDF}
-              disabled={exporting}
-              className="bg-primary hover:bg-primary/90 gap-2"
-            >
-              <FileDown className="w-4 h-4" />
-              {exporting ? '导出中...' : '导出 PDF'}
-            </Button>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <h1 className="text-lg md:text-xl font-bold text-foreground">分析报告</h1>
+              <p className="text-xs md:text-sm text-muted-foreground mt-0.5">AI 生成的玩家反馈分析报告</p>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <ShareDialog
+                reportTitle={report.title}
+                totalFeedback={report.totalFeedback}
+                avgScore={report.avgScore}
+                positiveRate={0}
+                summary={report.summary}
+              />
+              <Button
+                onClick={handleExportPDF}
+                disabled={exporting}
+                size="sm"
+                className="bg-primary hover:bg-primary/90 gap-1.5 text-xs md:text-sm"
+              >
+                <FileDown className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                <span className="hidden sm:inline">{exporting ? '导出中...' : '导出 PDF'}</span>
+                <span className="sm:hidden">PDF</span>
+              </Button>
+            </div>
           </div>
           {exportError && (
-            <div className="absolute top-20 right-8 z-50 px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-lg text-sm text-destructive">
+            <div className="absolute top-16 right-4 md:top-20 md:right-8 z-50 px-3 md:px-4 py-2 bg-destructive/10 border border-destructive/20 rounded-lg text-xs md:text-sm text-destructive">
               {exportError}
             </div>
           )}
@@ -238,7 +231,7 @@ export default function ReportPage() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-8 py-6">
+      <main className="max-w-[1200px] mx-auto px-4 md:px-8 py-4 md:py-6">
         <Card className="bg-card border-border" ref={reportRef}>
           <CardHeader className="border-b border-border">
             <div className="flex items-start justify-between">

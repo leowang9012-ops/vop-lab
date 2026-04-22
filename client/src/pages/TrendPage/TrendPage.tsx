@@ -62,16 +62,16 @@ export default function TrendPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4">
-          <h1 className="text-xl font-bold text-foreground">趋势对比</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">不同时间段反馈数据对比分析</p>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4">
+          <h1 className="text-lg md:text-xl font-bold text-foreground">趋势对比</h1>
+          <p className="text-xs md:text-sm text-muted-foreground mt-0.5">不同时间段反馈数据对比分析</p>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1600px] mx-auto px-8 py-6 space-y-6">
+      <main className="max-w-[1600px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6">
         {/* Period Selector */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <Card className="bg-card border-border">
             <CardHeader className="pb-3">
               <CardTitle className="text-base flex items-center gap-2">
@@ -81,7 +81,7 @@ export default function TrendPage() {
               <CardDescription>{period1.dateRange}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-2 md:gap-3">
                 <MetricCard label="反馈数" value={period1.totalFeedback} />
                 <MetricCard label="平均分" value={period1.avgScore} />
                 <MetricCard label="正面率" value={`${period1.positiveRate}%`} />
@@ -98,7 +98,7 @@ export default function TrendPage() {
               <CardDescription>{period2.dateRange}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-2 md:gap-3">
                 <MetricCard label="反馈数" value={period2.totalFeedback} />
                 <MetricCard label="平均分" value={period2.avgScore} />
                 <MetricCard label="正面率" value={`${period2.positiveRate}%`} />
@@ -114,7 +114,7 @@ export default function TrendPage() {
             <CardDescription>核心指标对比</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
               <ChangeCard
                 label="反馈量"
                 before={period1.totalFeedback}
@@ -146,7 +146,7 @@ export default function TrendPage() {
         </Card>
 
         {/* Category Distribution */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
           <Card className="bg-card border-border">
             <CardHeader>
               <CardTitle className="text-base">问题分类对比</CardTitle>
@@ -225,7 +225,7 @@ export default function TrendPage() {
             <CardDescription>两个时间段被提及最多的关键词</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div>
                 <h4 className="text-sm font-medium text-muted-foreground mb-3">{period1.label}</h4>
                 <div className="flex flex-wrap gap-2">

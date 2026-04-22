@@ -256,31 +256,34 @@ export default function WeeklyReportPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-xl font-bold text-foreground">周报生成</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">自动生成玩家反馈周报</p>
-          </div>
-          {report && (
-            <div className="flex items-center gap-3">
-              <ShareDialog
-                reportTitle={`${rangeLabel}玩家反馈周报`}
-                totalFeedback={report.totalFeedback}
-                avgScore={report.avgScore}
-                positiveRate={report.positiveRate}
-                summary={`本周共收到${report.totalFeedback}条玩家反馈，平均评分${report.avgScore}，正面率${report.positiveRate}%`}
-              />
-              <Button onClick={handleExportPDF} className="bg-primary hover:bg-primary/90 gap-2">
-                <FileDown className="w-4 h-4" />
-                导出周报 PDF
-              </Button>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <h1 className="text-lg md:text-xl font-bold text-foreground">周报生成</h1>
+              <p className="text-xs md:text-sm text-muted-foreground mt-0.5">自动生成玩家反馈周报</p>
             </div>
-          )}
+            {report && (
+              <div className="flex items-center gap-2 shrink-0">
+                <ShareDialog
+                  reportTitle={`${rangeLabel}玩家反馈周报`}
+                  totalFeedback={report.totalFeedback}
+                  avgScore={report.avgScore}
+                  positiveRate={report.positiveRate}
+                  summary={`本周共收到${report.totalFeedback}条玩家反馈，平均评分${report.avgScore}，正面率${report.positiveRate}%`}
+                />
+                <Button onClick={handleExportPDF} size="sm" className="bg-primary hover:bg-primary/90 gap-1.5 text-xs md:text-sm">
+                  <FileDown className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                  <span className="hidden sm:inline">导出周报 PDF</span>
+                  <span className="sm:hidden">PDF</span>
+                </Button>
+              </div>
+            )}
+          </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-8 py-6 space-y-6">
+      <main className="max-w-[1200px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6">
         {/* Controls */}
         <Card className="bg-card border-border">
           <CardHeader>
@@ -288,7 +291,7 @@ export default function WeeklyReportPage() {
             <CardDescription>选择时间范围后生成周报</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3">
               <div className="flex gap-2">
                 {([["week", "本周"], ["twoweeks", "近两周"], ["month", "本月"]] as const).map(([key, label]) => (
                   <Button
@@ -318,35 +321,35 @@ export default function WeeklyReportPage() {
         {report && (
           <div ref={reportRef}>
             {/* Summary Cards */}
-            <div className="grid grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 mb-4 md:mb-6">
               <Card className="bg-card border-border">
                 <CardContent className="pt-6">
-                  <div className="text-3xl font-bold text-foreground">{report.totalFeedback}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-foreground">{report.totalFeedback}</div>
                   <p className="text-sm text-muted-foreground mt-1">反馈总数</p>
                 </CardContent>
               </Card>
               <Card className="bg-card border-border">
                 <CardContent className="pt-6">
-                  <div className="text-3xl font-bold text-foreground">{report.avgScore}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-foreground">{report.avgScore}</div>
                   <p className="text-sm text-muted-foreground mt-1">平均评分</p>
                 </CardContent>
               </Card>
               <Card className="bg-card border-border">
                 <CardContent className="pt-6">
-                  <div className="text-3xl font-bold text-success">{report.positiveRate}%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-success">{report.positiveRate}%</div>
                   <p className="text-sm text-muted-foreground mt-1">正面率</p>
                 </CardContent>
               </Card>
               <Card className="bg-card border-border">
                 <CardContent className="pt-6">
-                  <div className="text-3xl font-bold text-destructive">{report.negativeRate}%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-destructive">{report.negativeRate}%</div>
                   <p className="text-sm text-muted-foreground mt-1">负面率</p>
                 </CardContent>
               </Card>
             </div>
 
             {/* Category & Keywords */}
-            <div className="grid grid-cols-2 gap-6 mb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
               <Card className="bg-card border-border">
                 <CardHeader>
                   <CardTitle className="text-base">问题分类分布</CardTitle>

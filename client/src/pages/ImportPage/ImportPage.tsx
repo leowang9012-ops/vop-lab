@@ -154,24 +154,26 @@ export default function ImportPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold text-foreground">数据导入</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">上传 Excel/CSV 文件导入玩家反馈数据</p>
+            <h1 className="text-lg md:text-xl font-bold text-foreground">数据导入</h1>
+            <p className="text-xs md:text-sm text-muted-foreground mt-0.5">上传 Excel/CSV 文件导入玩家反馈数据</p>
           </div>
           <Button
             onClick={handleDownloadTemplate}
             variant="outline"
-            className="gap-2"
+            size="sm"
+            className="gap-2 text-xs md:text-sm"
           >
-            <Download className="w-4 h-4" />
-            下载模板
+            <Download className="w-3.5 h-3.5 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">下载模板</span>
+            <span className="sm:hidden">模板</span>
           </Button>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1200px] mx-auto px-8 py-6 space-y-6">
+      <main className="max-w-[1200px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6">
         {/* Upload Area */}
         <Card className="bg-card border-border">
           <CardHeader>
@@ -234,17 +236,17 @@ export default function ImportPage() {
                 <CardTitle className="text-base font-medium">导入结果</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-3 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mb-4 md:mb-6">
                   <div className="p-4 rounded-lg bg-secondary/30 border border-border/50">
-                    <p className="text-2xl font-bold text-foreground">{result.totalRows}</p>
+                    <p className="text-xl md:text-2xl font-bold text-foreground">{result.totalRows}</p>
                     <p className="text-sm text-muted-foreground">总行数</p>
                   </div>
                   <div className="p-4 rounded-lg bg-success/10 border border-success/20">
-                    <p className="text-2xl font-bold text-success">{result.validRows}</p>
+                    <p className="text-xl md:text-2xl font-bold text-success">{result.validRows}</p>
                     <p className="text-sm text-muted-foreground">有效数据</p>
                   </div>
                   <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20">
-                    <p className="text-2xl font-bold text-destructive">{result.invalidRows}</p>
+                    <p className="text-xl md:text-2xl font-bold text-destructive">{result.invalidRows}</p>
                     <p className="text-sm text-muted-foreground">无效数据</p>
                   </div>
                 </div>
@@ -336,7 +338,7 @@ export default function ImportPage() {
             <div className="space-y-4 text-sm">
               <div>
                 <h4 className="font-medium text-foreground mb-2">必填字段</h4>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="p-3 rounded-lg bg-secondary/30 border border-border/50">
                     <p className="font-mono text-xs text-primary">content</p>
                     <p className="text-muted-foreground mt-1">反馈内容（必填）</p>
@@ -349,7 +351,7 @@ export default function ImportPage() {
               </div>
               <div>
                 <h4 className="font-medium text-foreground mb-2">可选字段</h4>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div className="p-3 rounded-lg bg-secondary/30 border border-border/50">
                     <p className="font-mono text-xs text-muted-foreground">category</p>
                     <p className="text-muted-foreground mt-1">分类</p>

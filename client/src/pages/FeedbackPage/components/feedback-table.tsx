@@ -29,7 +29,8 @@ interface FeedbackTableProps {
 
 export function FeedbackTable({ feedbacks }: FeedbackTableProps) {
   return (
-    <Table>
+    <div className="overflow-x-auto">
+    <Table className="min-w-[640px]">
       <TableHeader>
         <TableRow className="border-border hover:bg-transparent">
           <TableHead className="text-muted-foreground font-medium">反馈内容</TableHead>
@@ -87,5 +88,6 @@ export function FeedbackTable({ feedbacks }: FeedbackTableProps) {
         )}
       </TableBody>
     </Table>
+    </div>
   );
 }

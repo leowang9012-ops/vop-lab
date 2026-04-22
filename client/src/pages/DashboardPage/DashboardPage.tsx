@@ -75,10 +75,10 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold text-foreground">数据看板</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">
+            <h1 className="text-lg md:text-xl font-bold text-foreground">数据看板</h1>
+            <p className="text-xs md:text-sm text-muted-foreground mt-0.5">
               {currentProject ? `${currentProject.name} · 实时监控玩家反馈动态` : "实时监控玩家反馈动态"}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function DashboardPage() {
       </header>
 
       <motion.main
-        className="max-w-[1600px] mx-auto px-8 py-6 space-y-6"
+        className="max-w-[1600px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -112,14 +112,14 @@ export default function DashboardPage() {
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 >
                   <Card className="bg-card border-border h-full">
-                    <CardContent className="p-5">
-                      <div className="flex items-center gap-4">
-                        <div className={`w-11 h-11 rounded-lg ${stat.bgColor} flex items-center justify-center`}>
-                          <Icon className={`w-5 h-5 ${stat.color}`} />
+                    <CardContent className="p-3 md:p-5">
+                      <div className="flex items-center gap-2 md:gap-4">
+                        <div className={`w-9 h-9 md:w-11 md:h-11 rounded-lg ${stat.bgColor} flex items-center justify-center`}>
+                          <Icon className={`w-4 h-4 md:w-5 md:h-5 ${stat.color}`} />
                         </div>
                         <div>
-                          <p className="text-2xl font-bold text-foreground">{stat.format(value)}</p>
-                          <p className="text-sm text-muted-foreground">{stat.label}</p>
+                          <p className="text-lg md:text-2xl font-bold text-foreground">{stat.format(value)}</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">{stat.label}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -141,10 +141,10 @@ export default function DashboardPage() {
                 {Object.entries(report.categoryDistribution).map(([cat, count]) => {
                   const pct = Math.round(count / report.totalFeedback * 100);
                   return (
-                    <div key={cat} className="p-4 rounded-lg bg-secondary/30 border border-border/50">
-                      <p className="text-2xl font-bold text-foreground">{count}</p>
-                      <p className="text-sm text-muted-foreground mt-1">{cat}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{pct}%</p>
+                    <div key={cat} className="p-3 md:p-4 rounded-lg bg-secondary/30 border border-border/50">
+                      <p className="text-xl md:text-2xl font-bold text-foreground">{count}</p>
+                      <p className="text-xs md:text-sm text-muted-foreground mt-1">{cat}</p>
+                      <p className="text-[10px] md:text-xs text-muted-foreground mt-0.5">{pct}%</p>
                     </div>
                   );
                 })}
@@ -167,10 +167,10 @@ export default function DashboardPage() {
                     const pct = Math.round(count / report.totalFeedback * 100);
                     const icon = source === 'questionnaire' ? '📋' : source === 'taptap' ? '🎮' : source === 'appstore' ? '🍎' : '📊';
                     return (
-                      <div key={source} className="p-4 rounded-lg bg-secondary/30 border border-border/50">
-                        <p className="text-2xl font-bold text-foreground">{icon} {count}</p>
-                        <p className="text-sm text-muted-foreground mt-1">{label}</p>
-                        <p className="text-xs text-muted-foreground mt-0.5">{pct}%</p>
+                      <div key={source} className="p-3 md:p-4 rounded-lg bg-secondary/30 border border-border/50">
+                        <p className="text-lg md:text-2xl font-bold text-foreground">{icon} {count}</p>
+                        <p className="text-xs md:text-sm text-muted-foreground mt-1">{label}</p>
+                        <p className="text-[10px] md:text-xs text-muted-foreground mt-0.5">{pct}%</p>
                       </div>
                     );
                   })}
@@ -194,13 +194,13 @@ export default function DashboardPage() {
                     const pct = Math.round(avgScore / 100 * 100);
                     const color = avgScore >= 55 ? "bg-success" : avgScore >= 45 ? "bg-warning" : "bg-destructive";
                     return (
-                      <div key={category} className="flex items-center gap-4">
-                        <span className="text-sm text-foreground w-24 truncate">{category}</span>
+                      <div key={category} className="flex items-center gap-2 md:gap-4">
+                        <span className="text-xs md:text-sm text-foreground w-16 md:w-24 truncate">{category}</span>
                         <div className="flex-1 h-3 bg-secondary rounded-full overflow-hidden">
                           <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
                         </div>
-                        <span className="text-sm font-semibold text-foreground w-16 text-right">{avgScore.toFixed(1)}</span>
-                        <span className="text-xs text-muted-foreground w-12 text-right">({count}条)</span>
+                        <span className="text-xs md:text-sm font-semibold text-foreground w-12 md:w-16 text-right">{avgScore.toFixed(1)}</span>
+                        <span className="text-[10px] md:text-xs text-muted-foreground w-10 md:w-12 text-right">({count}条)</span>
                       </div>
                     );
                   })}
@@ -210,7 +210,7 @@ export default function DashboardPage() {
         </motion.div>
 
         {/* Keywords & Sentiment */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
           <motion.div variants={itemVariants}>
             <Card className="bg-card border-border h-full">
               <CardHeader className="pb-2">

@@ -18,16 +18,16 @@ export default function ProjectsPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4 flex items-center justify-between">
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold text-foreground">项目管理</h1>
-            <p className="text-sm text-muted-foreground mt-0.5">管理游戏项目及其反馈数据</p>
+            <h1 className="text-lg md:text-xl font-bold text-foreground">项目管理</h1>
+            <p className="text-xs md:text-sm text-muted-foreground mt-0.5">管理游戏项目及其反馈数据</p>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="max-w-[1600px] mx-auto px-8 py-6 space-y-6">
+      <main className="max-w-[1600px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6">
         {/* Current Project */}
         {currentProject && (
           <Card className="bg-card border-primary/30 border-2">

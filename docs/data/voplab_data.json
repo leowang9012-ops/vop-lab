@@ -1,0 +1,931 @@
+{
+  "projects": [
+    {
+      "id": "proj_jielan2",
+      "name": "街篮2",
+      "description": "《街篮2》试玩反馈 - 700份有效样本（三批次）",
+      "platforms": [
+        "Android"
+      ],
+      "status": "active",
+      "totalFeedback": 700,
+      "weeklyNew": 700,
+      "negativeRate": 14.3,
+      "urgentCount": 32,
+      "updatedAt": "2024-06-15T10:00:00Z",
+      "createdAt": "2024-06-01T10:00:00Z"
+    }
+  ],
+  "categoryData": [
+    {
+      "name": "性能/网络",
+      "value": 22,
+      "count": 154
+    },
+    {
+      "name": "操作手感",
+      "value": 20,
+      "count": 140
+    },
+    {
+      "name": "UI/UX",
+      "value": 16,
+      "count": 112
+    },
+    {
+      "name": "职业平衡",
+      "value": 14,
+      "count": 98
+    },
+    {
+      "name": "美术表现",
+      "value": 15,
+      "count": 105
+    },
+    {
+      "name": "音频体验",
+      "value": 13,
+      "count": 91
+    }
+  ],
+  "sentimentTrend": [
+    {
+      "day": "Day 1",
+      "positive": 28.6,
+      "neutral": 50.0,
+      "negative": 21.4
+    },
+    {
+      "day": "Day 2",
+      "positive": 30.2,
+      "neutral": 48.6,
+      "negative": 21.2
+    },
+    {
+      "day": "Day 3",
+      "positive": 26.8,
+      "neutral": 52.4,
+      "negative": 20.8
+    },
+    {
+      "day": "Day 4",
+      "positive": 32.1,
+      "neutral": 47.6,
+      "negative": 20.3
+    },
+    {
+      "day": "Day 5",
+      "positive": 29.8,
+      "neutral": 49.2,
+      "negative": 21.0
+    },
+    {
+      "day": "Day 6",
+      "positive": 31.5,
+      "neutral": 48.1,
+      "negative": 20.4
+    },
+    {
+      "day": "Day 7",
+      "positive": 30.0,
+      "neutral": 49.0,
+      "negative": 21.0
+    }
+  ],
+  "keywords": [
+    {
+      "name": "网络延迟",
+      "count": 330
+    },
+    {
+      "name": "感觉没法玩了",
+      "count": 114
+    },
+    {
+      "name": "盖帽体验",
+      "count": 89
+    },
+    {
+      "name": "技能数量",
+      "count": 82
+    },
+    {
+      "name": "抢篮板",
+      "count": 67
+    },
+    {
+      "name": "投篮动作",
+      "count": 62
+    },
+    {
+      "name": "操作无反馈",
+      "count": 86
+    },
+    {
+      "name": "职业平衡",
+      "count": 89
+    },
+    {
+      "name": "身后盖帽",
+      "count": 58
+    },
+    {
+      "name": "爆发技",
+      "count": 67
+    },
+    {
+      "name": "天赋树",
+      "count": 54
+    },
+    {
+      "name": "贴身上篮",
+      "count": 48
+    },
+    {
+      "name": "技能理解",
+      "count": 43
+    },
+    {
+      "name": "突破投篮",
+      "count": 42
+    },
+    {
+      "name": "匹配时间",
+      "count": 42
+    },
+    {
+      "name": "花式技能",
+      "count": 38
+    },
+    {
+      "name": "晃倒表现",
+      "count": 35
+    },
+    {
+      "name": "C/PF定位",
+      "count": 32
+    },
+    {
+      "name": "动态篮网",
+      "count": 28
+    },
+    {
+      "name": "特写镜头",
+      "count": 25
+    }
+  ],
+  "feedbackList": [
+    {
+      "id": "fb_1",
+      "content": "设备:模拟器 | mix3 | 延迟:比较难受 | 整体:1.0 战斗:1.0 美术:1.0",
+      "category": "performance",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-01T10:00:00Z",
+      "score": 20.0
+    },
+    {
+      "id": "fb_2",
+      "content": "设备:模拟器 | 啊啊 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:1.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-02T11:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_3",
+      "content": "设备:模拟器 | 三星 | 延迟:还能接受 | 整体:4.0 战斗:4.0 美术:2.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "还能接受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-03T12:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_4",
+      "content": "设备:安卓手机 | 华为荣耀 | 延迟:比较难受 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-04T13:00:00Z",
+      "score": 51.0
+    },
+    {
+      "id": "fb_5",
+      "content": "设备:模拟器 | 1.0 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:3.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-05T14:00:00Z",
+      "score": 53.0
+    },
+    {
+      "id": "fb_6",
+      "content": "设备:安卓手机 | 小米 | 延迟:感觉没法玩了 | 整体:3.0 战斗:3.0 美术:1.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-06T15:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_7",
+      "content": "设备:凤凰系统 | 华为 | 延迟:感觉没法玩了 | 整体:4.0 战斗:3.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "感觉没法玩了",
+        "凤凰系统"
+      ],
+      "timestamp": "2024-06-07T16:00:00Z",
+      "score": 48.0
+    },
+    {
+      "id": "fb_8",
+      "content": "设备:安卓手机 | 小米9 | 整体:3.0 战斗:3.0 美术:2.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "还能接受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-08T17:00:00Z",
+      "score": 40.0
+    },
+    {
+      "id": "fb_9",
+      "content": "设备:安卓手机 | 小米 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-09T18:00:00Z",
+      "score": 60.0
+    },
+    {
+      "id": "fb_10",
+      "content": "设备:安卓手机 | 华为 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-10T19:00:00Z",
+      "score": 45.0
+    },
+    {
+      "id": "fb_11",
+      "content": "设备:安卓手机 | 一加 | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-11T20:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_12",
+      "content": "设备:安卓手机 | vivo | 整体:5.0 战斗:4.0 美术:5.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-12T21:00:00Z",
+      "score": 68.0
+    },
+    {
+      "id": "fb_13",
+      "content": "设备:安卓手机 | OPPO | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:3.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-13T10:00:00Z",
+      "score": 46.0
+    },
+    {
+      "id": "fb_14",
+      "content": "设备:安卓手机 | 华为 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-14T11:00:00Z",
+      "score": 51.0
+    },
+    {
+      "id": "fb_15",
+      "content": "设备:安卓手机 | 魅族 | 延迟:比较难受 | 整体:3.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-15T12:00:00Z",
+      "score": 60.0
+    },
+    {
+      "id": "fb_16",
+      "content": "设备:安卓手机 | vivo | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "没遇到过网络波动",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-16T13:00:00Z",
+      "score": 63.0
+    },
+    {
+      "id": "fb_17",
+      "content": "设备:安卓手机 | 华为 | 延迟:比较难受 | 整体:4.0 战斗:3.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-17T14:00:00Z",
+      "score": 52.0
+    },
+    {
+      "id": "fb_18",
+      "content": "设备:安卓手机 | 一加 | 整体:4.0 战斗:4.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-18T15:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_19",
+      "content": "设备:安卓手机 | VIVO | 延迟:比较难受 | 整体:3.0 战斗:1.0 美术:3.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-19T16:00:00Z",
+      "score": 37.0
+    },
+    {
+      "id": "fb_20",
+      "content": "设备:安卓手机 | vivo | 延迟:比较难受 | 整体:3.0 战斗:3.0 美术:4.0",
+      "category": "performance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "安卓手机"
+      ],
+      "timestamp": "2024-06-20T17:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_b2_1",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:4.0 总分:54.0",
+      "category": "balance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-01T14:00:00Z",
+      "score": 54.0
+    },
+    {
+      "id": "fb_b2_2",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:3.0 总分:58.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-02T15:00:00Z",
+      "score": 58.0
+    },
+    {
+      "id": "fb_b2_3",
+      "content": "职业:中锋（C） | 延迟:感觉没法玩了 | 职业平衡:4.0 天赋树:5.0 总分:61.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-03T16:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_b2_4",
+      "content": "职业:大前锋（PF） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:5.0 总分:65.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "大前锋（PF）"
+      ],
+      "timestamp": "2024-06-04T17:00:00Z",
+      "score": 65.0
+    },
+    {
+      "id": "fb_b2_5",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:2.0 天赋树:3.0 总分:54.0",
+      "category": "balance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-05T18:00:00Z",
+      "score": 54.0
+    },
+    {
+      "id": "fb_b2_6",
+      "content": "职业:中锋（C） | 延迟:感觉没法玩了 | 职业平衡:4.0 天赋树:5.0 总分:61.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-06T19:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_b2_7",
+      "content": "职业:中锋（C） | 延迟:感觉没法玩了 | 职业平衡:4.0 天赋树:4.0 总分:56.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-07T20:00:00Z",
+      "score": 56.0
+    },
+    {
+      "id": "fb_b2_8",
+      "content": "职业:小前锋（SF） | 延迟:比较难受 | 职业平衡:3.0 天赋树:5.0 总分:57.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "比较难受",
+        "小前锋（SF）"
+      ],
+      "timestamp": "2024-06-08T21:00:00Z",
+      "score": 57.0
+    },
+    {
+      "id": "fb_b2_9",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:5.0 总分:59.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-09T14:00:00Z",
+      "score": 59.0
+    },
+    {
+      "id": "fb_b2_10",
+      "content": "职业:中锋（C） | 延迟:感觉没法玩了 | 职业平衡:5.0 天赋树:1.0 总分:35.0",
+      "category": "balance",
+      "sentiment": "negative",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-10T15:00:00Z",
+      "score": 35.0
+    },
+    {
+      "id": "fb_b2_11",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:3.0 总分:49.0",
+      "category": "balance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-11T16:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_b2_12",
+      "content": "职业:控球后卫（PG） | 延迟:比较难受 | 职业平衡:3.0 天赋树:4.0 总分:52.0",
+      "category": "balance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "比较难受",
+        "控球后卫（PG）"
+      ],
+      "timestamp": "2024-06-12T17:00:00Z",
+      "score": 52.0
+    },
+    {
+      "id": "fb_b2_13",
+      "content": "职业:中锋（C） | 延迟:没遇到网络波动 | 职业平衡:3.0 天赋树:4.0 总分:70.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "没遇到网络波动",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-13T18:00:00Z",
+      "score": 70.0
+    },
+    {
+      "id": "fb_b2_14",
+      "content": "职业:得分后卫（SG） | 延迟:感觉没法玩了 | 职业平衡:4.0 天赋树:4.0 总分:64.0",
+      "category": "balance",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "感觉没法玩了",
+        "得分后卫（SG）"
+      ],
+      "timestamp": "2024-06-14T19:00:00Z",
+      "score": 64.0
+    },
+    {
+      "id": "fb_b2_15",
+      "content": "职业:中锋（C） | 延迟:感觉没法玩了 | 职业平衡:3.0 天赋树:3.0 总分:49.0",
+      "category": "balance",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "感觉没法玩了",
+        "中锋（C）"
+      ],
+      "timestamp": "2024-06-15T20:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_b3_1",
+      "content": "技能数量:一般 | 技能理解:不能理解 | 盖帽:2.0 投篮:3.0 抢篮板:4.0 总分:53.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能一般",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-01T16:00:00Z",
+      "score": 53.0
+    },
+    {
+      "id": "fb_b3_2",
+      "content": "技能数量:完全足够 | 技能理解:不能理解 | 盖帽:2.0 投篮:5.0 抢篮板:4.0 总分:74.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-02T17:00:00Z",
+      "score": 74.0
+    },
+    {
+      "id": "fb_b3_3",
+      "content": "技能数量:完全足够 | 技能理解:一般 | 盖帽:3.0 投篮:3.0 抢篮板:3.0 总分:56.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-03T18:00:00Z",
+      "score": 56.0
+    },
+    {
+      "id": "fb_b3_4",
+      "content": "技能数量:完全足够 | 技能理解:一般 | 盖帽:3.0 投篮:5.0 抢篮板:5.0 总分:84.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-04T19:00:00Z",
+      "score": 84.0
+    },
+    {
+      "id": "fb_b3_5",
+      "content": "技能数量:一般 | 技能理解:一般 | 盖帽:1.0 投篮:1.0 抢篮板:2.0 总分:49.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能一般",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-05T20:00:00Z",
+      "score": 49.0
+    },
+    {
+      "id": "fb_b3_6",
+      "content": "技能数量:完全足够 | 技能理解:一般 | 盖帽:5.0 投篮:3.0 抢篮板:4.0 总分:84.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-06T21:00:00Z",
+      "score": 84.0
+    },
+    {
+      "id": "fb_b3_7",
+      "content": "技能数量:完全足够 | 技能理解:一般 | 盖帽:4.0 投篮:2.0 抢篮板:2.0 总分:53.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-07T16:00:00Z",
+      "score": 53.0
+    },
+    {
+      "id": "fb_b3_8",
+      "content": "技能数量:根本不够 | 技能理解:一般 | 盖帽:1.0 投篮:1.0 抢篮板:3.0 总分:45.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能根本不够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-08T17:00:00Z",
+      "score": 45.0
+    },
+    {
+      "id": "fb_b3_9",
+      "content": "技能数量:不够 | 技能理解:一般 | 盖帽:2.0 投篮:4.0 抢篮板:3.0 总分:72.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能不够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-09T18:00:00Z",
+      "score": 72.0
+    },
+    {
+      "id": "fb_b3_10",
+      "content": "技能数量:根本不够 | 技能理解:一般 | 盖帽:3.0 投篮:3.0 抢篮板:2.0 总分:59.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能根本不够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-10T19:00:00Z",
+      "score": 59.0
+    },
+    {
+      "id": "fb_b3_11",
+      "content": "技能数量:完全足够 | 技能理解:不能理解 | 盖帽:5.0 投篮:5.0 抢篮板:5.0 总分:75.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能完全足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-11T20:00:00Z",
+      "score": 75.0
+    },
+    {
+      "id": "fb_b3_12",
+      "content": "技能数量:足够 | 技能理解:不能理解 | 盖帽:3.0 投篮:2.0 抢篮板:4.0 总分:61.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-12T21:00:00Z",
+      "score": 61.0
+    },
+    {
+      "id": "fb_b3_13",
+      "content": "技能数量:一般 | 技能理解:一般 | 盖帽:2.0 投篮:2.0 抢篮板:2.0 总分:56.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能一般",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-13T16:00:00Z",
+      "score": 56.0
+    },
+    {
+      "id": "fb_b3_14",
+      "content": "技能数量:根本不够 | 技能理解:一般 | 盖帽:2.0 投篮:3.0 抢篮板:3.0 总分:52.0",
+      "category": "ui",
+      "sentiment": "neutral",
+      "urgency": "medium",
+      "keywords": [
+        "技能根本不够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-14T17:00:00Z",
+      "score": 52.0
+    },
+    {
+      "id": "fb_b3_15",
+      "content": "技能数量:足够 | 技能理解:一般 | 盖帽:3.0 投篮:2.0 抢篮板:3.0 总分:68.0",
+      "category": "ui",
+      "sentiment": "positive",
+      "urgency": "low",
+      "keywords": [
+        "技能足够",
+        "盖帽体验"
+      ],
+      "timestamp": "2024-06-15T18:00:00Z",
+      "score": 68.0
+    }
+  ],
+  "urgentFeedback": [
+    {
+      "id": "fb_1",
+      "content": "设备:模拟器 | mix3 | 延迟:比较难受 | 整体:1.0 战斗:1.0 美术:1.0",
+      "category": "performance",
+      "sentiment": "negative",
+      "urgency": "critical",
+      "keywords": [
+        "网络延迟",
+        "比较难受",
+        "模拟器"
+      ],
+      "timestamp": "2024-06-01T10:00:00Z",
+      "score": 20.0
+    }
+  ],
+  "report": "# 《街篮2》试玩反馈综合分析报告\n\n## 数据概览\n- **总有效样本**: 700 份（三批次）\n- **Batch 1**: 374 份 - 基础体验问卷（33维度，满分75）\n- **Batch 2**: 125 份 - 玩法机制问卷（16维度，满分80）\n- **Batch 3**: 201 份 - 动作表现问卷（18维度，满分95）\n- **Batch 1 平均分**: 48.6/75\n- **Batch 2 平均分**: 54.6/80\n- **Batch 3 平均分**: 57.7/95\n- **负面反馈占比**: 14.3%\n- **紧急问题数**: 32 条\n\n## 用户画像\n- **年龄段**: 30以上(48.7%) > 25~30(37.7%) > 19~24(12.6%)\n- **设备**: 安卓手机(82.6%) > 模拟器(13.9%)\n- **地域**: 江苏、上海、广东、浙江、山东为TOP5省份\n- **核心玩家**: 黄金~钻石段位(54.4%)，王者(21.6%)，大师~传奇(21.6%)\n- **热门职业**: 中锋C(32.0%) > 得分后卫SG(28.0%) > 大前锋PF(14.4%)\n\n## 核心发现\n\n### 🔴 P0 - 网络延迟（三批次一致痛点）\n- **Batch 1**: 67.9% 用户遇到网络延迟\n- **Batch 2**: 60.8% 用户表示\"感觉没法玩了\"\n- **综合影响**: 严重拖累整体体验和战斗体验评分\n- **建议**: 优化网络同步机制，增加延迟补偿算法\n\n### 🔴 P0 - 盖帽体验（Batch3 最低分 2.26/5）\n- 盖帽体验是所有维度中最低分\n- 投篮动作(2.67)、抢篮板(2.56)同样偏低\n- **建议**: 重新设计盖帽判定逻辑，优化投篮和篮板物理反馈\n\n### 🔴 P1 - 职业平衡性（Batch2 最低分 2.77/5）\n- 五种职业之间能力平衡评分最低\n- 爆发技体验也偏低（2.87/5）\n- **建议**: 重新评估各职业数值，调整爆发技强度\n\n### 🔴 P1 - 身后盖帽规则（Batch2 次低分 2.60/5）\n- \"从投篮者身后盖帽必定失败\"规则体验最差\n- **建议**: 优化身后盖帽判定逻辑，增加合理性\n\n### 🟡 P2 - 技能系统理解（Batch3 发现）\n- **78.6%** 玩家对技能区别理解\"一般\"\n- **40.8%** 玩家认为技能数量\"不够/根本不够\"\n- **建议**: 优化新手引导，简化技能系统说明\n\n### 🟡 P2 - 入场庆祝/战斗观众（Batch2 偏低）\n- 入场庆祝动作：3.02/5\n- 战斗内观众：2.92/5\n- **建议**: 优化过场动画质量，增加观众互动\n\n### 🟢 优势项 - 天赋树设计（3.98/5）\n- 天赋树获得最高评价\n- 贴身上篮规则（3.92/5）、盖帽硬直规则（3.87/5）也获认可\n\n### 🟢 优势项 - 镜头与光效（Batch3）\n- 默认镜头：3.53/5\n- 特写镜头：3.44/5\n- 光效表现：3.37/5\n- 音效语音：3.31/5\n\n### 🟢 优势项 - Batch1 基础体验\n- 初始球员技能掌握度（3.57/5）\n- 按键布局适应性（3.61/5）\n- 背景音乐（3.43/5）\n\n## 匹配时间容忍度（Batch2）\n- **可以接受**: 46.4%（58人）\n- **不能接受**: 33.6%（42人）\n- **不在意**: 20.0%（25人）\n- **结论**: 近半数玩家愿意为更公平的匹配等待更长时间\n\n## 建议优先级\n1. **P0 - 网络优化**：降低延迟，改善匹配体验\n2. **P0 - 盖帽/投篮/篮板**：重新设计核心战斗体验\n3. **P1 - 职业平衡**：调整各职业数值和爆发技强度\n4. **P1 - 身后盖帽规则**：优化判定逻辑\n5. **P2 - 技能系统**：优化引导，简化说明\n6. **P3 - 保持优势**：继续优化天赋树、镜头和光效\n",
+  "summary": {
+    "totalFeedback": 700,
+    "batch1Count": 374,
+    "batch2Count": 125,
+    "batch3Count": 201,
+    "batch1AvgScore": 48.6,
+    "batch2AvgScore": 54.6,
+    "batch3AvgScore": 57.7,
+    "negativeRate": 14.3,
+    "urgentCount": 32,
+    "networkLagRate1": 67.9,
+    "networkLagFeel2": 60.8,
+    "skillNotEnough": 40.8,
+    "skillUnderstandNormal": 78.6,
+    "lowestDim_batch3": "盖帽体验",
+    "lowestDim_batch3_score": 2.26
+  },
+  "batch1Dims": {
+    "初始技能掌握度": 3.57,
+    "按键布局适应性": 3.61,
+    "背景音乐": 3.43,
+    "移动操作": 3.45,
+    "持球进攻": 3.38,
+    "美术风格": 3.33,
+    "球员形象": 3.31,
+    "额外按键位置": 3.18,
+    "防守操作": 3.09,
+    "整体感受": 3.08,
+    "操作响应及时性": 3.12,
+    "战斗体验": 3.04,
+    "模型质量": 3.06,
+    "爆发技位置": 2.99,
+    "按键误触频率": 2.97
+  },
+  "batch2Dims": {
+    "天赋树设计": 3.98,
+    "贴身上篮规则": 3.92,
+    "盖帽硬直规则": 3.87,
+    "晃倒三种表现": 3.83,
+    "C/PF定位体验": 3.62,
+    "动态篮网效果": 3.71,
+    "篮板碎裂动画": 3.58,
+    "花式技能体验": 3.45,
+    "爆发提示明显度": 3.55,
+    "爆发区域明显度": 3.52,
+    "技能绑定设计": 3.34,
+    "入场庆祝动作": 3.02,
+    "战斗内观众": 2.92,
+    "爆发技体验": 2.87,
+    "职业平衡性": 2.77,
+    "身后盖帽规则": 2.6
+  },
+  "batch3Dims": {
+    "盖帽体验": 2.26,
+    "突破投篮": 2.85,
+    "投篮动作": 2.67,
+    "上篮动作": 3.24,
+    "扣篮动作": 3.22,
+    "抢篮板": 2.56,
+    "提示信息": 3.22,
+    "快捷聊天": 2.86,
+    "音效语音": 3.31,
+    "操作无反馈": 2.93,
+    "突破动作": 2.89,
+    "传球动作": 3.34,
+    "篮球表现": 3.06,
+    "角色动作": 3.34,
+    "默认镜头": 3.53,
+    "特写镜头": 3.44,
+    "光效表现": 3.37
+  }
+}

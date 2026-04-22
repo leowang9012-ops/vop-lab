@@ -90,13 +90,13 @@ export default function FeedbackPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-8 py-4">
-          <h1 className="text-xl font-bold text-foreground">反馈列表</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">查看和管理所有玩家反馈（{feedbacks.length} 条）</p>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4">
+          <h1 className="text-lg md:text-xl font-bold text-foreground">反馈列表</h1>
+          <p className="text-xs md:text-sm text-muted-foreground mt-0.5">查看和管理所有玩家反馈（{feedbacks.length} 条）</p>
         </div>
       </header>
 
-      <main className="max-w-[1600px] mx-auto px-8 py-6 space-y-6">
+      <main className="max-w-[1600px] mx-auto px-4 md:px-8 py-4 md:py-6 space-y-4 md:space-y-6">
         <FeedbackFilters
           filters={filters}
           onFilterChange={handleFilterChange}
@@ -104,7 +104,7 @@ export default function FeedbackPage() {
           categories={[...new Set(feedbacks.map(f => f.category))]}
         />
 
-        <div className="flex items-center gap-4 text-sm">
+        <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs md:text-sm">
           <Card className="bg-card border-border flex-1">
             <CardContent className="py-3 px-4">
               <div className="flex items-center justify-between">

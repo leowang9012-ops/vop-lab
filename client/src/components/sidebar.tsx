@@ -25,7 +25,11 @@ const navItems = [
   { label: "数据导入", path: "/import", icon: Upload },
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  onNavigate?: () => void;
+}
+
+export function Sidebar({ onNavigate }: SidebarProps) {
   const location = useLocation();
   const { projects, currentProject, selectProject } = useProject();
   const [showDropdown, setShowDropdown] = useState(false);
@@ -111,6 +115,7 @@ export function Sidebar() {
             <Link
               key={item.path}
               to={item.path}
+              onClick={onNavigate}
               className={cn(
                 "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200",
                 active
