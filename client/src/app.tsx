@@ -1,4 +1,5 @@
 import { Routes, Route, useSearchParams, Navigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Layout } from "@/components/layout";
 import DashboardPage from "@/pages/DashboardPage/DashboardPage";
 import ProjectsPage from "@/pages/ProjectsPage/ProjectsPage";
@@ -18,21 +19,34 @@ function ShareRedirect() {
   return <Navigate to="/" replace />;
 }
 
+function ThemeInit() {
+  useEffect(() => {
+    const saved = localStorage.getItem("vop-theme");
+    if (saved === "light") {
+      document.documentElement.classList.add("light");
+    }
+  }, []);
+  return null;
+}
+
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<DashboardPage />} />
-        <Route path="dashboard" element={<DashboardPage />} />
-        <Route path="projects" element={<ProjectsPage />} />
-        <Route path="feedback" element={<FeedbackPage />} />
-        <Route path="report" element={<ReportPage />} />
-        <Route path="trend" element={<TrendPage />} />
-        <Route path="weekly" element={<WeeklyReportPage />} />
-        <Route path="import" element={<ImportPage />} />
-        <Route path="clusters" element={<ClustersPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
+    <>
+      <ThemeInit />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<DashboardPage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="feedback" element={<FeedbackPage />} />
+          <Route path="report" element={<ReportPage />} />
+          <Route path="trend" element={<TrendPage />} />
+          <Route path="weekly" element={<WeeklyReportPage />} />
+          <Route path="import" element={<ImportPage />} />
+          <Route path="clusters" element={<ClustersPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </>
   );
 }

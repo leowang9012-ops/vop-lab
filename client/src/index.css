@@ -1,6 +1,39 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.light {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(224 14% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(224 14% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(224 14% 10%);
+  --primary: hsl(250 75% 55%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(224 20% 96%);
+  --secondary-foreground: hsl(224 14% 10%);
+  --muted: hsl(224 20% 94%);
+  --muted-foreground: hsl(220 10% 45%);
+  --accent: hsl(38 92% 50%);
+  --accent-foreground: hsl(224 14% 10%);
+  --destructive: hsl(0 72% 51%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(224 15% 88%);
+  --input: hsl(224 15% 88%);
+  --ring: hsl(250 75% 55%);
+  --sidebar: hsl(224 25% 97%);
+  --sidebar-foreground: hsl(224 14% 10%);
+  --sidebar-primary: hsl(250 75% 55%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(250 60% 94%);
+  --sidebar-accent-foreground: hsl(250 75% 40%);
+  --sidebar-border: hsl(224 15% 88%);
+  --button-outline: rgba(0,0,0, .06);
+  --badge-outline: rgba(0,0,0, .04);
+  --elevate-1: rgba(0,0,0, .02);
+  --elevate-2: rgba(0,0,0, .04);
+}
+
 :root {
   --button-outline: rgba(255,255,255, .08);
   --badge-outline: rgba(255,255,255, .04);

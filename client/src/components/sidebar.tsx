@@ -9,9 +9,11 @@ import {
   Upload,
   TrendingUp,
   Calendar,
-  ChevronDown,
   Gamepad2,
   Network,
+  ChevronDown,
+  Sun,
+  Moon,
 } from "lucide-react";
 import { useState } from "react";
 import { useProject } from "@/contexts/ProjectContext";
@@ -35,6 +37,22 @@ export function Sidebar({ onNavigate }: SidebarProps) {
   const location = useLocation();
   const { projects, currentProject, selectProject } = useProject();
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem("vop-theme");
+    return saved !== "light";
+  });
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    if (next) {
+      document.documentElement.classList.remove("light");
+      localStorage.setItem("vop-theme", "dark");
+    } else {
+      document.documentElement.classList.add("light");
+      localStorage.setItem("vop-theme", "light");
+    }
+  };
 
   const isActive = (path: string) => {
     if (path === "/") return location.pathname === "/";
@@ -133,7 +151,17 @@ export function Sidebar({ onNavigate }: SidebarProps) {
       </nav>
 
       {/* Footer */}
-      <div className="px-4 py-4 border-t border-sidebar-border">
+      <div className="px-4 py-4 border-t border-sidebar-border space-y-3">
+        {/* Theme Toggle */}
+        <button
+          onClick={toggleTheme}
+          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-sidebar-foreground/70 hover:text-sidebar-foreground hover:bg-secondary/60 transition-colors"
+          title={isDark ? "切换到亮色模式" : "切换到深色模式"}
+        >
+          {isDark ? <Sun className="w-4 h-4 shrink-0" /> : <Moon className="w-4 h-4 shrink-0" />}
+          <span>{isDark ? "亮色模式" : "深色模式"}</span>
+        </button>
+
         <div className="flex items-center gap-2.5 px-2">
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center text-white text-xs font-bold">
             管

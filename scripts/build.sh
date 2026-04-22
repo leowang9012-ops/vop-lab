@@ -47,7 +47,7 @@ cat > docs/404.html << 'EOF404'
 <head><meta charset="utf-8"><title>VoP Lab</title></head>
 <body>
 <script>
-var base = location.pathname.replace(/\/[^/]*$/, '/');
+var base = '/vop-lab/';
 location.replace(location.origin + base);
 </script>
 </body>
