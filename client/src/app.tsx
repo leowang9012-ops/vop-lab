@@ -1,5 +1,5 @@
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Layout } from "@/components/layout";
 import DashboardPage from "@/pages/DashboardPage/DashboardPage";
 import ProjectsPage from "@/pages/ProjectsPage/ProjectsPage";
@@ -24,16 +24,14 @@ function ThemeInit() {
   return null;
 }
 
-// 认证守卫：未登录则跳转到登录页
-function ProtectedRoute({ children }: { children: JSX.Element }) {
+function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const isLoggedIn = localStorage.getItem(AUTH_TOKEN) === "1";
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />;
   }
-  return children;
+  return <>{children}</>;
 }
 
-// 已是登录状态访问 /login 则跳转首页
 function LoginRoute() {
   const isLoggedIn = localStorage.getItem(AUTH_TOKEN) === "1";
   if (isLoggedIn) return <Navigate to="/" replace />;
@@ -47,26 +45,24 @@ export default function App() {
       <Routes>
         <Route path="/login" element={<LoginRoute />} />
         <Route
-          path="*"
+          path="/"
           element={
             <ProtectedRoute>
-              <Routes>
-                <Route element={<Layout />}>
-                  <Route index element={<DashboardPage />} />
-                  <Route path="dashboard" element={<DashboardPage />} />
-                  <Route path="projects" element={<ProjectsPage />} />
-                  <Route path="feedback" element={<FeedbackPage />} />
-                  <Route path="report" element={<ReportPage />} />
-                  <Route path="trend" element={<TrendPage />} />
-                  <Route path="weekly" element={<WeeklyReportPage />} />
-                  <Route path="import" element={<ImportPage />} />
-                  <Route path="clusters" element={<ClustersPage />} />
-                  <Route path="*" element={<NotFoundPage />} />
-                </Route>
-              </Routes>
+              <Layout />
             </ProtectedRoute>
           }
-        />
+        >
+          <Route index element={<DashboardPage />} />
+          <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="feedback" element={<FeedbackPage />} />
+          <Route path="report" element={<ReportPage />} />
+          <Route path="trend" element={<TrendPage />} />
+          <Route path="weekly" element={<WeeklyReportPage />} />
+          <Route path="import" element={<ImportPage />} />
+          <Route path="clusters" element={<ClustersPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </>
   );
