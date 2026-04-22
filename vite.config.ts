@@ -26,4 +26,7 @@ export default defineConfig({
     outDir: '../docs',
     emptyOutDir: true,
   },
+  optimizeDeps: {
+    include: ['xlsx'],
+  },
 })

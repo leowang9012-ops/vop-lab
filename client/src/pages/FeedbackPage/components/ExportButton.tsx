@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Download, ChevronDown, X } from "lucide-react";
+import * as XLSX from "xlsx";
 
 interface ExportButtonProps {
   feedbacks: any[];
@@ -19,7 +20,6 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
   const [exporting, setExporting] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // 关 dropdown
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) setOpen(false);
@@ -28,29 +28,27 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const handleExport = async () => {
+  const handleExport = () => {
     setExporting(true);
     try {
-      const XLSX = (await import("xlsx")).default;
-
-      // 按筛选器过滤
       let data = feedbacks;
       if (source !== "all") data = data.filter(f => f.source === source);
       if (sentiment !== "all") data = data.filter(f => f.sentiment === sentiment);
       if (currentFilters.category !== "all") data = data.filter(f => f.category === currentFilters.category);
-      if (currentFilters.sentiment !== "all" && sentiment === "all") data = data.filter(f => f.sentiment === currentFilters.sentiment);
+      if (currentFilters.sentiment !== "all" && sentiment === "all") {
+        data = data.filter(f => f.sentiment === currentFilters.sentiment);
+      }
       if (currentFilters.search) {
         const q = currentFilters.search.toLowerCase();
         data = data.filter(f =>
-          f.content.toLowerCase().includes(q) ||
+          (f.content || "").toLowerCase().includes(q) ||
           (f.keywords || []).some((k: string) => k.toLowerCase().includes(q))
         );
       }
 
-      // 映射为 Excel 行
       const rows = data.map((f, i) => ({
         "序号": i + 1,
-        "来源": f.source === "questionnaire" ? "问卷" : f.source === "taptap" ? "TapTap" : f.source === "appstore" ? "App Store" : f.source,
+        "来源": f.source === "questionnaire" ? "问卷" : f.source === "taptap" ? "TapTap" : f.source === "appstore" ? "App Store" : f.source || "",
         "分类": f.category || "",
         "情感": f.sentiment === "positive" ? "正面" : f.sentiment === "negative" ? "负面" : "中性",
         "紧急度": f.urgency === "critical" ? "紧急" : f.urgency === "high" ? "高" : f.urgency === "medium" ? "中" : "低",
@@ -64,22 +62,12 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
       const wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, ws, "反馈数据");
 
-      // 列宽自适应
-      const colWidths = [
-        { wch: 6 },  // 序号
-        { wch: 10 }, // 来源
-        { wch: 12 }, // 分类
-        { wch: 8 },  // 情感
-        { wch: 8 },  // 紧急度
-        { wch: 8 },  // 评分
-        { wch: 20 }, // 关键词
-        { wch: 60 }, // 内容
-        { wch: 20 }, // 时间
+      ws["!cols"] = [
+        { wch: 6 }, { wch: 10 }, { wch: 12 }, { wch: 8 }, { wch: 8 },
+        { wch: 8 }, { wch: 20 }, { wch: 60 }, { wch: 20 },
       ];
-      ws["!cols"] = colWidths;
 
       const date = new Date().toISOString().slice(0, 10);
-      // 生成 Excel 并触发下载（兼容浏览器）
       const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
       const blob = new Blob([wbout], { type: "application/octet-stream" });
       const url = URL.createObjectURL(blob);
@@ -91,20 +79,21 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
     } catch (err) {
-      console.error("Export failed:", err);
+      console.error("导出失败:", err);
+      alert("导出失败，请稍后重试");
     } finally {
       setExporting(false);
       setOpen(false);
     }
   };
 
-  const filteredCount = (() => {
+  const getFilteredCount = () => {
     let d = feedbacks;
     if (source !== "all") d = d.filter(f => f.source === source);
     if (sentiment !== "all") d = d.filter(f => f.sentiment === sentiment);
     if (currentFilters.category !== "all") d = d.filter(f => f.category === currentFilters.category);
     return d.length;
-  })();
+  };
 
   return (
     <div className="relative" ref={menuRef}>
@@ -155,15 +144,15 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
           </div>
 
           <div className="text-xs text-muted-foreground text-center py-1">
-            将导出 <span className="font-medium text-foreground">{filteredCount}</span> 条数据
+            将导出 <span className="font-medium text-foreground">{getFilteredCount()}</span> 条数据
           </div>
 
           <button
             onClick={handleExport}
-            disabled={exporting || filteredCount === 0}
+            disabled={exporting || getFilteredCount() === 0}
             className="w-full py-2 text-xs font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 disabled:opacity-50 transition-colors"
           >
-            {exporting ? "生成中..." : `下载 Excel (${filteredCount} 条)`}
+            {exporting ? "生成中..." : `下载 Excel (${getFilteredCount()} 条)`}
           </button>
         </div>
       )}
