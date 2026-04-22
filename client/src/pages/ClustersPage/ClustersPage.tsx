@@ -90,7 +90,7 @@ export default function ClustersPage() {
     );
   }
 
-  if (!data) {
+  if (!data || data.totalFeedback === 0 || !data.clusters?.length) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <p className="text-muted-foreground">暂无聚类数据</p>

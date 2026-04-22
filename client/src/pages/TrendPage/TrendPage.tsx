@@ -43,7 +43,7 @@ export default function TrendPage() {
     );
   }
 
-  if (!trendData) {
+  if (!trendData || !trendData.period1 || !trendData.period2) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <p className="text-muted-foreground">暂无趋势数据，请先构建项目</p>
