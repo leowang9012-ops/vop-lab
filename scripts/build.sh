@@ -50,9 +50,12 @@ if [ -f scripts/merge-star-rail.js ]; then
   cp data/projects/star-rail/*.json docs/data/projects/star-rail/ 2>/dev/null || true
 fi
 
-# Generate semantic clusters AFTER data copy
-echo "🔮 Running semantic clustering..."
-node scripts/semantic-cluster.js || echo "⚠️  Semantic clustering skipped"
+# Generate semantic clusters for each project
+for dir in data/projects/*/; do
+  name=$(basename "$dir")
+  echo "🔮 Clustering $name..."
+  node scripts/semantic-cluster-project.js "$dir" || echo "⚠️  $name clustering skipped"
+done
 cp data/clusters.json docs/data/clusters.json 2>/dev/null || true
 
 # GitHub Pages SPA fallback: redirect all 404s to app root

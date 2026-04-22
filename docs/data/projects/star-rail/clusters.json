@@ -1,1 +1,468 @@
-{"clusters":[],"totalFeedback":0,"generatedAt":""}
+{
+  "generatedAt": "2026-04-22T15:33:32.976Z",
+  "totalFeedback": 499,
+  "analyzedFeedback": 372,
+  "classifiedFeedback": 206,
+  "unclassifiedCount": 166,
+  "clusterCount": 3,
+  "method": "Keyword Grouping + Pre-classification (v3)",
+  "clusters": [
+    {
+      "id": "cluster-2",
+      "themeName": "职业与角色",
+      "themeEmoji": "🏃",
+      "description": "关于职业定位、角色强度的专项反馈",
+      "keywords": [
+        {
+          "word": "角色",
+          "count": 105
+        }
+      ],
+      "primaryCategory": "剧情故事",
+      "feedbackCount": 105,
+      "criticalCount": 0,
+      "sampleCount": 50,
+      "representatives": [
+        {
+          "id": "sr_appstore_starrail_appstore_1_0",
+          "content": "好玩爱玩 我呢，是从1.1入坑的老玩家了，当时是和朋友一起的，现在朋友也渐渐不玩的，而我还是选择了继续\n我认为呢，星铁的角色更替还可以，不是很快也不是很慢，就像我的主c彦卿，现在来讲还是能打（因为是我喜欢的角色，就是都是最好的）副c那刻夏也是一样的\n然后呢，重点表演的是星铁的音乐和美术，真的很喜欢(ฅ>ω<*ฅ)\n祝愿星铁和米哈游越来越好，愿我们都能在路途中见到自己喜欢的风景和人，就像我签名说的，风会带领我们寻找合适的人",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "喜欢",
+            "好玩",
+            "坑",
+            "角色"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_5",
+          "content": "我会一直玩下去！ 崩铁是我玩过最久的二游，虽然每次限定金基本保底出的，但是热爱这个游戏，即使有时会吐槽，心情会暴躁，但貌似有魔力一般一直吸引我玩下去，而且崩铁的福利也很多，游戏玩起来也不算肝，角色都很好看，也会出很多好玩的小活动，并且对社恐来说挺友好的，虽然是单机游戏，但玩起来真的感受不到什么孤独，反而很自在，且也不怎么容易成痛苦号，虽然现在数值膨胀很快，但是抽对角色也很好打，xp党除外，总而言之，崩铁不算最好的二游，但是是我玩过的目前最好的二游，我会一直玩下去的！！！",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "好玩",
+            "角色",
+            "游戏"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_8",
+          "content": "希望越来越好 玩这个游戏也三年了，这个游戏一路陪我走了很多，我也曾是血条膨胀的受害者，不断地凹分，3.0到现在还有四天4.2我抽的新角色只有大黑塔提宝刻律那刻夏另一个队就是击破（11金）其实感觉挺好的，目前也准备补完大丽花后抽一个满命红A了",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "角色",
+            "游戏"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_14",
+          "content": "为什么所有人都说的那么长。 其实都还好的。在里面玩法和自由度可能没有原神高，其实做的不错的，玩的时候可以提供很好的情绪价值。但其实现在很多老角色已经有点退化了，和新角色比起来差距真的有点大了。我其实觉得可能原神要更好一点点，希望可以更好呀，未来可期！谢谢。\n\n但总之祝大家十连三金不歪！",
+          "sentiment": "positive",
+          "urgency": "medium",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "不错",
+            "差",
+            "角色",
+            "玩法"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_17",
+          "content": "还不错，就是膨胀太快了 从开服玩到现在，星铁给我我最大的感受，就是这游戏膨胀速度太快了。鉴定膨胀速度最好的方法，就是去打三个深渊，如果你发现你的队伍打不满深渊了，就代表你需要抽卡了。不过星铁还是挺大方的，一年好几个免费的五星角色，虽然大多数都是牢角色，但最起码送了。还有从去年开始的，送纪念册，就很棒。还有30抽➕一个五星角色，福利还是不错的。剧情也还可以，但真的，膨胀的速度有点可怕了，还是希望项目组平衡一下吧。总的来说还不错，但还需要努力。",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "棒",
+            "不错",
+            "角色",
+            "剧情"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_45",
+          "content": "很优秀的游戏，继续加油 刚开始就被崩铁的角色美工吸引了，每一个都是眼前一亮的存在！角色塑造也很立体！就是数值膨胀太快了。希望能调整一下，另外开发出新的游戏方式！",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "优秀",
+            "角色",
+            "游戏"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_51",
+          "content": "挺好的 不氪金也能玩，福利多，还能借用角色，总体很不错",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "不错",
+            "角色",
+            "氪金"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_67",
+          "content": "。。。 真挺好玩的吧，我即是剧情党还是一名忠实的货币党，建议多加点角色强度",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "好玩",
+            "角色",
+            "剧情"
+          ]
+        }
+      ],
+      "sentiment": {
+        "positive": 56,
+        "neutral": 15,
+        "negative": 29
+      },
+      "categoryBreakdown": [
+        {
+          "name": "剧情故事",
+          "count": 36,
+          "pct": 34
+        },
+        {
+          "name": "综合体验",
+          "count": 24,
+          "pct": 23
+        },
+        {
+          "name": "美术表现",
+          "count": 14,
+          "pct": 13
+        },
+        {
+          "name": "氪金付费",
+          "count": 14,
+          "pct": 13
+        },
+        {
+          "name": "游戏平衡",
+          "count": 13,
+          "pct": 12
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "id": "cluster-1",
+      "themeName": "玩法内容",
+      "themeEmoji": "📦",
+      "description": "游戏玩法设计、活动内容、版本更新相关反馈",
+      "keywords": [
+        {
+          "word": "剧情",
+          "count": 53
+        },
+        {
+          "word": "玩法",
+          "count": 6
+        }
+      ],
+      "primaryCategory": "剧情故事",
+      "feedbackCount": 54,
+      "criticalCount": 0,
+      "sampleCount": 50,
+      "representatives": [
+        {
+          "id": "sr_appstore_starrail_appstore_1_35",
+          "content": "副游佳选 剧情来说，pnkn绝对是米家数一数二的剧情了。虽然各个世界剧情水平层次不齐，但是有剧情跳过也不算大事。\n福利很多，虽然数值膨胀很厉害，但是三路深渊不打也不会有很大影响，xp抽卡只要不在乎强度业无所谓。\n希望能多推出点任务，长草期真没事干",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "剧情",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_54",
+          "content": "希望游戏可以越来越好 玩了这么久的崩铁，我发现崩铁真的不怎么肝，活动也很好做，剧情也很好，玩起来很轻松",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "剧情",
+            "游戏"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_62",
+          "content": "我将玩一辈子崩铁 剧情很吸引我，画风也是没得说了，对于我这种注重剧情的玩家来说太赞了",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "赞",
+            "剧情"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_84",
+          "content": "站桩剧情 建议改，剧情是不错，如果互动动作强一点也会捎去困倦感",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "不错",
+            "剧情"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_89",
+          "content": "喜欢 相比原神来说没有那么肝，有剧情跳过就很好，回合制打得很爽",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "喜欢",
+            "剧情"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_94",
+          "content": "我觉得崩铁还好啊 也是个开服老登了，看了一圈评论好像都在骂爆率啊。我觉得爆率还行啊反正我没歪过几次）作为一个忠实的剧情党，崩铁剧情也是给我玩美了。就是数值膨胀有点厉害，还有。啥时候加强饮月啊牢饮肘不动了啊。！！！！",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "剧情"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_3_103",
+          "content": "从剧情和音乐和美术这三方面我觉得还挺好 我不会过于体抽卡的问题，我不太在意，因为本身不是一个天天回去肝游戏的人我觉得入坑算不亏的，而且现在日益发展起来了，总归有一款xp，会让你比较喜欢这种人设但总归选择还是你的，我的评价到此为止",
+          "sentiment": "positive",
+          "urgency": "medium",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "喜欢",
+            "坑",
+            "剧情",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_3_111",
+          "content": "很好的游戏 质量挺好，剧情不错，不怎么需要肝，不过剧情文案有点多。休闲为主，还可以",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "不错",
+            "剧情",
+            "游戏"
+          ]
+        }
+      ],
+      "sentiment": {
+        "positive": 59,
+        "neutral": 13,
+        "negative": 28
+      },
+      "categoryBreakdown": [
+        {
+          "name": "剧情故事",
+          "count": 41,
+          "pct": 76
+        },
+        {
+          "name": "美术表现",
+          "count": 12,
+          "pct": 22
+        },
+        {
+          "name": "综合体验",
+          "count": 1,
+          "pct": 2
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "cluster-0",
+      "themeName": "氪金与付费",
+      "themeEmoji": "💰",
+      "description": "涉及充值、虚拟货币、付费性价比，是玩家最关注的核心话题",
+      "keywords": [
+        {
+          "word": "抽卡",
+          "count": 33
+        },
+        {
+          "word": "氪金",
+          "count": 3
+        }
+      ],
+      "primaryCategory": "氪金付费",
+      "feedbackCount": 34,
+      "criticalCount": 0,
+      "sampleCount": 34,
+      "representatives": [
+        {
+          "id": "sr_appstore_starrail_appstore_1_10",
+          "content": "玩了一年 去年周年庆入的吧感觉抽卡运气还行，歪的不多，膨胀速度确实挺快的，但我们dot女子是不会输的，在等dot队最后一块拼图",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_20",
+          "content": "很好玩 说真的 回合制虽然容易玩腻但是星铁他总体来说是二游里面真的非常不错的 抽卡（这个因人而异）他对我很好 我平均出金是40抽 对我很良心了 福利什么也很好 缺点是下载的时候占了太大内存 虽然后面可以直接清理过往数据但是对一些空间紧张的玩家不是很友好 总体来说可以给五分 星铁加油 继续保持",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "好玩",
+            "不错",
+            "良心",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_32",
+          "content": "抽卡概率 我玩到杰帕德那一段的时候三十发就出银狼了，现在想要抽爻光往里面怼了快大保底了还没出，感觉越后面手气越差，整体还可以就是主要要改概率",
+          "sentiment": "positive",
+          "urgency": "medium",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "差",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_1_46",
+          "content": "好玩 以前不感兴趣，后来2.0回坑的。一直玩到现在，抽卡欧欧非非的，就是刷遗器的时候经常刷到很差的，但依然不失乐趣。",
+          "sentiment": "positive",
+          "urgency": "medium",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "好玩",
+            "差",
+            "坑",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_74",
+          "content": "加油米哈游 米家人，从崩坏3玩到绝区零，铁子的玩法可以说是一种创新，回合制的创新，但是，算是米哈游几个姐妹中数值膨胀最快的了，新玩家最好多看看社区抽卡建议，不然数值真的会跟不上",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "抽卡",
+            "玩法",
+            "崩坏"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_2_97",
+          "content": "u 抽卡别给我歪了，已经给你好评了",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_3_101",
+          "content": "太好玩辣，我是米哈游忠实粉丝啊啊啊啊啊 希望这个抽卡机制改进一下，我太非啦",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "好玩",
+            "抽卡"
+          ]
+        },
+        {
+          "id": "sr_appstore_starrail_appstore_3_113",
+          "content": "休闲玩法 抽卡歪还是难受的，不过还好，我一分都不会充进去，每天挂机带着流萤到处跑，也挺欢乐的",
+          "sentiment": "positive",
+          "urgency": "low",
+          "source": "appstore",
+          "score": 5,
+          "keywords": [
+            "好",
+            "抽卡",
+            "玩法"
+          ]
+        }
+      ],
+      "sentiment": {
+        "positive": 59,
+        "neutral": 3,
+        "negative": 38
+      },
+      "categoryBreakdown": [
+        {
+          "name": "氪金付费",
+          "count": 33,
+          "pct": 97
+        },
+        {
+          "name": "剧情故事",
+          "count": 1,
+          "pct": 3
+        }
+      ],
+      "rank": 3
+    }
+  ]
+}
