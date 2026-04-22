@@ -11,6 +11,7 @@ import {
   Calendar,
   ChevronDown,
   Gamepad2,
+  Network,
 } from "lucide-react";
 import { useState } from "react";
 import { useProject } from "@/contexts/ProjectContext";
@@ -23,6 +24,7 @@ const navItems = [
   { label: "趋势对比", path: "/trend", icon: TrendingUp },
   { label: "周报生成", path: "/weekly", icon: Calendar },
   { label: "数据导入", path: "/import", icon: Upload },
+  { label: "语义聚类", path: "/clusters", icon: Network },
 ];
 
 interface SidebarProps {

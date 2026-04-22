@@ -7,6 +7,7 @@ import ReportPage from "@/pages/ReportPage/ReportPage";
 import ImportPage from "@/pages/ImportPage/ImportPage";
 import TrendPage from "@/pages/TrendPage/TrendPage";
 import WeeklyReportPage from "@/pages/WeeklyReportPage/WeeklyReportPage";
+import ClustersPage from "@/pages/ClustersPage/ClustersPage";
 import NotFoundPage from "@/pages/NotFoundPage/NotFoundPage";
 
 function ShareRedirect() {
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="trend" element={<TrendPage />} />
         <Route path="weekly" element={<WeeklyReportPage />} />
         <Route path="import" element={<ImportPage />} />
+        <Route path="clusters" element={<ClustersPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

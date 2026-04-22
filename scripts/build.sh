@@ -8,12 +8,10 @@ echo "📊 Generating AI analysis report..."
 node scripts/generate-report.js
 
 echo "🕷️  Crawling TapTap reviews (optional, skip if no network)..."
-# 街篮2 TapTap ID: 175459
-node scripts/crawl-taptap.js 175459 5 || echo "⚠️ TapTap crawl skipped"
+node scripts/crawl-taptap.js 175459 5 || echo "⚠️  TapTap crawl skipped"
 
 echo "🕷️  Crawling App Store reviews (optional, skip if no network)..."
-# 街篮 App Store ID: 1096974019 (街篮2 可能尚未上架)
-node scripts/crawl-appstore.js 1096974019 cn 5 || echo "⚠️ App Store crawl skipped"
+node scripts/crawl-appstore.js 1096974019 cn 5 || echo "⚠️  App Store crawl skipped"
 
 echo "🔄 Re-merging with crawled data..."
 node scripts/merge-data.js
@@ -36,6 +34,11 @@ cp data/trend_comparison.json docs/data/trend_comparison.json 2>/dev/null || tru
 cp data/taptap_reviews.json docs/data/taptap_reviews.json 2>/dev/null || true
 cp data/appstore_reviews.json docs/data/appstore_reviews.json 2>/dev/null || true
 cp data/projects.json docs/data/projects.json 2>/dev/null || true
+
+# Generate semantic clusters AFTER data copy (so docs/ is ready)
+echo "🔮 Running semantic clustering..."
+node scripts/semantic-cluster.js || echo "⚠️  Semantic clustering skipped"
+cp data/clusters.json docs/data/clusters.json 2>/dev/null || true
 
 # Restore 404.html for SPA routing
 cat > docs/404.html << 'HTMLEOF'
