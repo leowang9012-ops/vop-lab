@@ -35,18 +35,9 @@ cp data/taptap_reviews.json docs/data/taptap_reviews.json 2>/dev/null || true
 cp data/appstore_reviews.json docs/data/appstore_reviews.json 2>/dev/null || true
 cp data/projects.json docs/data/projects.json 2>/dev/null || true
 
-# Generate semantic clusters AFTER data copy (so docs/ is ready)
+# Generate semantic clusters AFTER data copy
 echo "🔮 Running semantic clustering..."
 node scripts/semantic-cluster.js || echo "⚠️  Semantic clustering skipped"
 cp data/clusters.json docs/data/clusters.json 2>/dev/null || true
-
-# Restore 404.html for SPA routing
-cat > docs/404.html << 'HTMLEOF'
-<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>VoP Lab</title>
-<script>location.replace('/vop-lab/'+location.pathname.slice(1))</script>
-</head><body></body></html>
-HTMLEOF
 
 echo "Build complete!"

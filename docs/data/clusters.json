@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T06:22:54.697Z",
-  "totalFeedback": 4165,
-  "analyzedFeedback": 2779,
-  "classifiedFeedback": 2659,
+  "generatedAt": "2026-04-22T06:34:33.791Z",
+  "totalFeedback": 4361,
+  "analyzedFeedback": 2975,
+  "classifiedFeedback": 2855,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 711
+          "count": 779
         },
         {
           "word": "充值",
-          "count": 375
+          "count": 411
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 877,
-      "criticalCount": 431,
+      "feedbackCount": 961,
+      "criticalCount": 473,
       "sampleCount": 50,
       "representatives": [
         {
@@ -140,7 +140,7 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 877,
+          "count": 961,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 285
+          "count": 309
         },
         {
           "word": "技能",
-          "count": 252
+          "count": 276
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 537,
-      "criticalCount": 183,
+      "feedbackCount": 585,
+      "criticalCount": 194,
       "sampleCount": 50,
       "representatives": [
         {
@@ -257,18 +257,18 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 66,
-        "negative": 34
+        "neutral": 67,
+        "negative": 33
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 494,
+          "count": 538,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 43,
+          "count": 47,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 123
+          "count": 135
         }
       ],
       "primaryCategory": "性能问题",
-      "feedbackCount": 377,
+      "feedbackCount": 389,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,25 +416,25 @@
         }
       ],
       "sentiment": {
-        "positive": 49,
-        "neutral": 36,
+        "positive": 51,
+        "neutral": 35,
         "negative": 15
       },
       "categoryBreakdown": [
         {
           "name": "性能问题",
-          "count": 123,
-          "pct": 33
+          "count": 135,
+          "pct": 35
         },
         {
           "name": "操作手感",
           "count": 89,
-          "pct": 24
+          "pct": 23
         },
         {
           "name": "整体体验",
           "count": 83,
-          "pct": 22
+          "pct": 21
         },
         {
           "name": "美术表现",
@@ -453,16 +453,16 @@
       "id": "cluster-2",
       "themeName": "美术表现",
       "themeEmoji": "🎨",
-      "description": "游戏画面、视觉效果、美术风格相关反馈，部分机型适配问题突出，需重点关注改善",
+      "description": "游戏画面、视觉效果、美术风格相关反馈，部分机型适配问题突出",
       "keywords": [
         {
           "word": "画面",
-          "count": 242
+          "count": 262
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 242,
-      "criticalCount": 146,
+      "feedbackCount": 262,
+      "criticalCount": 154,
       "sampleCount": 50,
       "representatives": [
         {
@@ -572,19 +572,19 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 40,
-        "negative": 60
+        "neutral": 41,
+        "negative": 59
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 209,
-          "pct": 86
+          "count": 229,
+          "pct": 87
         },
         {
           "name": "美术表现",
           "count": 33,
-          "pct": 14
+          "pct": 13
         }
       ],
       "rank": 4
@@ -597,12 +597,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 232
+          "count": 248
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 232,
-      "criticalCount": 174,
+      "feedbackCount": 248,
+      "criticalCount": 186,
       "sampleCount": 50,
       "representatives": [
         {
@@ -702,17 +702,17 @@
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 125,
-          "pct": 54
+          "count": 137,
+          "pct": 55
         },
         {
           "name": "综合体验",
           "count": 66,
-          "pct": 28
+          "pct": 27
         },
         {
           "name": "游戏平衡",
-          "count": 41,
+          "count": 45,
           "pct": 18
         }
       ],
@@ -726,7 +726,7 @@
       "keywords": [
         {
           "word": "操作",
-          "count": 170
+          "count": 186
         },
         {
           "word": "手感",
@@ -734,8 +734,8 @@
         }
       ],
       "primaryCategory": "操作手感",
-      "feedbackCount": 203,
-      "criticalCount": 84,
+      "feedbackCount": 219,
+      "criticalCount": 92,
       "sampleCount": 50,
       "representatives": [
         {
@@ -828,14 +828,14 @@
         }
       ],
       "sentiment": {
-        "positive": 16,
-        "neutral": 42,
-        "negative": 41
+        "positive": 15,
+        "neutral": 43,
+        "negative": 42
       },
       "categoryBreakdown": [
         {
           "name": "操作手感",
-          "count": 203,
+          "count": 219,
           "pct": 100
         }
       ],
