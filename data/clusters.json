@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T06:22:54.697Z",
-  "totalFeedback": 4165,
-  "analyzedFeedback": 2779,
-  "classifiedFeedback": 2659,
+  "generatedAt": "2026-04-22T07:20:12.539Z",
+  "totalFeedback": 3283,
+  "analyzedFeedback": 2065,
+  "classifiedFeedback": 1945,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 711
+          "count": 473
         },
         {
           "word": "充值",
-          "count": 375
+          "count": 249
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 877,
-      "criticalCount": 431,
+      "feedbackCount": 583,
+      "criticalCount": 293,
       "sampleCount": 50,
       "representatives": [
         {
@@ -134,13 +134,13 @@
       ],
       "sentiment": {
         "positive": 24,
-        "neutral": 27,
-        "negative": 49
+        "neutral": 26,
+        "negative": 50
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 877,
+          "count": 583,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 285
+          "count": 197
         },
         {
           "word": "技能",
-          "count": 252
+          "count": 168
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 537,
-      "criticalCount": 183,
+      "feedbackCount": 365,
+      "criticalCount": 131,
       "sampleCount": 50,
       "representatives": [
         {
@@ -257,18 +257,18 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 66,
-        "negative": 34
+        "neutral": 64,
+        "negative": 36
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 494,
+          "count": 336,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 43,
+          "count": 29,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 123
+          "count": 81
         }
       ],
-      "primaryCategory": "性能问题",
-      "feedbackCount": 377,
+      "primaryCategory": "操作手感",
+      "feedbackCount": 335,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,30 +416,30 @@
         }
       ],
       "sentiment": {
-        "positive": 49,
-        "neutral": 36,
-        "negative": 15
+        "positive": 43,
+        "neutral": 40,
+        "negative": 17
       },
       "categoryBreakdown": [
         {
-          "name": "性能问题",
-          "count": 123,
-          "pct": 33
-        },
-        {
           "name": "操作手感",
           "count": 89,
-          "pct": 24
+          "pct": 27
         },
         {
           "name": "整体体验",
           "count": 83,
-          "pct": 22
+          "pct": 25
+        },
+        {
+          "name": "性能问题",
+          "count": 81,
+          "pct": 24
         },
         {
           "name": "美术表现",
           "count": 77,
-          "pct": 20
+          "pct": 23
         },
         {
           "name": "设备兼容",
@@ -450,146 +450,6 @@
       "rank": 3
     },
     {
-      "id": "cluster-2",
-      "themeName": "美术表现",
-      "themeEmoji": "🎨",
-      "description": "游戏画面、视觉效果、美术风格相关反馈，部分机型适配问题突出，需重点关注改善",
-      "keywords": [
-        {
-          "word": "画面",
-          "count": 242
-        }
-      ],
-      "primaryCategory": "游戏平衡",
-      "feedbackCount": 242,
-      "criticalCount": 146,
-      "sampleCount": 50,
-      "representatives": [
-        {
-          "id": "taptap_175459_2_12",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 50,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_12",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 50,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_4_32",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 50,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_4_32",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 50,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_1_2",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 49,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_1_2",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 49,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_1_2",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 49,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        },
-        {
-          "id": "taptap_175459_1_2",
-          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
-          "sentiment": "neutral",
-          "urgency": "medium",
-          "source": "taptap",
-          "score": 49,
-          "keywords": [
-            "画面",
-            "技能",
-            "氪金"
-          ]
-        }
-      ],
-      "sentiment": {
-        "positive": 0,
-        "neutral": 40,
-        "negative": 60
-      },
-      "categoryBreakdown": [
-        {
-          "name": "游戏平衡",
-          "count": 209,
-          "pct": 86
-        },
-        {
-          "name": "美术表现",
-          "count": 33,
-          "pct": 14
-        }
-      ],
-      "rank": 4
-    },
-    {
       "id": "cluster-1",
       "themeName": "匹配体验",
       "themeEmoji": "🎮",
@@ -597,12 +457,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 232
+          "count": 168
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 232,
-      "criticalCount": 174,
+      "feedbackCount": 168,
+      "criticalCount": 127,
       "sampleCount": 50,
       "representatives": [
         {
@@ -677,7 +537,7 @@
           "sentiment": "neutral",
           "urgency": "medium",
           "source": "taptap",
-          "score": 48,
+          "score": 47,
           "keywords": [
             "匹配"
           ]
@@ -688,7 +548,7 @@
           "sentiment": "neutral",
           "urgency": "medium",
           "source": "taptap",
-          "score": 48,
+          "score": 47,
           "keywords": [
             "匹配"
           ]
@@ -696,24 +556,164 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 25,
-        "negative": 75
+        "neutral": 24,
+        "negative": 76
       },
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 125,
-          "pct": 54
+          "count": 83,
+          "pct": 49
         },
         {
           "name": "综合体验",
-          "count": 66,
-          "pct": 28
+          "count": 58,
+          "pct": 35
         },
         {
           "name": "游戏平衡",
-          "count": 41,
-          "pct": 18
+          "count": 27,
+          "pct": 16
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "id": "cluster-2",
+      "themeName": "美术表现",
+      "themeEmoji": "🎨",
+      "description": "游戏画面、视觉效果、美术风格相关反馈，部分机型适配问题突出，需重点关注改善",
+      "keywords": [
+        {
+          "word": "画面",
+          "count": 168
+        }
+      ],
+      "primaryCategory": "游戏平衡",
+      "feedbackCount": 168,
+      "criticalCount": 102,
+      "sampleCount": 50,
+      "representatives": [
+        {
+          "id": "taptap_175459_2_12",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 50,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_12",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 50,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_4_32",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 50,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_4_32",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 50,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_1_2",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 49,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_1_2",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 49,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_1_2",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 49,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        },
+        {
+          "id": "taptap_175459_1_2",
+          "content": "街篮1就开始玩了，再到后面2，一共玩了7年，1画面不太行，但是氪佬也没离谱到哪儿去，上限就在那儿，氪金球员就数值稍微高一些。2刚开服还行，后面就是见鬼的，氪金抽碎片换的球员那些技能，上了场就跟个鬼一样",
+          "sentiment": "neutral",
+          "urgency": "medium",
+          "source": "taptap",
+          "score": 49,
+          "keywords": [
+            "画面",
+            "技能",
+            "氪金"
+          ]
+        }
+      ],
+      "sentiment": {
+        "positive": 0,
+        "neutral": 39,
+        "negative": 61
+      },
+      "categoryBreakdown": [
+        {
+          "name": "游戏平衡",
+          "count": 139,
+          "pct": 83
+        },
+        {
+          "name": "美术表现",
+          "count": 29,
+          "pct": 17
         }
       ],
       "rank": 5
@@ -726,16 +726,16 @@
       "keywords": [
         {
           "word": "操作",
-          "count": 170
+          "count": 114
         },
         {
           "word": "手感",
-          "count": 33
+          "count": 29
         }
       ],
       "primaryCategory": "操作手感",
-      "feedbackCount": 203,
-      "criticalCount": 84,
+      "feedbackCount": 143,
+      "criticalCount": 56,
       "sampleCount": 50,
       "representatives": [
         {
@@ -828,14 +828,14 @@
         }
       ],
       "sentiment": {
-        "positive": 16,
-        "neutral": 42,
-        "negative": 41
+        "positive": 20,
+        "neutral": 41,
+        "negative": 39
       },
       "categoryBreakdown": [
         {
           "name": "操作手感",
-          "count": 203,
+          "count": 143,
           "pct": 100
         }
       ],
@@ -984,12 +984,12 @@
       "keywords": [
         {
           "word": "网络",
-          "count": 66
+          "count": 58
         }
       ],
       "primaryCategory": "综合体验",
-      "feedbackCount": 66,
-      "criticalCount": 66,
+      "feedbackCount": 58,
+      "criticalCount": 58,
       "sampleCount": 50,
       "representatives": [
         {
@@ -1089,7 +1089,7 @@
       "categoryBreakdown": [
         {
           "name": "综合体验",
-          "count": 66,
+          "count": 58,
           "pct": 100
         }
       ],
