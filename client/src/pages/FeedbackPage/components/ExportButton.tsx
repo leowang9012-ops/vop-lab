@@ -79,7 +79,17 @@ export function ExportButton({ feedbacks, currentFilters }: ExportButtonProps) {
       ws["!cols"] = colWidths;
 
       const date = new Date().toISOString().slice(0, 10);
-      XLSX.writeFile(wb, `街篮2反馈数据_${date}.xlsx`);
+      // 生成 Excel 并触发下载（兼容浏览器）
+      const wbout = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+      const blob = new Blob([wbout], { type: "application/octet-stream" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `街篮2反馈数据_${date}.xlsx`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
     } catch (err) {
       console.error("Export failed:", err);
     } finally {

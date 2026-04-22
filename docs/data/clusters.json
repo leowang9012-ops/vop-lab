@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T10:53:18.395Z",
-  "totalFeedback": 3626,
-  "analyzedFeedback": 2282,
-  "classifiedFeedback": 2162,
+  "generatedAt": "2026-04-22T11:21:45.823Z",
+  "totalFeedback": 3823,
+  "analyzedFeedback": 2390,
+  "classifiedFeedback": 2270,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 541
+          "count": 570
         },
         {
           "word": "充值",
-          "count": 285
+          "count": 301
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 667,
-      "criticalCount": 330,
+      "feedbackCount": 702,
+      "criticalCount": 346,
       "sampleCount": 50,
       "representatives": [
         {
@@ -140,7 +140,7 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 667,
+          "count": 702,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 224
+          "count": 238
         },
         {
           "word": "技能",
-          "count": 192
+          "count": 204
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 416,
-      "criticalCount": 148,
+      "feedbackCount": 442,
+      "criticalCount": 159,
       "sampleCount": 50,
       "representatives": [
         {
@@ -263,12 +263,12 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 383,
+          "count": 407,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 33,
+          "count": 35,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 93
+          "count": 99
         }
       ],
       "primaryCategory": "性能问题",
-      "feedbackCount": 347,
+      "feedbackCount": 353,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,20 +416,20 @@
         }
       ],
       "sentiment": {
-        "positive": 45,
-        "neutral": 39,
+        "positive": 46,
+        "neutral": 38,
         "negative": 16
       },
       "categoryBreakdown": [
         {
           "name": "性能问题",
-          "count": 93,
-          "pct": 27
+          "count": 99,
+          "pct": 28
         },
         {
           "name": "操作手感",
           "count": 89,
-          "pct": 26
+          "pct": 25
         },
         {
           "name": "整体体验",
@@ -457,12 +457,12 @@
       "keywords": [
         {
           "word": "画面",
-          "count": 191
+          "count": 203
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 191,
-      "criticalCount": 114,
+      "feedbackCount": 203,
+      "criticalCount": 121,
       "sampleCount": 50,
       "representatives": [
         {
@@ -578,12 +578,12 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 159,
+          "count": 169,
           "pct": 83
         },
         {
           "name": "美术表现",
-          "count": 32,
+          "count": 34,
           "pct": 17
         }
       ],
@@ -597,12 +597,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 190
+          "count": 202
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 190,
-      "criticalCount": 143,
+      "feedbackCount": 202,
+      "criticalCount": 153,
       "sampleCount": 50,
       "representatives": [
         {
@@ -683,12 +683,12 @@
           ]
         },
         {
-          "id": "taptap_175459_3_25",
-          "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+          "id": "taptap_175459_3_28",
+          "content": "修改&总结:还平什么衡啊.....削奈娜还连带着失吹和小明这些底层一起削，没啥人物特色，这游戏的特色就是新出的绝对强，对，下一个新出的又是绝对强，旧角色削一波，玩家洗点，就这么一浪一浪的，你身上啥都不剩，划策只想从你口袋里赚点券，然后不断的削弱回收洗点费(没错，黑心到失吹小明的洗点费都赚)，再然后制作街篮3，这就是它们的整体思路，照这情况街篮3继续相同战略，就连咱们现在说的这些，它们看都不带看一眼的，说来搞笑就来这个论坛都没人发帖了，匹配3v3，1v1，2v2全是人机，聊天栏只有刷喇叭没有交流，俱乐部聊天栏每天都是句号逗号句号逗号，好友一大半弃坑40，30，20多天，玩小号钻石以下单排把把人机，这游戏开服几个月就已经在走末路了，说不定街篮3已经在制作了，救不活了~😒",
           "sentiment": "neutral",
           "urgency": "medium",
           "source": "taptap",
-          "score": 47,
+          "score": 48,
           "keywords": [
             "匹配"
           ]
@@ -696,23 +696,23 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 25,
-        "negative": 75
+        "neutral": 24,
+        "negative": 76
       },
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 95,
+          "count": 102,
           "pct": 50
         },
         {
           "name": "综合体验",
-          "count": 64,
+          "count": 68,
           "pct": 34
         },
         {
           "name": "游戏平衡",
-          "count": 31,
+          "count": 32,
           "pct": 16
         }
       ],
@@ -726,16 +726,16 @@
       "keywords": [
         {
           "word": "操作",
-          "count": 130
+          "count": 140
         },
         {
           "word": "手感",
-          "count": 32
+          "count": 34
         }
       ],
       "primaryCategory": "操作手感",
-      "feedbackCount": 162,
-      "criticalCount": 64,
+      "feedbackCount": 174,
+      "criticalCount": 69,
       "sampleCount": 50,
       "representatives": [
         {
@@ -835,7 +835,7 @@
       "categoryBreakdown": [
         {
           "name": "操作手感",
-          "count": 162,
+          "count": 174,
           "pct": 100
         }
       ],
@@ -869,7 +869,7 @@
         }
       ],
       "primaryCategory": "战斗体验",
-      "feedbackCount": 125,
+      "feedbackCount": 126,
       "criticalCount": 0,
       "sampleCount": 50,
       "representatives": [
@@ -963,15 +963,20 @@
         }
       ],
       "sentiment": {
-        "positive": 70,
-        "neutral": 26,
+        "positive": 69,
+        "neutral": 27,
         "negative": 4
       },
       "categoryBreakdown": [
         {
           "name": "战斗体验",
           "count": 125,
-          "pct": 100
+          "pct": 99
+        },
+        {
+          "name": "游戏平衡",
+          "count": 1,
+          "pct": 1
         }
       ],
       "rank": 7
@@ -984,12 +989,12 @@
       "keywords": [
         {
           "word": "网络",
-          "count": 64
+          "count": 68
         }
       ],
       "primaryCategory": "综合体验",
-      "feedbackCount": 64,
-      "criticalCount": 64,
+      "feedbackCount": 68,
+      "criticalCount": 68,
       "sampleCount": 50,
       "representatives": [
         {
@@ -1089,7 +1094,7 @@
       "categoryBreakdown": [
         {
           "name": "综合体验",
-          "count": 64,
+          "count": 68,
           "pct": 100
         }
       ],
