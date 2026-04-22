@@ -1,17 +1,54 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useProject, Project } from "@/contexts/ProjectContext";
 import { Gamepad2, Plus, BarChart3, ArrowRight, Calendar } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export default function ProjectsPage() {
-  const { projects, currentProject, selectProject } = useProject();
+  const { projects, currentProject, selectProject, addProject } = useProject();
   const navigate = useNavigate();
+
+  const [showDialog, setShowDialog] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    platform: "",
+    genre: "",
+    description: "",
+  });
 
   const handleSelect = (id: string) => {
     selectProject(id);
     navigate("/");
+  };
+
+  const handleCreate = () => {
+    if (!form.name.trim()) return;
+    const newProject: Project = {
+      id: `proj_${Date.now()}`,
+      name: form.name.trim(),
+      platform: form.platform.trim() || "移动端",
+      genre: form.genre.trim() || "竞技",
+      status: "active",
+      createdAt: new Date().toLocaleDateString("zh-CN"),
+      dataFile: "",
+      reportFile: "",
+      trendFile: "",
+      description: form.description.trim(),
+    };
+    addProject(newProject);
+    setShowDialog(false);
+    setForm({ name: "", platform: "", genre: "", description: "" });
   };
 
   return (
@@ -98,8 +135,11 @@ export default function ProjectsPage() {
               </Card>
             ))}
 
-            {/* Add Project Placeholder */}
-            <Card className="bg-card border-border border-dashed cursor-pointer hover:border-primary/50 transition-colors">
+            {/* Add Project Card */}
+            <Card
+              className="bg-card border-border border-dashed cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => setShowDialog(true)}
+            >
               <CardContent className="flex flex-col items-center justify-center py-12 text-muted-foreground">
                 <Plus className="w-8 h-8 mb-3" />
                 <p className="text-sm font-medium">新建项目</p>
@@ -140,6 +180,60 @@ export default function ProjectsPage() {
           </CardContent>
         </Card>
       </main>
+
+      {/* New Project Dialog */}
+      <Dialog open={showDialog} onOpenChange={setShowDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>新建项目</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4 py-2">
+            <div className="space-y-1.5">
+              <Label htmlFor="proj-name">项目名称 *</Label>
+              <Input
+                id="proj-name"
+                value={form.name}
+                onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+                placeholder="例如：街篮2"
+                autoFocus
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1.5">
+                <Label htmlFor="proj-platform">平台</Label>
+                <Input
+                  id="proj-platform"
+                  value={form.platform}
+                  onChange={e => setForm(f => ({ ...f, platform: e.target.value }))}
+                  placeholder="例如：移动端"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <Label htmlFor="proj-genre">品类</Label>
+                <Input
+                  id="proj-genre"
+                  value={form.genre}
+                  onChange={e => setForm(f => ({ ...f, genre: e.target.value }))}
+                  placeholder="例如：竞技"
+                />
+              </div>
+            </div>
+            <div className="space-y-1.5">
+              <Label htmlFor="proj-desc">项目描述</Label>
+              <Input
+                id="proj-desc"
+                value={form.description}
+                onChange={e => setForm(f => ({ ...f, description: e.target.value }))}
+                placeholder="简要描述项目定位"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setShowDialog(false)}>取消</Button>
+            <Button onClick={handleCreate} disabled={!form.name.trim()}>创建项目</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
