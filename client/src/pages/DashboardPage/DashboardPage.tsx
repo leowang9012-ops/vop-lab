@@ -47,8 +47,13 @@ export default function DashboardPage() {
       .then(data => {
         const total = data.totalFeedback || 1;
         const negativeCount = data.sentimentDistribution?.negative || 0;
+        // 兼容 topKeywords 格式：可能是 string[] 或 {word, count}[]
+        const topKeywords = Array.isArray(data.topKeywords)
+          ? data.topKeywords.map((item: any) => typeof item === 'string' ? { word: item, count: 0 } : item)
+          : [];
         setReport({
           ...data,
+          topKeywords,
           negativeRatio: Math.round(negativeCount / total * 100),
         });
         setLoading(false);
