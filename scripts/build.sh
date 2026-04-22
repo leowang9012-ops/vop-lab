@@ -40,4 +40,18 @@ echo "🔮 Running semantic clustering..."
 node scripts/semantic-cluster.js || echo "⚠️  Semantic clustering skipped"
 cp data/clusters.json docs/data/clusters.json 2>/dev/null || true
 
+# GitHub Pages SPA fallback: redirect all 404s to app root
+cat > docs/404.html << 'EOF404'
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>VoP Lab</title></head>
+<body>
+<script>
+var base = location.pathname.replace(/\/[^/]*$/, '/');
+location.replace(location.origin + base);
+</script>
+</body>
+</html>
+EOF404
+
 echo "Build complete!"
