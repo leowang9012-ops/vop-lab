@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { FeedbackFilters } from "./components/feedback-filters";
 import { FeedbackTable } from "./components/feedback-table";
 import { Pagination } from "./components/pagination";
+import { ExportButton } from "./components/ExportButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export type FeedbackItem = {
@@ -90,9 +91,12 @@ export default function FeedbackPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
-        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4">
-          <h1 className="text-lg md:text-xl font-bold text-foreground">反馈列表</h1>
-          <p className="text-xs md:text-sm text-muted-foreground mt-0.5">查看和管理所有玩家反馈（{feedbacks.length} 条）</p>
+        <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-3 md:py-4 flex items-center justify-between gap-4 flex-wrap">
+          <div>
+            <h1 className="text-lg md:text-xl font-bold text-foreground">反馈列表</h1>
+            <p className="text-xs md:text-sm text-muted-foreground mt-0.5">查看和管理所有玩家反馈（{feedbacks.length} 条）</p>
+          </div>
+          <ExportButton feedbacks={feedbacks} currentFilters={filters} />
         </div>
       </header>
 
