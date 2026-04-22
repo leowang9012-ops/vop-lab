@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T11:59:35.934Z",
-  "totalFeedback": 4615,
-  "analyzedFeedback": 2806,
-  "classifiedFeedback": 2686,
+  "generatedAt": "2026-04-22T12:04:04.410Z",
+  "totalFeedback": 4813,
+  "analyzedFeedback": 2910,
+  "classifiedFeedback": 2790,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 666
+          "count": 690
         },
         {
           "word": "充值",
-          "count": 357
+          "count": 371
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 814,
-      "criticalCount": 410,
+      "feedbackCount": 842,
+      "criticalCount": 426,
       "sampleCount": 50,
       "representatives": [
         {
@@ -134,13 +134,13 @@
       ],
       "sentiment": {
         "positive": 26,
-        "neutral": 24,
-        "negative": 50
+        "neutral": 23,
+        "negative": 51
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 814,
+          "count": 842,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 294
+          "count": 308
         },
         {
           "word": "技能",
-          "count": 252
+          "count": 264
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 546,
-      "criticalCount": 223,
+      "feedbackCount": 572,
+      "criticalCount": 240,
       "sampleCount": 50,
       "representatives": [
         {
@@ -257,18 +257,18 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 59,
-        "negative": 41
+        "neutral": 58,
+        "negative": 42
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 503,
+          "count": 527,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 43,
+          "count": 45,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 123
+          "count": 129
         }
       ],
       "primaryCategory": "性能问题",
-      "feedbackCount": 377,
+      "feedbackCount": 383,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,20 +416,20 @@
         }
       ],
       "sentiment": {
-        "positive": 49,
-        "neutral": 36,
+        "positive": 50,
+        "neutral": 35,
         "negative": 15
       },
       "categoryBreakdown": [
         {
           "name": "性能问题",
-          "count": 123,
-          "pct": 33
+          "count": 129,
+          "pct": 34
         },
         {
           "name": "操作手感",
           "count": 89,
-          "pct": 24
+          "pct": 23
         },
         {
           "name": "整体体验",
@@ -457,12 +457,12 @@
       "keywords": [
         {
           "word": "画面",
-          "count": 251
+          "count": 263
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 251,
-      "criticalCount": 150,
+      "feedbackCount": 263,
+      "criticalCount": 156,
       "sampleCount": 50,
       "representatives": [
         {
@@ -572,18 +572,18 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 40,
-        "negative": 60
+        "neutral": 41,
+        "negative": 59
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 209,
+          "count": 219,
           "pct": 83
         },
         {
           "name": "美术表现",
-          "count": 42,
+          "count": 44,
           "pct": 17
         }
       ],
@@ -597,12 +597,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 250
+          "count": 262
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 250,
-      "criticalCount": 192,
+      "feedbackCount": 262,
+      "criticalCount": 200,
       "sampleCount": 50,
       "representatives": [
         {
@@ -696,24 +696,24 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 23,
-        "negative": 77
+        "neutral": 24,
+        "negative": 76
       },
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 134,
+          "count": 142,
           "pct": 54
         },
         {
           "name": "综合体验",
-          "count": 84,
+          "count": 88,
           "pct": 34
         },
         {
           "name": "游戏平衡",
           "count": 32,
-          "pct": 13
+          "pct": 12
         }
       ],
       "rank": 5
@@ -726,16 +726,16 @@
       "keywords": [
         {
           "word": "操作",
-          "count": 188
+          "count": 200
         },
         {
           "word": "手感",
-          "count": 42
+          "count": 44
         }
       ],
       "primaryCategory": "操作手感",
-      "feedbackCount": 230,
-      "criticalCount": 93,
+      "feedbackCount": 244,
+      "criticalCount": 99,
       "sampleCount": 50,
       "representatives": [
         {
@@ -830,12 +830,12 @@
       "sentiment": {
         "positive": 18,
         "neutral": 41,
-        "negative": 40
+        "negative": 41
       },
       "categoryBreakdown": [
         {
           "name": "操作手感",
-          "count": 230,
+          "count": 244,
           "pct": 100
         }
       ],
@@ -869,11 +869,11 @@
         },
         {
           "word": "职业",
-          "count": 9
+          "count": 11
         }
       ],
       "primaryCategory": "战斗体验",
-      "feedbackCount": 134,
+      "feedbackCount": 136,
       "criticalCount": 0,
       "sampleCount": 50,
       "representatives": [
@@ -967,20 +967,20 @@
         }
       ],
       "sentiment": {
-        "positive": 65,
-        "neutral": 31,
+        "positive": 64,
+        "neutral": 32,
         "negative": 4
       },
       "categoryBreakdown": [
         {
           "name": "战斗体验",
           "count": 125,
-          "pct": 93
+          "pct": 92
         },
         {
           "name": "游戏平衡",
-          "count": 9,
-          "pct": 7
+          "count": 11,
+          "pct": 8
         }
       ],
       "rank": 7
@@ -993,12 +993,12 @@
       "keywords": [
         {
           "word": "网络",
-          "count": 84
+          "count": 88
         }
       ],
       "primaryCategory": "综合体验",
-      "feedbackCount": 84,
-      "criticalCount": 84,
+      "feedbackCount": 88,
+      "criticalCount": 88,
       "sampleCount": 50,
       "representatives": [
         {
@@ -1098,7 +1098,7 @@
       "categoryBreakdown": [
         {
           "name": "综合体验",
-          "count": 84,
+          "count": 88,
           "pct": 100
         }
       ],
