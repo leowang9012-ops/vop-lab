@@ -21,7 +21,7 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
-      - run: cd vop-lab && npm ci && npm run build
+      - run: npm ci && npm run build
         env:
           MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
 
