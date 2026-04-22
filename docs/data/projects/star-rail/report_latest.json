@@ -1,0 +1,135 @@
+{
+  "totalFeedback": 490,
+  "avgScore": 3.4,
+  "sentimentDistribution": {
+    "positive": 274,
+    "neutral": 43,
+    "negative": 173
+  },
+  "categoryDistribution": {
+    "美术表现": 11,
+    "综合体验": 424,
+    "玩法设计": 22,
+    "性能问题": 5,
+    "游戏平衡": 23,
+    "音频体验": 2,
+    "操作手感": 2,
+    "UI/UX": 1
+  },
+  "urgencyDistribution": {
+    "low": 274,
+    "medium": 43,
+    "critical": 148,
+    "high": 25
+  },
+  "sourceDistribution": {
+    "appstore": 490
+  },
+  "topKeywords": [
+    {
+      "word": "角色",
+      "count": 102
+    },
+    {
+      "word": "剧情",
+      "count": 93
+    },
+    {
+      "word": "抽卡",
+      "count": 51
+    },
+    {
+      "word": "音乐",
+      "count": 11
+    },
+    {
+      "word": "玩法",
+      "count": 11
+    },
+    {
+      "word": "美术",
+      "count": 9
+    },
+    {
+      "word": "氪金",
+      "count": 8
+    },
+    {
+      "word": "星琼",
+      "count": 4
+    },
+    {
+      "word": "平衡",
+      "count": 3
+    },
+    {
+      "word": "画面",
+      "count": 2
+    },
+    {
+      "word": "崩溃",
+      "count": 2
+    },
+    {
+      "word": "闪退",
+      "count": 2
+    },
+    {
+      "word": "技能",
+      "count": 1
+    },
+    {
+      "word": "网络",
+      "count": 1
+    },
+    {
+      "word": "bug",
+      "count": 1
+    }
+  ],
+  "categoryAvgScores": [
+    {
+      "category": "综合体验",
+      "avgScore": 3.3,
+      "count": 424
+    },
+    {
+      "category": "游戏平衡",
+      "avgScore": 3.8,
+      "count": 23
+    },
+    {
+      "category": "玩法设计",
+      "avgScore": 3.2,
+      "count": 22
+    },
+    {
+      "category": "美术表现",
+      "avgScore": 3.9,
+      "count": 11
+    },
+    {
+      "category": "性能问题",
+      "avgScore": 2,
+      "count": 5
+    },
+    {
+      "category": "音频体验",
+      "avgScore": 5,
+      "count": 2
+    },
+    {
+      "category": "操作手感",
+      "avgScore": 3,
+      "count": 2
+    },
+    {
+      "category": "UI/UX",
+      "avgScore": 5,
+      "count": 1
+    }
+  ],
+  "urgentIssues": 148,
+  "generatedAt": "2026-04-22T13:43:42.892Z",
+  "reportTitle": "崩坏星穹铁道 - 反馈分析报告"
+}
