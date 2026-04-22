@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T13:53:50.527Z",
-  "totalFeedback": 6595,
-  "analyzedFeedback": 3846,
-  "classifiedFeedback": 3726,
+  "generatedAt": "2026-04-22T14:07:17.313Z",
+  "totalFeedback": 6793,
+  "analyzedFeedback": 3950,
+  "classifiedFeedback": 3830,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 906
+          "count": 930
         },
         {
           "word": "充值",
-          "count": 497
+          "count": 511
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 1094,
-      "criticalCount": 560,
+      "feedbackCount": 1122,
+      "criticalCount": 576,
       "sampleCount": 50,
       "representatives": [
         {
@@ -134,13 +134,13 @@
       ],
       "sentiment": {
         "positive": 28,
-        "neutral": 21,
+        "neutral": 20,
         "negative": 51
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 1094,
+          "count": 1122,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 434
+          "count": 448
         },
         {
           "word": "技能",
-          "count": 372
+          "count": 384
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 806,
-      "criticalCount": 388,
+      "feedbackCount": 832,
+      "criticalCount": 403,
       "sampleCount": 50,
       "representatives": [
         {
@@ -263,12 +263,12 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 743,
+          "count": 767,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 63,
+          "count": 65,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 183
+          "count": 189
         }
       ],
       "primaryCategory": "性能问题",
-      "feedbackCount": 437,
+      "feedbackCount": 443,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,15 +416,15 @@
         }
       ],
       "sentiment": {
-        "positive": 56,
-        "neutral": 31,
+        "positive": 57,
+        "neutral": 30,
         "negative": 13
       },
       "categoryBreakdown": [
         {
           "name": "性能问题",
-          "count": 183,
-          "pct": 42
+          "count": 189,
+          "pct": 43
         },
         {
           "name": "操作手感",
@@ -439,7 +439,7 @@
         {
           "name": "美术表现",
           "count": 77,
-          "pct": 18
+          "pct": 17
         },
         {
           "name": "设备兼容",
@@ -450,6 +450,129 @@
       "rank": 3
     },
     {
+      "id": "cluster-3",
+      "themeName": "操作手感",
+      "themeEmoji": "🕹️",
+      "description": "操作响应、技能释放流畅度体验，是竞技体验的核心组成",
+      "keywords": [
+        {
+          "word": "操作",
+          "count": 320
+        },
+        {
+          "word": "手感",
+          "count": 64
+        }
+      ],
+      "primaryCategory": "操作手感",
+      "feedbackCount": 384,
+      "criticalCount": 159,
+      "sampleCount": 50,
+      "representatives": [
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        },
+        {
+          "id": "taptap_175459_2_17",
+          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
+          "sentiment": "neutral",
+          "urgency": "low",
+          "source": "taptap",
+          "score": 67,
+          "keywords": [
+            "操作"
+          ]
+        }
+      ],
+      "sentiment": {
+        "positive": 17,
+        "neutral": 42,
+        "negative": 41
+      },
+      "categoryBreakdown": [
+        {
+          "name": "操作手感",
+          "count": 384,
+          "pct": 100
+        }
+      ],
+      "rank": 4
+    },
+    {
       "id": "cluster-2",
       "themeName": "美术表现",
       "themeEmoji": "🎨",
@@ -457,12 +580,12 @@
       "keywords": [
         {
           "word": "画面",
-          "count": 371
+          "count": 383
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 371,
-      "criticalCount": 227,
+      "feedbackCount": 383,
+      "criticalCount": 235,
       "sampleCount": 50,
       "representatives": [
         {
@@ -578,16 +701,16 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 309,
+          "count": 319,
           "pct": 83
         },
         {
           "name": "美术表现",
-          "count": 62,
+          "count": 64,
           "pct": 17
         }
       ],
-      "rank": 4
+      "rank": 5
     },
     {
       "id": "cluster-1",
@@ -597,12 +720,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 370
+          "count": 382
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 370,
-      "criticalCount": 281,
+      "feedbackCount": 382,
+      "criticalCount": 291,
       "sampleCount": 50,
       "representatives": [
         {
@@ -702,141 +825,18 @@
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 214,
+          "count": 222,
           "pct": 58
         },
         {
           "name": "综合体验",
-          "count": 124,
+          "count": 128,
           "pct": 34
         },
         {
           "name": "游戏平衡",
           "count": 32,
-          "pct": 9
-        }
-      ],
-      "rank": 5
-    },
-    {
-      "id": "cluster-3",
-      "themeName": "操作手感",
-      "themeEmoji": "🕹️",
-      "description": "操作响应、技能释放流畅度体验，是竞技体验的核心组成",
-      "keywords": [
-        {
-          "word": "操作",
-          "count": 308
-        },
-        {
-          "word": "手感",
-          "count": 62
-        }
-      ],
-      "primaryCategory": "操作手感",
-      "feedbackCount": 370,
-      "criticalCount": 153,
-      "sampleCount": 50,
-      "representatives": [
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        },
-        {
-          "id": "taptap_175459_2_17",
-          "content": "🕹️可操作性：\\\\\n\\\\\n比常规篮球游戏难受，但也增加了不确定性，乐趣性增大，玩家之间的差距拉的特别大\\\\\n\\\\\n🎮可玩性：\\\\\n\\\\\n差评，繁重的成长系统，夸张的抽卡系统，让人很难受，球员之间差距很大",
-          "sentiment": "neutral",
-          "urgency": "low",
-          "source": "taptap",
-          "score": 67,
-          "keywords": [
-            "操作"
-          ]
-        }
-      ],
-      "sentiment": {
-        "positive": 17,
-        "neutral": 42,
-        "negative": 41
-      },
-      "categoryBreakdown": [
-        {
-          "name": "操作手感",
-          "count": 370,
-          "pct": 100
+          "pct": 8
         }
       ],
       "rank": 6
@@ -857,7 +857,7 @@
         },
         {
           "word": "职业",
-          "count": 29
+          "count": 31
         },
         {
           "word": "大前锋",
@@ -873,7 +873,7 @@
         }
       ],
       "primaryCategory": "战斗体验",
-      "feedbackCount": 154,
+      "feedbackCount": 156,
       "criticalCount": 0,
       "sampleCount": 50,
       "representatives": [
@@ -968,19 +968,19 @@
       ],
       "sentiment": {
         "positive": 56,
-        "neutral": 40,
+        "neutral": 41,
         "negative": 3
       },
       "categoryBreakdown": [
         {
           "name": "战斗体验",
           "count": 125,
-          "pct": 81
+          "pct": 80
         },
         {
           "name": "游戏平衡",
-          "count": 29,
-          "pct": 19
+          "count": 31,
+          "pct": 20
         }
       ],
       "rank": 7
@@ -993,12 +993,12 @@
       "keywords": [
         {
           "word": "网络",
-          "count": 124
+          "count": 128
         }
       ],
       "primaryCategory": "综合体验",
-      "feedbackCount": 124,
-      "criticalCount": 124,
+      "feedbackCount": 128,
+      "criticalCount": 128,
       "sampleCount": 50,
       "representatives": [
         {
@@ -1098,7 +1098,7 @@
       "categoryBreakdown": [
         {
           "name": "综合体验",
-          "count": 124,
+          "count": 128,
           "pct": 100
         }
       ],

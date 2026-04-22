@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquareWarning, TrendingUp, Frown, AlertTriangle, ArrowLeft } from "lucide-react";
+import { useProject } from "@/contexts/ProjectContext";
 
 interface ClusterKeyword {
   word: string;
@@ -71,16 +72,15 @@ export default function ClustersPage() {
   const [data, setData] = useState<ClusterData | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedCluster, setSelectedCluster] = useState<Cluster | null>(null);
+  const { currentDataDir } = useProject();
 
   useEffect(() => {
-    fetch("/vop-lab/data/clusters.json")
+    if (!currentDataDir) return;
+    fetch(`/vop-lab/data/projects/${currentDataDir}/clusters.json`)
       .then((res) => (res.ok ? res.json() : Promise.reject()))
-      .then((d: ClusterData) => {
-        setData(d);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, []);
+      .then((d: ClusterData) => { setData(d); setLoading(false); })
+      .catch(() => { setData(null); setLoading(false); });
+  }, [currentDataDir]);
 
   if (loading) {
     return (
