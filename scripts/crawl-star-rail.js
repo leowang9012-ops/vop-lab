@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 星穹铁道 TapTap
-const APP_ID = '305268';
+const APP_ID = '224267';
 const PAGES = 8;
 
 async function scrape(url) {
