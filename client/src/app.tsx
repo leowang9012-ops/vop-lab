@@ -21,7 +21,8 @@ export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<ShareRedirect />} />
+        <Route index element={<DashboardPage />} />
+        <Route path="dashboard" element={<DashboardPage />} />
         <Route path="projects" element={<ProjectsPage />} />
         <Route path="feedback" element={<FeedbackPage />} />
         <Route path="report" element={<ReportPage />} />
