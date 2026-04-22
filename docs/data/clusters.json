@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-22T10:37:34.114Z",
-  "totalFeedback": 3430,
-  "analyzedFeedback": 2170,
-  "classifiedFeedback": 2050,
+  "generatedAt": "2026-04-22T10:53:18.395Z",
+  "totalFeedback": 3626,
+  "analyzedFeedback": 2282,
+  "classifiedFeedback": 2162,
   "unclassifiedCount": 120,
   "clusterCount": 8,
   "method": "Keyword Grouping + Pre-classification (v3)",
@@ -15,16 +15,16 @@
       "keywords": [
         {
           "word": "氪金",
-          "count": 507
+          "count": 541
         },
         {
           "word": "充值",
-          "count": 267
+          "count": 285
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 625,
-      "criticalCount": 312,
+      "feedbackCount": 667,
+      "criticalCount": 330,
       "sampleCount": 50,
       "representatives": [
         {
@@ -134,13 +134,13 @@
       ],
       "sentiment": {
         "positive": 24,
-        "neutral": 26,
-        "negative": 50
+        "neutral": 27,
+        "negative": 49
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 625,
+          "count": 667,
           "pct": 100
         }
       ],
@@ -154,16 +154,16 @@
       "keywords": [
         {
           "word": "平衡",
-          "count": 210
+          "count": 224
         },
         {
           "word": "技能",
-          "count": 180
+          "count": 192
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 390,
-      "criticalCount": 138,
+      "feedbackCount": 416,
+      "criticalCount": 148,
       "sampleCount": 50,
       "representatives": [
         {
@@ -257,18 +257,18 @@
       ],
       "sentiment": {
         "positive": 0,
-        "neutral": 65,
-        "negative": 35
+        "neutral": 64,
+        "negative": 36
       },
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 359,
+          "count": 383,
           "pct": 92
         },
         {
           "name": "玩法设计",
-          "count": 31,
+          "count": 33,
           "pct": 8
         }
       ],
@@ -286,11 +286,11 @@
         },
         {
           "word": "卡顿",
-          "count": 87
+          "count": 93
         }
       ],
-      "primaryCategory": "操作手感",
-      "feedbackCount": 341,
+      "primaryCategory": "性能问题",
+      "feedbackCount": 347,
       "criticalCount": 57,
       "sampleCount": 50,
       "representatives": [
@@ -416,19 +416,19 @@
         }
       ],
       "sentiment": {
-        "positive": 44,
-        "neutral": 40,
-        "negative": 17
+        "positive": 45,
+        "neutral": 39,
+        "negative": 16
       },
       "categoryBreakdown": [
         {
-          "name": "操作手感",
-          "count": 89,
-          "pct": 26
+          "name": "性能问题",
+          "count": 93,
+          "pct": 27
         },
         {
-          "name": "性能问题",
-          "count": 87,
+          "name": "操作手感",
+          "count": 89,
           "pct": 26
         },
         {
@@ -439,7 +439,7 @@
         {
           "name": "美术表现",
           "count": 77,
-          "pct": 23
+          "pct": 22
         },
         {
           "name": "设备兼容",
@@ -457,12 +457,12 @@
       "keywords": [
         {
           "word": "画面",
-          "count": 179
+          "count": 191
         }
       ],
       "primaryCategory": "游戏平衡",
-      "feedbackCount": 179,
-      "criticalCount": 108,
+      "feedbackCount": 191,
+      "criticalCount": 114,
       "sampleCount": 50,
       "representatives": [
         {
@@ -578,12 +578,12 @@
       "categoryBreakdown": [
         {
           "name": "游戏平衡",
-          "count": 149,
+          "count": 159,
           "pct": 83
         },
         {
           "name": "美术表现",
-          "count": 30,
+          "count": 32,
           "pct": 17
         }
       ],
@@ -597,12 +597,12 @@
       "keywords": [
         {
           "word": "匹配",
-          "count": 178
+          "count": 190
         }
       ],
       "primaryCategory": "玩法设计",
-      "feedbackCount": 178,
-      "criticalCount": 134,
+      "feedbackCount": 190,
+      "criticalCount": 143,
       "sampleCount": 50,
       "representatives": [
         {
@@ -672,12 +672,12 @@
           ]
         },
         {
-          "id": "taptap_175459_3_25",
-          "content": "垃圾游戏，前期给你匹配人机让你爽一下，后面直接给你匹配超级人机，角色是一下被放倒的，球是一下被断的，队友是一下不防的，篮板是没有的，对面是会协防的。总的一句话:不充钱玩不了，这种煞笔游戏赶紧下架吧",
+          "id": "taptap_175459_3_28",
+          "content": "修改&总结:还平什么衡啊.....削奈娜还连带着失吹和小明这些底层一起削，没啥人物特色，这游戏的特色就是新出的绝对强，对，下一个新出的又是绝对强，旧角色削一波，玩家洗点，就这么一浪一浪的，你身上啥都不剩，划策只想从你口袋里赚点券，然后不断的削弱回收洗点费(没错，黑心到失吹小明的洗点费都赚)，再然后制作街篮3，这就是它们的整体思路，照这情况街篮3继续相同战略，就连咱们现在说的这些，它们看都不带看一眼的，说来搞笑就来这个论坛都没人发帖了，匹配3v3，1v1，2v2全是人机，聊天栏只有刷喇叭没有交流，俱乐部聊天栏每天都是句号逗号句号逗号，好友一大半弃坑40，30，20多天，玩小号钻石以下单排把把人机，这游戏开服几个月就已经在走末路了，说不定街篮3已经在制作了，救不活了~😒",
           "sentiment": "neutral",
           "urgency": "medium",
           "source": "taptap",
-          "score": 47,
+          "score": 48,
           "keywords": [
             "匹配"
           ]
@@ -702,17 +702,17 @@
       "categoryBreakdown": [
         {
           "name": "玩法设计",
-          "count": 89,
+          "count": 95,
           "pct": 50
         },
         {
           "name": "综合体验",
-          "count": 60,
+          "count": 64,
           "pct": 34
         },
         {
           "name": "游戏平衡",
-          "count": 29,
+          "count": 31,
           "pct": 16
         }
       ],
@@ -726,16 +726,16 @@
       "keywords": [
         {
           "word": "操作",
-          "count": 122
+          "count": 130
         },
         {
           "word": "手感",
-          "count": 30
+          "count": 32
         }
       ],
       "primaryCategory": "操作手感",
-      "feedbackCount": 152,
-      "criticalCount": 60,
+      "feedbackCount": 162,
+      "criticalCount": 64,
       "sampleCount": 50,
       "representatives": [
         {
@@ -830,12 +830,12 @@
       "sentiment": {
         "positive": 20,
         "neutral": 41,
-        "negative": 39
+        "negative": 40
       },
       "categoryBreakdown": [
         {
           "name": "操作手感",
-          "count": 152,
+          "count": 162,
           "pct": 100
         }
       ],
@@ -984,12 +984,12 @@
       "keywords": [
         {
           "word": "网络",
-          "count": 60
+          "count": 64
         }
       ],
       "primaryCategory": "综合体验",
-      "feedbackCount": 60,
-      "criticalCount": 60,
+      "feedbackCount": 64,
+      "criticalCount": 64,
       "sampleCount": 50,
       "representatives": [
         {
@@ -1089,7 +1089,7 @@
       "categoryBreakdown": [
         {
           "name": "综合体验",
-          "count": 60,
+          "count": 64,
           "pct": 100
         }
       ],
