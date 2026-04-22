@@ -38,7 +38,7 @@ export default function FeedbackPage() {
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/feedback_processed.json`)
+    fetch(`\/vop-lab\/data\/feedback_processed.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         setFeedbacks(data);

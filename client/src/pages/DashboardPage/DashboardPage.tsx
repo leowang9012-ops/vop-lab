@@ -42,7 +42,7 @@ export default function DashboardPage() {
   const { currentProject } = useProject();
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/report_latest.json`)
+    fetch(`/vop-lab/data/report_latest.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         const total = data.totalFeedback || 1;

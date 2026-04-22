@@ -38,7 +38,7 @@ export default function WeeklyReportPage() {
   const reportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/feedback_processed.json`)
+    fetch(`\/vop-lab\/data\/feedback_processed.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         setAllData(data);

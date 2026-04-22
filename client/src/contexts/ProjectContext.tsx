@@ -29,7 +29,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/projects.json`)
+    fetch(`/vop-lab/data/projects.json`)
       .then(res => res.ok ? res.json() : Promise.reject())
       .then(data => {
         const list = data.projects || [];

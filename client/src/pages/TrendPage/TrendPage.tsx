@@ -26,7 +26,7 @@ export default function TrendPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/trend_comparison.json`)
+    fetch(`\/vop-lab\/data\/trend_comparison.json`)
       .then(res => {
         if (!res.ok) throw new Error('Trend data not found');
         return res.json();

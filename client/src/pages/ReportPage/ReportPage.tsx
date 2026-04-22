@@ -25,7 +25,7 @@ export default function ReportPage() {
   const [exportError, setExportError] = useState<string>("");
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}data/report_latest.json`)
+    fetch(`\/vop-lab\/data\/report_latest.json`)
       .then(res => {
         if (!res.ok) throw new Error('Report not found');
         return res.json();
