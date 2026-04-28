@@ -9,7 +9,7 @@ export function Layout() {
   return (
     <div className="min-h-screen bg-background flex">
       {/* Mobile header */}
-      <header className="fixed top-0 left-0 right-0 z-50 h-14 bg-sidebar/95 backdrop-blur border-b border-sidebar-border flex items-center justify-between px-4 md:hidden">
+      <header className="fixed top-0 left-0 right-0 z-50 h-14 bg-sidebar/90 backdrop-blur-xl border-b border-sidebar-border/60 flex items-center justify-between px-4 md:hidden">
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="p-2 rounded-lg hover:bg-secondary/60 transition-colors"
@@ -21,14 +21,14 @@ export function Layout() {
           )}
         </button>
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white">
+          <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground">
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
               <path d="M2 12h20" />
             </svg>
           </div>
-          <span className="text-sm font-bold text-sidebar-foreground">VoP Lab</span>
+          <span className="text-sm font-bold text-sidebar-foreground font-display">VoP Lab</span>
         </div>
         <div className="w-9" />
       </header>
@@ -36,7 +36,7 @@ export function Layout() {
       {/* Mobile overlay */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-30 bg-black/50 md:hidden"
+          className="fixed inset-0 z-30 bg-black/60 backdrop-blur-sm md:hidden"
           onClick={() => setMobileMenuOpen(false)}
         />
       )}
@@ -44,8 +44,8 @@ export function Layout() {
       {/* Sidebar - desktop: fixed left, mobile: slide-in overlay */}
       <div
         className={`
-          fixed top-0 left-0 bottom-0 z-40 w-64 bg-sidebar border-r border-sidebar-border flex flex-col
-          transform transition-transform duration-300 ease-in-out
+          fixed top-0 left-0 bottom-0 z-40 w-64 bg-sidebar border-r border-sidebar-border/60 flex flex-col
+          transform transition-transform duration-300 ease-out
           md:translate-x-0 md:static md:z-auto
           ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
         `}

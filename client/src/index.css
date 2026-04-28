@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ==================== Light Theme ==================== */
 .light:root {
   --background: hsl(0 0% 100%);
   --foreground: hsl(224 14% 10%);
@@ -8,7 +9,7 @@
   --card-foreground: hsl(224 14% 10%);
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(224 14% 10%);
-  --primary: hsl(250 75% 55%);
+  --primary: hsl(199 89% 48%);
   --primary-foreground: hsl(0 0% 100%);
   --secondary: hsl(224 20% 96%);
   --secondary-foreground: hsl(224 14% 10%);
@@ -20,93 +21,119 @@
   --destructive-foreground: hsl(0 0% 100%);
   --border: hsl(224 15% 88%);
   --input: hsl(224 15% 88%);
-  --ring: hsl(250 75% 55%);
+  --ring: hsl(199 89% 48%);
   --sidebar: hsl(224 25% 97%);
   --sidebar-foreground: hsl(224 14% 10%);
-  --sidebar-primary: hsl(250 75% 55%);
+  --sidebar-primary: hsl(199 89% 48%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(250 60% 94%);
-  --sidebar-accent-foreground: hsl(250 75% 40%);
+  --sidebar-accent: hsl(199 80% 94%);
+  --sidebar-accent-foreground: hsl(199 89% 30%);
   --sidebar-border: hsl(224 15% 88%);
   --button-outline: rgba(0,0,0, .06);
   --badge-outline: rgba(0,0,0, .04);
   --elevate-1: rgba(0,0,0, .02);
   --elevate-2: rgba(0,0,0, .04);
+  --glow-primary: hsl(199 89% 48% / 0.08);
+  --glow-card: transparent;
+  --card-surface: hsl(0 0% 100%);
+  --card-border-subtle: hsl(224 15% 92%);
 }
 
+/* ==================== Dark Theme (Default) ==================== */
 :root {
-  --button-outline: rgba(255,255,255, .08);
+  --button-outline: rgba(255,255,255, .06);
   --badge-outline: rgba(255,255,255, .04);
-  --opaque-button-border-intensity: 10;
-  --elevate-1: rgba(255,255,255, .02);
-  --elevate-2: rgba(255,255,255, .04);
+  --opaque-button-border-intensity: 12;
+  --elevate-1: rgba(255,255,255, .015);
+  --elevate-2: rgba(255,255,255, .03);
 
-  /* VoP Lab - Deep Purple/Indigo Primary with Amber Accent */
-  --background: hsl(224 40% 4%);
-  --foreground: hsl(220 40% 98%);
-  --card: hsl(224 35% 8%);
-  --card-foreground: hsl(220 40% 98%);
-  --popover: hsl(224 35% 10%);
-  --popover-foreground: hsl(220 40% 98%);
-  --primary: hsl(250 75% 60%);
-  --primary-foreground: hsl(224 40% 4%);
-  --secondary: hsl(224 30% 12%);
-  --secondary-foreground: hsl(220 40% 95%);
-  --muted: hsl(224 30% 12%);
-  --muted-foreground: hsl(220 15% 55%);
+  /* === Surface Colors — ultra-deep blue-black === */
+  --background: hsl(228 50% 3%);
+  --foreground: hsl(210 40% 96%);
+  --card: hsl(228 40% 6%);
+  --card-foreground: hsl(210 40% 96%);
+  --popover: hsl(228 40% 8%);
+  --popover-foreground: hsl(210 40% 96%);
+
+  /* === Primary — electric cyan === */
+  --primary: hsl(199 95% 53%);
+  --primary-foreground: hsl(228 50% 3%);
+
+  /* === Secondary & Muted === */
+  --secondary: hsl(228 30% 10%);
+  --secondary-foreground: hsl(210 40% 92%);
+  --muted: hsl(228 25% 11%);
+  --muted-foreground: hsl(215 15% 50%);
+
+  /* === Accent — warm amber === */
   --accent: hsl(38 92% 50%);
-  --accent-foreground: hsl(224 40% 4%);
-  --info: hsl(199 89% 48%);
+  --accent-foreground: hsl(228 50% 3%);
+
+  /* === Semantic === */
+  --info: hsl(199 95% 53%);
   --info-foreground: hsl(199 100% 97%);
-  --destructive: hsl(0 72% 51%);
+  --destructive: hsl(0 78% 57%);
   --destructive-foreground: hsl(0 0% 100%);
-  --success: hsl(142 76% 45%);
-  --success-foreground: hsl(142 77% 97%);
+  --success: hsl(152 69% 42%);
+  --success-foreground: hsl(152 77% 97%);
   --warning: hsl(38 92% 50%);
   --warning-foreground: hsl(33 100% 96%);
-  --border: hsl(224 25% 14%);
-  --input: hsl(224 25% 14%);
-  --ring: hsl(250 75% 60%);
 
-  --chart-1: hsl(250 75% 60%);
-  --chart-2: hsl(174 77% 40%);
-  --chart-3: hsl(38 92% 50%);
-  --chart-4: hsl(340 75% 55%);
-  --chart-5: hsl(199 89% 48%);
-  --sidebar: hsl(224 35% 6%);
-  --sidebar-foreground: hsl(220 40% 95%);
-  --sidebar-primary: hsl(250 75% 60%);
-  --sidebar-primary-foreground: hsl(224 40% 4%);
-  --sidebar-accent: hsl(250 50% 15%);
-  --sidebar-accent-foreground: hsl(250 75% 70%);
-  --sidebar-border: hsl(224 25% 14%);
-  --sidebar-ring: hsl(250 75% 60%);
+  /* === Borders === */
+  --border: hsl(228 25% 12%);
+  --input: hsl(228 25% 12%);
+  --ring: hsl(199 95% 53%);
 
-  --primary-border: hsl(from hsl(250 75% 60%) h s calc(l + var(--opaque-button-border-intensity)));
-  --secondary-border: hsl(from hsl(224 30% 12%) h s calc(l + var(--opaque-button-border-intensity)));
-  --destructive-border: hsl(from hsl(0 72% 51%) h s calc(l + var(--opaque-button-border-intensity)));
+  /* === Chart — vivid neon palette === */
+  --chart-1: hsl(199 95% 53%);
+  --chart-2: hsl(152 69% 42%);
+  --chart-3: hsl(38 92% 55%);
+  --chart-4: hsl(328 85% 60%);
+  --chart-5: hsl(262 80% 65%);
+
+  /* === Sidebar === */
+  --sidebar: hsl(228 45% 3.5%);
+  --sidebar-foreground: hsl(210 40% 92%);
+  --sidebar-primary: hsl(199 95% 53%);
+  --sidebar-primary-foreground: hsl(228 50% 3%);
+  --sidebar-accent: hsl(199 60% 10%);
+  --sidebar-accent-foreground: hsl(199 95% 65%);
+  --sidebar-border: hsl(228 25% 10%);
+  --sidebar-ring: hsl(199 95% 53%);
+
+  /* === Glow & Surface Effects === */
+  --glow-primary: hsl(199 95% 53% / 0.12);
+  --glow-card: hsl(199 95% 53% / 0.04);
+  --card-surface: hsl(228 35% 7%);
+  --card-border-subtle: hsl(228 20% 13%);
+
+  /* === Border derivations === */
+  --primary-border: hsl(from hsl(199 95% 53%) h s calc(l + var(--opaque-button-border-intensity)));
+  --secondary-border: hsl(from hsl(228 30% 10%) h s calc(l + var(--opaque-button-border-intensity)));
+  --destructive-border: hsl(from hsl(0 78% 57%) h s calc(l + var(--opaque-button-border-intensity)));
   --accent-border: hsl(from hsl(38 92% 50%) h s calc(l + var(--opaque-button-border-intensity)));
-  --muted-border: hsl(from hsl(224 30% 12%) h s calc(l + var(--opaque-button-border-intensity)));
+  --muted-border: hsl(from hsl(228 25% 11%) h s calc(l + var(--opaque-button-border-intensity)));
 
-  --font-sans:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Tahoma, 'PingFang SC',
-    'Microsoft Yahei', Arial, 'Hiragino Sans GB', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-mono: 'Cascadia Code', 'Fira Code', Source Code Pro, monospace;
+  /* === Typography — Space Grotesk for data, DM Sans for body === */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft Yahei', sans-serif;
+  --font-display: 'Space Grotesk', 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace;
   --radius: 0.625rem;
   --spacing: 0.25rem;
 
-  --shadow-2xs: 0px 2px 8px 0px hsl(0 0% 0% / 0.08);
-  --shadow-xs: 0px 2px 8px 0px hsl(0 0% 0% / 0.12);
-  --shadow-sm: 0px 2px 8px 0px hsl(0 0% 0% / 0.16), 0px 1px 2px -1px hsl(0 0% 0% / 0.12);
-  --shadow: 0px 2px 8px 0px hsl(0 0% 0% / 0.2), 0px 1px 2px -1px hsl(0 0% 0% / 0.16);
-  --shadow-md: 0px 2px 8px 0px hsl(0 0% 0% / 0.24), 0px 2px 4px -1px hsl(0 0% 0% / 0.2);
-  --shadow-lg: 0px 2px 8px 0px hsl(0 0% 0% / 0.28), 0px 4px 6px -1px hsl(0 0% 0% / 0.24);
-  --shadow-xl: 0px 2px 8px 0px hsl(0 0% 0% / 0.32), 0px 8px 10px -1px hsl(0 0% 0% / 0.28);
-  --shadow-2xl: 0px 2px 8px 0px hsl(0 0% 0% / 0.4);
+  /* === Shadows — deeper, more atmospheric === */
+  --shadow-2xs: 0px 1px 4px 0px hsl(228 60% 0% / 0.2);
+  --shadow-xs: 0px 2px 8px 0px hsl(228 60% 0% / 0.25);
+  --shadow-sm: 0px 2px 8px 0px hsl(228 60% 0% / 0.3), 0px 1px 2px -1px hsl(228 60% 0% / 0.2);
+  --shadow: 0px 4px 12px 0px hsl(228 60% 0% / 0.35), 0px 1px 3px -1px hsl(228 60% 0% / 0.25);
+  --shadow-md: 0px 4px 16px 0px hsl(228 60% 0% / 0.4), 0px 2px 6px -1px hsl(228 60% 0% / 0.3);
+  --shadow-lg: 0px 8px 24px 0px hsl(228 60% 0% / 0.45), 0px 4px 8px -1px hsl(228 60% 0% / 0.35);
+  --shadow-xl: 0px 12px 32px 0px hsl(228 60% 0% / 0.5), 0px 8px 12px -1px hsl(228 60% 0% / 0.4);
+  --shadow-2xl: 0px 16px 48px 0px hsl(228 60% 0% / 0.55);
   --tracking-normal: 0em;
 }
 
+/* ==================== Tailwind Theme Mapping ==================== */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -148,6 +175,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
   --font-mono: var(--font-mono);
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -165,6 +193,7 @@
   --shadow-2xl: var(--shadow-2xl);
 }
 
+/* ==================== Base ==================== */
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -173,29 +202,71 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ==================== Card Glow Effect ==================== */
+.glow-card {
+  position: relative;
+  background: var(--card-surface);
+  border: 1px solid var(--card-border-subtle);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-card:hover {
+  border-color: hsl(199 95% 53% / 0.25);
+  box-shadow: 0 0 20px hsl(199 95% 53% / 0.06), var(--shadow-md);
+}
+
+/* ==================== Stat Card Variants ==================== */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stat-card:hover::before {
+  opacity: 0.6;
+}
+
+/* ==================== Number Display ==================== */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* ==================== Scrollbar ==================== */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--sidebar);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(224 25% 20%);
+  background: hsl(228 20% 18%);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(224 25% 28%);
+  background: hsl(228 20% 26%);
 }
 
 ::selection {
-  background: hsl(250 75% 60% / 0.3);
+  background: hsl(199 95% 53% / 0.25);
   color: hsl(0 0% 100%);
 }
 
+/* ==================== Animations ==================== */
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -214,47 +285,75 @@ body {
   animation: slide-in 0.3s ease-out forwards;
 }
 
-/* ========== PDF 导出打印样式 ========== */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-count-up {
+  animation: count-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ==================== Progress Bar Glow ==================== */
+.progress-bar-glow {
+  position: relative;
+}
+
+.progress-bar-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15));
+  border-radius: inherit;
+}
+
+/* ==================== PDF Print Styles ==================== */
 @media print {
-  /* 白底黑字，适合打印 */
   body {
     background: white !important;
     color: #1a1a1a !important;
     font-size: 12pt;
   }
 
-  /* 隐藏不需要打印的元素 */
   header, nav, .sidebar, .print\:hidden, button, .no-print {
     display: none !important;
   }
 
-  /* 报告卡片样式 */
   .max-w-\[1200px\] {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  /* 卡片边框 */
   .bg-card, .border-border {
     border: 1px solid #e0e0e0 !important;
     background: white !important;
     box-shadow: none !important;
   }
 
-  /* 标题 */
   h1, h2, h3, h4, h5, h6 {
     color: #1a1a1a !important;
     page-break-after: avoid;
   }
 
   h2 {
-    border-bottom: 2px solid #6c5ce7 !important;
+    border-bottom: 2px solid hsl(199 89% 48%) !important;
     padding-bottom: 8px !important;
     margin-top: 24px !important;
   }
 
-  /* 表格 */
   table {
     border-collapse: collapse !important;
     width: 100% !important;
@@ -272,32 +371,20 @@ body {
     font-weight: 600 !important;
   }
 
-  /* 引用块 */
   blockquote {
-    border-left: 4px solid #6c5ce7 !important;
-    background: #f8f7ff !important;
+    border-left: 4px solid hsl(199 89% 48%) !important;
+    background: #f0f9ff !important;
     padding: 12px 16px !important;
     color: #333 !important;
   }
 
-  /* 列表 */
-  li {
-    color: #333 !important;
-    margin-bottom: 4px !important;
-  }
+  li { color: #333 !important; margin-bottom: 4px !important; }
+  p { color: #333 !important; line-height: 1.6 !important; }
 
-  /* 段落 */
-  p {
-    color: #333 !important;
-    line-height: 1.6 !important;
-  }
-
-  /* 避免内容被分页截断 */
   h2, h3, table, blockquote {
     page-break-inside: avoid;
   }
 
-  /* 页眉 */
   @page {
     margin: 2cm;
     size: A4;
