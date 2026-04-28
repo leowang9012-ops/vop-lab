@@ -11,6 +11,7 @@ import WeeklyReportPage from "@/pages/WeeklyReportPage/WeeklyReportPage";
 import ClustersPage from "@/pages/ClustersPage/ClustersPage";
 import NotFoundPage from "@/pages/NotFoundPage/NotFoundPage";
 import LoginPage from "@/pages/LoginPage/LoginPage";
+import { FilterProvider } from "@/contexts/FilterContext";
 
 const AUTH_TOKEN = "vop-lab-logged-in";
 
@@ -40,7 +41,7 @@ function LoginRoute() {
 
 export default function App() {
   return (
-    <>
+    <FilterProvider>
       <ThemeInit />
       <Routes>
         <Route path="/login" element={<LoginRoute />} />
@@ -64,6 +65,6 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-    </>
+    </FilterProvider>
   );
 }
