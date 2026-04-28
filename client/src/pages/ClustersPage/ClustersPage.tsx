@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageSquareWarning, TrendingUp, Frown, AlertTriangle, ArrowLeft } from "lucide-react";
+import { MessageSquareWarning, TrendingUp, Frown, AlertTriangle, ArrowLeft, ExternalLink } from "lucide-react";
 import { useProject } from "@/contexts/ProjectContext";
+import { useNavigate } from "react-router-dom";
 
 interface ClusterKeyword {
   word: string;
@@ -216,6 +217,7 @@ export default function ClustersPage() {
 }
 
 function ClusterDetail({ cluster, onBack }: { cluster: Cluster; onBack: () => void }) {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
@@ -311,6 +313,17 @@ function ClusterDetail({ cluster, onBack }: { cluster: Cluster; onBack: () => vo
             </CardContent>
           </Card>
         )}
+
+        {/* Drill-down: 查看全部反馈 */}
+        <div className="flex justify-center pt-2 pb-4">
+          <button
+            onClick={() => navigate(`/feedback?category=${encodeURIComponent(cluster.primaryCategory)}`)}
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+          >
+            <ExternalLink className="w-4 h-4" />
+            查看全部「{cluster.themeName}」反馈
+          </button>
+        </div>
       </main>
     </div>
   );

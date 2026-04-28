@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { FeedbackFilters } from "./components/feedback-filters";
 import { FeedbackTable } from "./components/feedback-table";
 import { Pagination } from "./components/pagination";
@@ -30,14 +31,15 @@ export type FilterState = {
 const PAGE_SIZE = 15;
 
 export default function FeedbackPage() {
+  const [searchParams] = useSearchParams();
   const [feedbacks, setFeedbacks] = useState<FeedbackItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState<FilterState>({
-    search: "",
-    source: "all",
-    category: "all",
-    sentiment: "all",
-    urgency: "all",
+    search: searchParams.get("search") || "",
+    source: searchParams.get("source") || "all",
+    category: searchParams.get("category") || "all",
+    sentiment: searchParams.get("sentiment") || "all",
+    urgency: searchParams.get("urgency") || "all",
     dateRange: "all",
   });
   const [currentPage, setCurrentPage] = useState(1);
