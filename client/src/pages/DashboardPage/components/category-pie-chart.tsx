@@ -1,15 +1,6 @@
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { mockCategoryDistribution } from "@/data/mock";
-
-const COLORS = [
-  "hsl(199 95% 53%)",
-  "hsl(152 69% 42%)",
-  "hsl(38 92% 55%)",
-  "hsl(328 85% 60%)",
-  "hsl(262 80% 65%)",
-  "hsl(25 90% 55%)",
-  "hsl(180 70% 45%)",
-];
+import { CHART_PALETTE, CHART_TOOLTIP, PIE_STROKE } from "@/lib/chart-theme";
 
 export function CategoryPieChart() {
   return (
@@ -28,24 +19,14 @@ export function CategoryPieChart() {
             labelLine={false}
             fontSize={11}
             fontFamily="var(--font-display)"
-            stroke="hsl(228 50% 3%)"
+            stroke={PIE_STROKE}
             strokeWidth={2}
           >
             {mockCategoryDistribution.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={CHART_PALETTE[index % CHART_PALETTE.length]} />
             ))}
           </Pie>
-          <Tooltip
-            contentStyle={{
-              backgroundColor: "hsl(228 40% 7%)",
-              border: "1px solid hsl(228 25% 14%)",
-              borderRadius: "12px",
-              color: "hsl(210 40% 96%)",
-              fontFamily: "var(--font-sans)",
-              fontSize: "12px",
-              boxShadow: "0 8px 32px hsl(228 60% 0% / 0.4)",
-            }}
-          />
+          <Tooltip contentStyle={CHART_TOOLTIP.contentStyle} />
         </PieChart>
       </ResponsiveContainer>
     </div>
