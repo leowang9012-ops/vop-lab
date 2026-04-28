@@ -5,7 +5,7 @@
     "totalFeedback": 3693,
     "avgScore": 27.8,
     "positiveRate": 24,
-    "negativeRate": 51,
+    "negativeRate": 52,
     "categoryDistribution": {
       "综合体验": 1488,
       "游戏平衡": 1279,
@@ -19,8 +19,8 @@
     },
     "sentimentDistribution": {
       "positive": 24,
-      "neutral": 25,
-      "negative": 51
+      "neutral": 24,
+      "negative": 52
     },
     "topKeywords": [
       {
@@ -133,7 +133,7 @@
     "totalFeedback": 3694,
     "avgScore": 21.5,
     "positiveRate": 22,
-    "negativeRate": 63,
+    "negativeRate": 64,
     "categoryDistribution": {
       "综合体验": 1917,
       "游戏平衡": 1183,
@@ -144,8 +144,8 @@
     },
     "sentimentDistribution": {
       "positive": 22,
-      "neutral": 15,
-      "negative": 63
+      "neutral": 14,
+      "negative": 64
     },
     "topKeywords": [
       {
