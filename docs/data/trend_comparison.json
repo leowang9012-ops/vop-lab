@@ -2,14 +2,14 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 8541,
-    "avgScore": 24.2,
+    "totalFeedback": 8590,
+    "avgScore": 24.1,
     "positiveRate": 23,
     "negativeRate": 58,
     "categoryDistribution": {
-      "综合体验": 3984,
-      "游戏平衡": 2841,
-      "操作手感": 677,
+      "综合体验": 4019,
+      "游戏平衡": 2853,
+      "操作手感": 679,
       "玩法设计": 348,
       "性能问题": 241,
       "美术表现": 194,
@@ -25,39 +25,39 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 2439
+        "count": 2450
       },
       {
         "keyword": "匹配",
-        "count": 1434
+        "count": 1439
       },
       {
         "keyword": "画面",
-        "count": 1141
+        "count": 1145
       },
       {
         "keyword": "技能",
-        "count": 900
+        "count": 904
       },
       {
         "keyword": "操作",
-        "count": 706
+        "count": 707
       },
       {
         "keyword": "充值",
-        "count": 626
+        "count": 629
       },
       {
         "keyword": "平衡",
-        "count": 564
+        "count": 566
       },
       {
         "keyword": "手感",
-        "count": 524
+        "count": 527
       },
       {
         "keyword": "网络",
-        "count": 404
+        "count": 405
       },
       {
         "keyword": "安卓手机",
@@ -65,7 +65,7 @@
       },
       {
         "keyword": "职业",
-        "count": 290
+        "count": 291
       },
       {
         "keyword": "网络延迟",
@@ -77,7 +77,7 @@
       },
       {
         "keyword": "天赋",
-        "count": 199
+        "count": 200
       },
       {
         "keyword": "华为",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 2849,
+        "count": 2871,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 1514,
+        "count": 1518,
         "severity": "critical"
       },
       {
@@ -130,17 +130,17 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 8541,
+    "totalFeedback": 8591,
     "avgScore": 22.1,
     "positiveRate": 21,
     "negativeRate": 63,
     "categoryDistribution": {
-      "综合体验": 4512,
-      "游戏平衡": 3222,
-      "操作手感": 440,
-      "性能问题": 199,
-      "玩法设计": 87,
-      "美术表现": 81
+      "综合体验": 4533,
+      "游戏平衡": 3245,
+      "操作手感": 442,
+      "性能问题": 201,
+      "玩法设计": 88,
+      "美术表现": 82
     },
     "sentimentDistribution": {
       "positive": 21,
@@ -150,72 +150,72 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 2852
+        "count": 2874
       },
       {
         "keyword": "匹配",
-        "count": 1399
+        "count": 1412
       },
       {
         "keyword": "画面",
-        "count": 1196
+        "count": 1205
       },
       {
         "keyword": "技能",
-        "count": 966
+        "count": 972
       },
       {
         "keyword": "平衡",
-        "count": 809
+        "count": 818
       },
       {
         "keyword": "充值",
-        "count": 698
+        "count": 701
       },
       {
         "keyword": "操作",
-        "count": 557
+        "count": 561
       },
       {
         "keyword": "手感",
-        "count": 544
+        "count": 547
       },
       {
         "keyword": "天赋",
-        "count": 446
+        "count": 452
       },
       {
         "keyword": "网络",
-        "count": 362
+        "count": 365
       },
       {
         "keyword": "职业",
-        "count": 214
+        "count": 215
       },
       {
         "keyword": "卡顿",
-        "count": 199
+        "count": 201
       }
     ],
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 3367,
+        "count": 3388,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 1736,
+        "count": 1749,
         "severity": "critical"
       },
       {
         "issue": "操作手感",
-        "count": 195,
+        "count": 197,
         "severity": "medium"
       },
       {
         "issue": "美术表现",
-        "count": 81,
+        "count": 82,
         "severity": "medium"
       },
       {
