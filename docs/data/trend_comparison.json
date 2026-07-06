@@ -2,17 +2,17 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 15016,
+    "totalFeedback": 15090,
     "avgScore": 23,
     "positiveRate": 23,
     "negativeRate": 60,
     "categoryDistribution": {
-      "综合体验": 7460,
-      "游戏平衡": 5202,
-      "操作手感": 1041,
+      "综合体验": 7512,
+      "游戏平衡": 5219,
+      "操作手感": 1044,
       "性能问题": 408,
-      "玩法设计": 391,
-      "美术表现": 258,
+      "玩法设计": 392,
+      "美术表现": 259,
       "战斗体验": 125,
       "整体体验": 124,
       "设备兼容": 7
@@ -25,43 +25,43 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 4478
+        "count": 4492
       },
       {
         "keyword": "匹配",
-        "count": 2423
+        "count": 2432
       },
       {
         "keyword": "画面",
-        "count": 2035
+        "count": 2041
       },
       {
         "keyword": "技能",
-        "count": 1601
+        "count": 1606
       },
       {
         "keyword": "充值",
-        "count": 1176
+        "count": 1179
       },
       {
         "keyword": "操作",
-        "count": 1172
+        "count": 1174
       },
       {
         "keyword": "平衡",
-        "count": 1144
+        "count": 1149
       },
       {
         "keyword": "手感",
-        "count": 925
+        "count": 928
       },
       {
         "keyword": "网络",
-        "count": 700
+        "count": 702
       },
       {
         "keyword": "天赋",
-        "count": 487
+        "count": 489
       },
       {
         "keyword": "职业",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 5408,
+        "count": 5446,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 2811,
+        "count": 2821,
         "severity": "critical"
       },
       {
@@ -107,7 +107,7 @@
       },
       {
         "issue": "美术表现",
-        "count": 167,
+        "count": 168,
         "severity": "medium"
       },
       {
@@ -130,16 +130,16 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 15016,
-    "avgScore": 25.4,
+    "totalFeedback": 15091,
+    "avgScore": 25.5,
     "positiveRate": 19,
     "negativeRate": 64,
     "categoryDistribution": {
-      "综合体验": 7040,
-      "游戏平衡": 6307,
-      "操作手感": 902,
-      "性能问题": 404,
-      "玩法设计": 252,
+      "综合体验": 7054,
+      "游戏平衡": 6360,
+      "操作手感": 905,
+      "性能问题": 408,
+      "玩法设计": 253,
       "美术表现": 111
     },
     "sentimentDistribution": {
@@ -150,72 +150,72 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 5420
+        "count": 5458
       },
       {
         "keyword": "匹配",
-        "count": 2989
+        "count": 3008
       },
       {
         "keyword": "画面",
-        "count": 2448
+        "count": 2467
       },
       {
         "keyword": "平衡",
-        "count": 1625
+        "count": 1637
       },
       {
         "keyword": "充值",
-        "count": 1536
+        "count": 1558
       },
       {
         "keyword": "技能",
-        "count": 1209
+        "count": 1216
       },
       {
         "keyword": "操作",
-        "count": 1195
+        "count": 1202
       },
       {
         "keyword": "手感",
-        "count": 1140
+        "count": 1149
       },
       {
         "keyword": "天赋",
-        "count": 943
+        "count": 950
       },
       {
         "keyword": "网络",
-        "count": 626
+        "count": 630
       },
       {
         "keyword": "职业",
-        "count": 436
+        "count": 440
       },
       {
         "keyword": "卡顿",
-        "count": 404
+        "count": 408
       }
     ],
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 5320,
+        "count": 5331,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 3575,
+        "count": 3604,
         "severity": "critical"
       },
       {
         "issue": "操作手感",
-        "count": 491,
+        "count": 493,
         "severity": "medium"
       },
       {
         "issue": "玩法设计",
-        "count": 153,
+        "count": 154,
         "severity": "medium"
       },
       {
