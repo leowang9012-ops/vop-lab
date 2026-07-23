@@ -2,17 +2,17 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 17363,
+    "totalFeedback": 17441,
     "avgScore": 23.1,
     "positiveRate": 22,
     "negativeRate": 61,
     "categoryDistribution": {
-      "综合体验": 8660,
-      "游戏平衡": 6154,
-      "操作手感": 1126,
-      "性能问题": 448,
-      "玩法设计": 441,
-      "美术表现": 278,
+      "综合体验": 8712,
+      "游戏平衡": 6172,
+      "操作手感": 1129,
+      "性能问题": 450,
+      "玩法设计": 443,
+      "美术表现": 279,
       "战斗体验": 125,
       "整体体验": 124,
       "设备兼容": 7
@@ -25,51 +25,51 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 5376
+        "count": 5393
       },
       {
         "keyword": "匹配",
-        "count": 2882
+        "count": 2893
       },
       {
         "keyword": "画面",
-        "count": 2376
+        "count": 2385
       },
       {
         "keyword": "技能",
-        "count": 1894
+        "count": 1899
       },
       {
         "keyword": "平衡",
-        "count": 1399
+        "count": 1404
       },
       {
         "keyword": "充值",
-        "count": 1341
+        "count": 1344
       },
       {
         "keyword": "操作",
-        "count": 1277
+        "count": 1281
       },
       {
         "keyword": "手感",
-        "count": 1085
+        "count": 1089
       },
       {
         "keyword": "网络",
-        "count": 780
+        "count": 784
       },
       {
         "keyword": "天赋",
-        "count": 659
+        "count": 661
       },
       {
         "keyword": "职业",
-        "count": 512
+        "count": 514
       },
       {
         "keyword": "卡顿",
-        "count": 448
+        "count": 450
       },
       {
         "keyword": "安卓手机",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 6338,
+        "count": 6376,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 3299,
+        "count": 3308,
         "severity": "critical"
       },
       {
@@ -102,12 +102,12 @@
       },
       {
         "issue": "玩法设计",
-        "count": 227,
+        "count": 228,
         "severity": "medium"
       },
       {
         "issue": "美术表现",
-        "count": 187,
+        "count": 188,
         "severity": "medium"
       },
       {
@@ -130,16 +130,16 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 17363,
-    "avgScore": 29.2,
+    "totalFeedback": 17442,
+    "avgScore": 29.3,
     "positiveRate": 23,
     "negativeRate": 61,
     "categoryDistribution": {
-      "综合体验": 7869,
-      "游戏平衡": 7288,
-      "操作手感": 1052,
-      "性能问题": 552,
-      "玩法设计": 481,
+      "综合体验": 7881,
+      "游戏平衡": 7333,
+      "操作手感": 1058,
+      "性能问题": 558,
+      "玩法设计": 491,
       "美术表现": 121
     },
     "sentimentDistribution": {
@@ -150,67 +150,67 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 5993
+        "count": 6022
       },
       {
         "keyword": "匹配",
-        "count": 3421
+        "count": 3440
       },
       {
         "keyword": "画面",
-        "count": 2977
+        "count": 2997
       },
       {
         "keyword": "充值",
-        "count": 2074
+        "count": 2093
       },
       {
         "keyword": "平衡",
-        "count": 1878
+        "count": 1890
       },
       {
         "keyword": "操作",
-        "count": 1483
+        "count": 1495
       },
       {
         "keyword": "手感",
-        "count": 1367
+        "count": 1378
       },
       {
         "keyword": "技能",
-        "count": 1263
+        "count": 1268
       },
       {
         "keyword": "天赋",
-        "count": 1016
+        "count": 1020
       },
       {
         "keyword": "网络",
-        "count": 794
+        "count": 800
       },
       {
         "keyword": "职业",
-        "count": 608
+        "count": 614
       },
       {
         "keyword": "卡顿",
-        "count": 552
+        "count": 558
       }
     ],
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 5973,
+        "count": 5980,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 3855,
+        "count": 3873,
         "severity": "critical"
       },
       {
         "issue": "操作手感",
-        "count": 511,
+        "count": 513,
         "severity": "medium"
       },
       {
