@@ -2,15 +2,15 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 17520,
+    "totalFeedback": 17569,
     "avgScore": 23.2,
     "positiveRate": 22,
     "negativeRate": 61,
     "categoryDistribution": {
-      "综合体验": 8728,
-      "游戏平衡": 6221,
-      "操作手感": 1131,
-      "性能问题": 457,
+      "综合体验": 8738,
+      "游戏平衡": 6253,
+      "操作手感": 1135,
+      "性能问题": 460,
       "玩法设计": 448,
       "美术表现": 279,
       "战斗体验": 125,
@@ -25,51 +25,51 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 5440
+        "count": 5471
       },
       {
         "keyword": "匹配",
-        "count": 2917
+        "count": 2928
       },
       {
         "keyword": "画面",
-        "count": 2407
+        "count": 2419
       },
       {
         "keyword": "技能",
-        "count": 1914
+        "count": 1924
       },
       {
         "keyword": "平衡",
-        "count": 1415
+        "count": 1421
       },
       {
         "keyword": "充值",
-        "count": 1354
+        "count": 1360
       },
       {
         "keyword": "操作",
-        "count": 1290
+        "count": 1297
       },
       {
         "keyword": "手感",
-        "count": 1097
+        "count": 1101
       },
       {
         "keyword": "网络",
-        "count": 791
+        "count": 794
       },
       {
         "keyword": "天赋",
-        "count": 668
+        "count": 672
       },
       {
         "keyword": "职业",
-        "count": 521
+        "count": 524
       },
       {
         "keyword": "卡顿",
-        "count": 457
+        "count": 460
       },
       {
         "keyword": "安卓手机",
@@ -87,17 +87,17 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 6389,
+        "count": 6397,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 3330,
+        "count": 3343,
         "severity": "critical"
       },
       {
         "issue": "操作手感",
-        "count": 441,
+        "count": 442,
         "severity": "medium"
       },
       {
@@ -130,16 +130,16 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 17520,
-    "avgScore": 29.4,
+    "totalFeedback": 17570,
+    "avgScore": 29.5,
     "positiveRate": 23,
     "negativeRate": 61,
     "categoryDistribution": {
-      "综合体验": 7929,
-      "游戏平衡": 7347,
-      "操作手感": 1065,
-      "性能问题": 559,
-      "玩法设计": 498,
+      "综合体验": 7937,
+      "游戏平衡": 7375,
+      "操作手感": 1066,
+      "性能问题": 561,
+      "玩法设计": 509,
       "美术表现": 122
     },
     "sentimentDistribution": {
@@ -150,31 +150,31 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 6021
+        "count": 6035
       },
       {
         "keyword": "匹配",
-        "count": 3446
+        "count": 3463
       },
       {
         "keyword": "画面",
-        "count": 3004
+        "count": 3017
       },
       {
         "keyword": "充值",
-        "count": 2105
+        "count": 2120
       },
       {
         "keyword": "平衡",
-        "count": 1896
+        "count": 1906
       },
       {
         "keyword": "操作",
-        "count": 1502
+        "count": 1505
       },
       {
         "keyword": "手感",
-        "count": 1385
+        "count": 1394
       },
       {
         "keyword": "技能",
@@ -182,30 +182,30 @@
       },
       {
         "keyword": "天赋",
-        "count": 1019
+        "count": 1024
       },
       {
         "keyword": "网络",
-        "count": 803
+        "count": 805
       },
       {
         "keyword": "职业",
-        "count": 615
+        "count": 617
       },
       {
         "keyword": "卡顿",
-        "count": 559
+        "count": 561
       }
     ],
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 6011,
+        "count": 6015,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 3875,
+        "count": 3886,
         "severity": "critical"
       },
       {
@@ -215,7 +215,7 @@
       },
       {
         "issue": "玩法设计",
-        "count": 139,
+        "count": 140,
         "severity": "medium"
       },
       {
