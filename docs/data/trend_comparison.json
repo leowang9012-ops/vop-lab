@@ -2,17 +2,17 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 31230,
+    "totalFeedback": 31255,
     "avgScore": 24.5,
     "positiveRate": 21,
     "negativeRate": 62,
     "categoryDistribution": {
-      "综合体验": 14997,
-      "游戏平衡": 12062,
-      "操作手感": 2011,
+      "综合体验": 15019,
+      "游戏平衡": 12063,
+      "操作手感": 2012,
       "性能问题": 864,
       "玩法设计": 664,
-      "美术表现": 376,
+      "美术表现": 377,
       "战斗体验": 125,
       "整体体验": 124,
       "设备兼容": 7
@@ -29,11 +29,11 @@
       },
       {
         "keyword": "匹配",
-        "count": 5635
+        "count": 5637
       },
       {
         "keyword": "画面",
-        "count": 4704
+        "count": 4705
       },
       {
         "keyword": "充值",
@@ -45,7 +45,7 @@
       },
       {
         "keyword": "平衡",
-        "count": 2904
+        "count": 2905
       },
       {
         "keyword": "操作",
@@ -53,7 +53,7 @@
       },
       {
         "keyword": "手感",
-        "count": 2158
+        "count": 2159
       },
       {
         "keyword": "天赋",
@@ -61,7 +61,7 @@
       },
       {
         "keyword": "网络",
-        "count": 1392
+        "count": 1394
       },
       {
         "keyword": "职业",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11102,
+        "count": 11121,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 6645,
+        "count": 6646,
         "severity": "critical"
       },
       {
@@ -107,7 +107,7 @@
       },
       {
         "issue": "美术表现",
-        "count": 285,
+        "count": 286,
         "severity": "medium"
       },
       {
@@ -130,15 +130,15 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 31231,
-    "avgScore": 34.9,
+    "totalFeedback": 31255,
+    "avgScore": 34.8,
     "positiveRate": 27,
     "negativeRate": 52,
     "categoryDistribution": {
-      "综合体验": 15264,
+      "综合体验": 15289,
       "游戏平衡": 11214,
       "玩法设计": 1812,
-      "操作手感": 1723,
+      "操作手感": 1722,
       "性能问题": 958,
       "美术表现": 260
     },
@@ -154,7 +154,7 @@
       },
       {
         "keyword": "匹配",
-        "count": 6483
+        "count": 6484
       },
       {
         "keyword": "画面",
@@ -178,7 +178,7 @@
       },
       {
         "keyword": "手感",
-        "count": 2393
+        "count": 2392
       },
       {
         "keyword": "天赋",
@@ -186,7 +186,7 @@
       },
       {
         "keyword": "网络",
-        "count": 1655
+        "count": 1656
       },
       {
         "keyword": "职业",
@@ -204,7 +204,7 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11079,
+        "count": 11101,
         "severity": "critical"
       },
       {
