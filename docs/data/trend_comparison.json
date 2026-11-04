@@ -2,16 +2,16 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 31475,
-    "avgScore": 24.6,
+    "totalFeedback": 31500,
+    "avgScore": 24.7,
     "positiveRate": 21,
     "negativeRate": 62,
     "categoryDistribution": {
-      "综合体验": 15111,
-      "游戏平衡": 12152,
-      "操作手感": 2025,
-      "性能问题": 873,
-      "玩法设计": 680,
+      "综合体验": 15116,
+      "游戏平衡": 12166,
+      "操作手感": 2027,
+      "性能问题": 875,
+      "玩法设计": 682,
       "美术表现": 378,
       "战斗体验": 125,
       "整体体验": 124,
@@ -25,51 +25,51 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 10380
+        "count": 10392
       },
       {
         "keyword": "匹配",
-        "count": 5674
+        "count": 5679
       },
       {
         "keyword": "画面",
-        "count": 4747
+        "count": 4753
       },
       {
         "keyword": "充值",
-        "count": 2950
+        "count": 2955
       },
       {
         "keyword": "平衡",
-        "count": 2925
+        "count": 2927
       },
       {
         "keyword": "技能",
-        "count": 2922
+        "count": 2924
       },
       {
         "keyword": "操作",
-        "count": 2501
+        "count": 2505
       },
       {
         "keyword": "手感",
-        "count": 2176
+        "count": 2178
       },
       {
         "keyword": "天赋",
-        "count": 1509
+        "count": 1511
       },
       {
         "keyword": "网络",
-        "count": 1405
+        "count": 1407
       },
       {
         "keyword": "职业",
-        "count": 987
+        "count": 991
       },
       {
         "keyword": "卡顿",
-        "count": 873
+        "count": 875
       },
       {
         "keyword": "安卓手机",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11190,
+        "count": 11194,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 6669,
+        "count": 6672,
         "severity": "critical"
       },
       {
@@ -130,17 +130,17 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 31476,
-    "avgScore": 34.3,
+    "totalFeedback": 31500,
+    "avgScore": 34.2,
     "positiveRate": 27,
     "negativeRate": 53,
     "categoryDistribution": {
-      "综合体验": 15620,
-      "游戏平衡": 11134,
-      "玩法设计": 1796,
-      "操作手感": 1709,
-      "性能问题": 949,
-      "美术表现": 268
+      "综合体验": 15662,
+      "游戏平衡": 11121,
+      "玩法设计": 1794,
+      "操作手感": 1707,
+      "性能问题": 947,
+      "美术表现": 269
     },
     "sentimentDistribution": {
       "positive": 27,
@@ -150,51 +150,51 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 8958
+        "count": 8946
       },
       {
         "keyword": "匹配",
-        "count": 6474
+        "count": 6472
       },
       {
         "keyword": "画面",
-        "count": 5287
+        "count": 5282
       },
       {
         "keyword": "充值",
-        "count": 3634
+        "count": 3629
       },
       {
         "keyword": "平衡",
-        "count": 3417
+        "count": 3416
       },
       {
         "keyword": "技能",
-        "count": 2793
+        "count": 2792
       },
       {
         "keyword": "操作",
-        "count": 2417
+        "count": 2413
       },
       {
         "keyword": "手感",
-        "count": 2375
+        "count": 2373
       },
       {
         "keyword": "天赋",
-        "count": 1809
+        "count": 1807
       },
       {
         "keyword": "网络",
-        "count": 1672
+        "count": 1673
       },
       {
         "keyword": "职业",
-        "count": 1087
+        "count": 1083
       },
       {
         "keyword": "卡顿",
-        "count": 949
+        "count": 947
       },
       {
         "keyword": "延迟",
@@ -204,17 +204,17 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11401,
+        "count": 11438,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 4794,
+        "count": 4792,
         "severity": "critical"
       },
       {
         "issue": "美术表现",
-        "count": 268,
+        "count": 269,
         "severity": "medium"
       },
       {
