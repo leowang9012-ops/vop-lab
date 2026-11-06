@@ -2,16 +2,16 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 31573,
+    "totalFeedback": 31598,
     "avgScore": 24.7,
     "positiveRate": 21,
     "negativeRate": 62,
     "categoryDistribution": {
-      "综合体验": 15166,
-      "游戏平衡": 12181,
-      "操作手感": 2030,
-      "性能问题": 876,
-      "玩法设计": 685,
+      "综合体验": 15172,
+      "游戏平衡": 12194,
+      "操作手感": 2031,
+      "性能问题": 879,
+      "玩法设计": 687,
       "美术表现": 379,
       "战斗体验": 125,
       "整体体验": 124,
@@ -25,51 +25,51 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 10403
+        "count": 10414
       },
       {
         "keyword": "匹配",
-        "count": 5687
+        "count": 5692
       },
       {
         "keyword": "画面",
-        "count": 4761
+        "count": 4768
       },
       {
         "keyword": "充值",
-        "count": 2960
+        "count": 2964
       },
       {
         "keyword": "平衡",
-        "count": 2932
+        "count": 2935
       },
       {
         "keyword": "技能",
-        "count": 2927
+        "count": 2929
       },
       {
         "keyword": "操作",
-        "count": 2508
+        "count": 2512
       },
       {
         "keyword": "手感",
-        "count": 2182
+        "count": 2184
       },
       {
         "keyword": "天赋",
-        "count": 1512
+        "count": 1514
       },
       {
         "keyword": "网络",
-        "count": 1410
+        "count": 1413
       },
       {
         "keyword": "职业",
-        "count": 992
+        "count": 996
       },
       {
         "keyword": "卡顿",
-        "count": 876
+        "count": 879
       },
       {
         "keyword": "安卓手机",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11232,
+        "count": 11236,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 6676,
+        "count": 6678,
         "severity": "critical"
       },
       {
@@ -130,17 +130,17 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 31574,
-    "avgScore": 34.1,
+    "totalFeedback": 31598,
+    "avgScore": 34,
     "positiveRate": 27,
     "negativeRate": 53,
     "categoryDistribution": {
-      "综合体验": 15753,
-      "游戏平衡": 11109,
-      "玩法设计": 1791,
-      "操作手感": 1704,
-      "性能问题": 946,
-      "美术表现": 271
+      "综合体验": 15794,
+      "游戏平衡": 11097,
+      "玩法设计": 1789,
+      "操作手感": 1703,
+      "性能问题": 943,
+      "美术表现": 272
     },
     "sentimentDistribution": {
       "positive": 27,
@@ -150,39 +150,39 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 8935
+        "count": 8924
       },
       {
         "keyword": "匹配",
-        "count": 6473
+        "count": 6471
       },
       {
         "keyword": "画面",
-        "count": 5277
+        "count": 5271
       },
       {
         "keyword": "充值",
-        "count": 3624
+        "count": 3620
       },
       {
         "keyword": "平衡",
-        "count": 3414
+        "count": 3412
       },
       {
         "keyword": "技能",
-        "count": 2792
+        "count": 2791
       },
       {
         "keyword": "操作",
-        "count": 2410
+        "count": 2406
       },
       {
         "keyword": "手感",
-        "count": 2369
+        "count": 2367
       },
       {
         "keyword": "天赋",
-        "count": 1806
+        "count": 1804
       },
       {
         "keyword": "网络",
@@ -190,11 +190,11 @@
       },
       {
         "keyword": "职业",
-        "count": 1082
+        "count": 1078
       },
       {
         "keyword": "卡顿",
-        "count": 946
+        "count": 943
       },
       {
         "keyword": "延迟",
@@ -204,17 +204,17 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11523,
+        "count": 11560,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 4791,
+        "count": 4790,
         "severity": "critical"
       },
       {
         "issue": "美术表现",
-        "count": 271,
+        "count": 272,
         "severity": "medium"
       },
       {
