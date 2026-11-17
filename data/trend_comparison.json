@@ -2,16 +2,16 @@
   "period1": {
     "label": "早期数据",
     "dateRange": "",
-    "totalFeedback": 32357,
+    "totalFeedback": 32382,
     "avgScore": 25.2,
     "positiveRate": 22,
     "negativeRate": 62,
     "categoryDistribution": {
-      "综合体验": 15500,
-      "游戏平衡": 12485,
-      "操作手感": 2068,
-      "性能问题": 919,
-      "玩法设计": 745,
+      "综合体验": 15510,
+      "游戏平衡": 12495,
+      "操作手感": 2070,
+      "性能问题": 920,
+      "玩法设计": 747,
       "美术表现": 384,
       "战斗体验": 125,
       "整体体验": 124,
@@ -25,35 +25,35 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 10642
+        "count": 10650
       },
       {
         "keyword": "匹配",
-        "count": 5821
+        "count": 5825
       },
       {
         "keyword": "画面",
-        "count": 4917
+        "count": 4922
       },
       {
         "keyword": "充值",
-        "count": 3068
+        "count": 3072
       },
       {
         "keyword": "平衡",
-        "count": 3007
+        "count": 3009
       },
       {
         "keyword": "技能",
-        "count": 2987
+        "count": 2989
       },
       {
         "keyword": "操作",
-        "count": 2584
+        "count": 2587
       },
       {
         "keyword": "手感",
-        "count": 2247
+        "count": 2249
       },
       {
         "keyword": "天赋",
@@ -61,15 +61,15 @@
       },
       {
         "keyword": "网络",
-        "count": 1463
+        "count": 1464
       },
       {
         "keyword": "职业",
-        "count": 1039
+        "count": 1040
       },
       {
         "keyword": "卡顿",
-        "count": 919
+        "count": 920
       },
       {
         "keyword": "安卓手机",
@@ -87,12 +87,12 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 11486,
+        "count": 11490,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 6773,
+        "count": 6777,
         "severity": "critical"
       },
       {
@@ -130,17 +130,17 @@
   "period2": {
     "label": "近期数据",
     "dateRange": "",
-    "totalFeedback": 32358,
-    "avgScore": 32.3,
+    "totalFeedback": 32382,
+    "avgScore": 32.2,
     "positiveRate": 26,
     "negativeRate": 55,
     "categoryDistribution": {
-      "综合体验": 16923,
-      "游戏平衡": 10837,
-      "玩法设计": 1731,
-      "操作手感": 1666,
-      "性能问题": 903,
-      "美术表现": 298
+      "综合体验": 16960,
+      "游戏平衡": 10828,
+      "玩法设计": 1729,
+      "操作手感": 1664,
+      "性能问题": 902,
+      "美术表现": 299
     },
     "sentimentDistribution": {
       "positive": 26,
@@ -150,35 +150,35 @@
     "topKeywords": [
       {
         "keyword": "氪金",
-        "count": 8696
+        "count": 8688
       },
       {
         "keyword": "匹配",
-        "count": 6435
+        "count": 6434
       },
       {
         "keyword": "画面",
-        "count": 5153
+        "count": 5149
       },
       {
         "keyword": "充值",
-        "count": 3516
+        "count": 3512
       },
       {
         "keyword": "平衡",
-        "count": 3371
+        "count": 3370
       },
       {
         "keyword": "技能",
-        "count": 2764
+        "count": 2763
       },
       {
         "keyword": "操作",
-        "count": 2334
+        "count": 2331
       },
       {
         "keyword": "手感",
-        "count": 2304
+        "count": 2302
       },
       {
         "keyword": "天赋",
@@ -186,15 +186,15 @@
       },
       {
         "keyword": "网络",
-        "count": 1722
+        "count": 1724
       },
       {
         "keyword": "职业",
-        "count": 1035
+        "count": 1034
       },
       {
         "keyword": "卡顿",
-        "count": 903
+        "count": 902
       },
       {
         "keyword": "延迟",
@@ -204,17 +204,17 @@
     "topIssues": [
       {
         "issue": "综合体验",
-        "count": 12581,
+        "count": 12618,
         "severity": "critical"
       },
       {
         "issue": "游戏平衡",
-        "count": 4726,
+        "count": 4723,
         "severity": "high"
       },
       {
         "issue": "美术表现",
-        "count": 298,
+        "count": 299,
         "severity": "medium"
       },
       {
